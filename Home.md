@@ -19,7 +19,7 @@ Welcome to the WooCommerce Wiki. Here we'll post links to resources and useful s
 ## Third Party Plugins
 
 * [WooCommerce Admin Bar Addition](http://wordpress.org/extend/plugins/woocommerce-admin-bar-addition/) - Adds links to the WordPress admin bar for WooCommerce sections.
-* [WooCommerce - All in one SEO Pack(http://wordpress.org/extend/plugins/woocommerce-all-in-one-seo-pack/) - Adds AIOSP support to WC.
+* [WooCommerce - All in one SEO Pack](http://wordpress.org/extend/plugins/woocommerce-all-in-one-seo-pack/) - Adds AIOSP support to WC.
 * [Delivery shipping method](http://wordpress.org/extend/plugins/woocommerce-shipping-delivery/)
 * [Local pickup shipping method](http://wordpress.org/extend/plugins/woocommerce-shipping-local-pickup/)
 * [WooCommerce NL translation](http://wordpress.org/extend/plugins/woocommerce-nl/)
