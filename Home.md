@@ -9,6 +9,7 @@ Welcome to the WooCommerce Wiki. Here we'll post links to resources and useful s
 * [WooCommerce User Guide](http://www.woothemes.com/woocommerce-codex/woocommerce-user-guide/) - Guide for clients using WC
 * [Official WC Extensions](http://www.woothemes.com/extensions/woocommerce-extensions/)
 * [Official WC Themes](http://www.woothemes.com/themes/woocommerce-themes/)
+* [WooCommerce on WordPress.org](http://wordpress.org/extend/plugins/woocommerce/)
 
 ## Snippets
 
