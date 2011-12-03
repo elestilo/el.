@@ -2,6 +2,11 @@
 
 Welcome to the WooCommerce Wiki. Here we'll post links to resources and useful snippets you can make use of in your projects.
 
+## Snippets
+
+* [Change the PayPal gateway icon](https://gist.github.com/1425282)
+* [Template for printing processing orders](https://gist.github.com/1339240)
+
 ## Resources/Links
 
 * [WooCommerce Features/intro](http://www.woothemes.com/woocommerce/)
@@ -10,11 +15,6 @@ Welcome to the WooCommerce Wiki. Here we'll post links to resources and useful s
 * [Official WC Extensions](http://www.woothemes.com/extensions/woocommerce-extensions/)
 * [Official WC Themes](http://www.woothemes.com/themes/woocommerce-themes/)
 * [WooCommerce on WordPress.org](http://wordpress.org/extend/plugins/woocommerce/)
-
-## Snippets
-
-* [Change the PayPal gateway icon](https://gist.github.com/1425282)
-* [Template for printing processing orders](https://gist.github.com/1339240)
 
 ## Third Party Plugins
 
