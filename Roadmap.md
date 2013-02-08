@@ -7,6 +7,10 @@
 
 ## Ideas
 
+**Promotions/special pages**
+
+* [#2249](https://github.com/woothemes/woocommerce/issues/2249) - Add dedicated page for products in promotion
+
 **Variations rewrite**
 
 * [#1984](https://github.com/woothemes/woocommerce/issues/1984) - Validation for variations and more filters to affect the form behaviour.
