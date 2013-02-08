@@ -3,4 +3,4 @@
 ## Ideas
 
 **Variations rewrite**
-#2399
+[#2399](https://github.com/woothemes/woocommerce/issues/2399)
