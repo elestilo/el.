@@ -9,4 +9,5 @@
 
 **Variations rewrite**
 
+* [#1984](https://github.com/woothemes/woocommerce/issues/1984) - Validation for variations and more filters to affect the form behaviour.
 * [#2399](https://github.com/woothemes/woocommerce/issues/2399) - Base product would define all properties (price, weight, stock, whatever) and variations can overwrite this for that specific variation.
