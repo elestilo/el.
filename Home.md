@@ -1,6 +1,8 @@
 # Home
 
-Welcome to the WooCommerce Wiki. Here we'll post links to resources and useful snippets you can make use of in your projects.
+Welcome to the WooCommerce Wiki. The most important page in here is the **[Roadmap](https://github.com/woothemes/woocommerce/wiki/Roadmap)**.
+
+Here we'll also post links to resources and useful snippets you can make use of in your projects.
 
 ## Snippets
 
