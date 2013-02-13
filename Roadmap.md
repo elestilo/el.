@@ -5,6 +5,10 @@
 * [#1507](https://github.com/woothemes/woocommerce/issues/1507) - Original refunds ticket.
 * [#1982](https://github.com/woothemes/woocommerce/issues/1982) - Refunds do not work as we planned, so credit notes is now pitched as the way to go.
 
+**Splitting CSS: Layout and pretty**
+
+* Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact). 
+
 ## Ideas or future releases
 
 **Promotions/special pages**
