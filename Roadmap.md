@@ -7,7 +7,11 @@
 
 **Splitting CSS: Layout and pretty**
 
-* Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact). 
+[] Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact). 
+
+**Coupons**
+
+[] Show coupons and amounts https://github.com/woothemes/woocommerce/tree/Coupon-display
 
 ## Ideas or future releases
 
