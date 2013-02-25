@@ -16,6 +16,7 @@
 ## Ideas or future releases
 
 **True multi-currency support**
+
 **Promotions/special pages**
 
 * [#2249](https://github.com/woothemes/woocommerce/issues/2249) - Add dedicated page for products in promotion
