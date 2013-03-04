@@ -1,5 +1,7 @@
 ## 2.1 - Peppy Penguin
 
+* Consider renaming 'shipping' in totals to 'shipping and handling'
+
 **Credit notes**
 
 * [#1507](https://github.com/woothemes/woocommerce/issues/1507) - Original refunds ticket.
