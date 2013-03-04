@@ -13,7 +13,7 @@
 
 * Show coupons and amounts https://github.com/woothemes/woocommerce/tree/Coupon-display
 
-** Account edit **
+**Account edit**
 
 * Allow users to change email addresses independently of billing email
 
