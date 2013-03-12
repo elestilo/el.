@@ -19,6 +19,10 @@
 
 * Allow users to change email addresses independently of billing email
 
+**Full API **
+
+* For querying orders, customers, products and report data.
+
 ## Ideas or future releases
 
 **True multi-currency support**
