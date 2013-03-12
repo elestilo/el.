@@ -19,7 +19,7 @@
 
 * Allow users to change email addresses independently of billing email
 
-**Full API **
+**Full API**
 
 * For querying orders, customers, products and report data.
 
