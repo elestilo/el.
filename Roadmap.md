@@ -1,6 +1,7 @@
 ## 2.1 - Peppy Penguin
 
 * Consider renaming 'shipping' in totals to 'shipping and handling'
+* Add an update notification class so we can show messages to users before updating the plugin.
 
 **Credit notes**
 
