@@ -2,6 +2,7 @@
 
 * Consider renaming 'shipping' in totals to 'shipping and handling'
 * Add an update notification class so we can show messages to users before updating the plugin.
+* Holding stock - See if more holds can be added to prevent simultaneous checkout.
 
 **Credit notes**
 
