@@ -19,7 +19,7 @@
 
 **Account edit**
 
-* Allow users to change email addresses independently of billing email
+* Allow users to change email addresses, first and last names independently of billing email. Profile edit page - separate to billing/shipping.
 
 **Full API**
 
