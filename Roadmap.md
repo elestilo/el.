@@ -27,6 +27,8 @@
 
 ## Ideas or future releases
 
+**ZONES**
+
 **True multi-currency support**
 
 **Promotions/special pages**
