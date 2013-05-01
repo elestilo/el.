@@ -27,6 +27,8 @@
 
 ## Ideas or future releases
 
+**Custom stock statuses** #3051
+
 **ZONES**
 
 **True multi-currency support**
