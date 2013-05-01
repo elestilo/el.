@@ -27,7 +27,7 @@
 
 ## Ideas or future releases
 
-**Custom stock statuses** #3051
+**Custom stock statuses** [#3051](https://github.com/woothemes/woocommerce/issues/3051)
 
 **ZONES**
 
