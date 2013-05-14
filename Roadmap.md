@@ -23,12 +23,12 @@
 
 ### Minor/enhancements/tweaks
 
-* Consider renaming 'shipping' in totals to 'shipping and handling' [#3160](https://github.com/woothemes/woocommerce/issues/3160)
-* Add an update notification class so we can show messages to users before updating the plugin [#3161](https://github.com/woothemes/woocommerce/issues/3161)
-* Holding stock - See if more holds can be added to prevent simultaneous checkout [#3162](https://github.com/woothemes/woocommerce/issues/3162)
-* Conditional logic, add to cart templates and `woocommerce_add_to_cart_url` filter improvements [#3143](https://github.com/woothemes/woocommerce/issues/3143)
-* Tax based on order amount (NYC/NYS states specific) [#3129](https://github.com/woothemes/woocommerce/issues/3129)
-* Prevent updates from removing logs [#3126](https://github.com/woothemes/woocommerce/issues/3126)
+* [#3160](https://github.com/woothemes/woocommerce/issues/3160) - Consider renaming 'shipping' in totals to 'shipping and handling'
+* [#3161](https://github.com/woothemes/woocommerce/issues/3161) - Add an update notification class so we can show messages to users before updating the plugin
+* [#3162](https://github.com/woothemes/woocommerce/issues/3162) - Holding stock - See if more holds can be added to prevent simultaneous checkout
+* [#3143](https://github.com/woothemes/woocommerce/issues/3143) - Conditional logic, add to cart templates and `woocommerce_add_to_cart_url` filter improvements
+* [#3129](https://github.com/woothemes/woocommerce/issues/3129) - Tax based on order amount (NYC/NYS states specific)
+* [#3126](https://github.com/woothemes/woocommerce/issues/3126) - Prevent updates from removing logs
 * Remove YuppieChef images from dummy content [#3119](https://github.com/woothemes/woocommerce/issues/3119)
 * Fix EDD and WooCommerce sharing checkout (possibly other plugins) pages [#3100](https://github.com/woothemes/woocommerce/issues/3100)
 * Provide support for username/nice name in registration [#3085](https://github.com/woothemes/woocommerce/issues/3085)
