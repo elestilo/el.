@@ -10,10 +10,6 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507) and [#1982](https://github.com/woothemes/woocommerce/issues/1982)
 * [#3164](https://github.com/woothemes/woocommerce/issues/3164) - Credit notes implementation
 
-### Coupon display on checkout
-
-* [#3167](https://github.com/woothemes/woocommerce/issues/3167) - Implement display of the coupons used in order
-
 ### Full API
 
 * For querying orders, customers, products and report data.
@@ -24,6 +20,7 @@ Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507)
 * [#3170](https://github.com/woothemes/woocommerce/issues/3170) - Pay and Thanks page become endpoints
 * [#3169](https://github.com/woothemes/woocommerce/issues/3169) - Remove default integrations and hide tab by default
 * [#3168](https://github.com/woothemes/woocommerce/issues/3168) - Offer more account edit options
+* [#3167](https://github.com/woothemes/woocommerce/issues/3167) - Implement display of the coupons used in order
 * [#3160](https://github.com/woothemes/woocommerce/issues/3160) - Rename 'shipping' in totals to 'shipping and handling'
 * [#3161](https://github.com/woothemes/woocommerce/issues/3161) - Add an update notification class so we can show messages to users before updating the plugin
 * [#3162](https://github.com/woothemes/woocommerce/issues/3162) - Holding stock - See if more holds can be added to prevent simultaneous checkout
