@@ -18,7 +18,6 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#3166](https://github.com/woothemes/woocommerce/issues/3166) - Default WooCommerce templates need some responsive love
 
 ### Credit notes (formerly known as refunds)
-Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507) and [#1982](https://github.com/woothemes/woocommerce/issues/1982)
 * [#3164](https://github.com/woothemes/woocommerce/issues/3164) - Credit notes implementation
 
 ### Full API
