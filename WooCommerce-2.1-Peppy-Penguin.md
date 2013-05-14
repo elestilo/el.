@@ -1,3 +1,7 @@
+WooCommerce 2.1 will be the next version of our eCommerce plugin.
+
+Starting the release of this version, we will stop support and compatibility for WooCommerce 1.x versions. Premium extensions will no longer be made compatible with the older 1.x versions.
+
 ## Refactor some more!
 WooCommerce 2.1 is going to bring some more refactoring of the code to further make it future proof and better customisable.
 * [#3172](https://github.com/woothemes/woocommerce/issues/3172) - Offer generic payment gateways
