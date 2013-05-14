@@ -3,6 +3,8 @@
 ### Splitting CSS: Layout and pretty
 Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
 * [#2785](https://github.com/woothemes/woocommerce/issues/2785) - Splitting the files
+* [#3165](https://github.com/woothemes/woocommerce/issues/3165) - Refactor the conditionals that determine the loading of stylesheets
+* [#3166](https://github.com/woothemes/woocommerce/issues/3166) - Default WooCommerce templates need some responsive love
 
 ### Credit notes (formerly known as refunds)
 Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507) and [#1982](https://github.com/woothemes/woocommerce/issues/1982)
