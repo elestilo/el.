@@ -4,20 +4,20 @@
 Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
 * [#2785](https://github.com/woothemes/woocommerce/issues/2785) - Splitting the files
 
-**Credit notes**
+### Credit notes
 
 * [#1507](https://github.com/woothemes/woocommerce/issues/1507) - Original refunds ticket.
 * [#1982](https://github.com/woothemes/woocommerce/issues/1982) - Refunds do not work as we planned, so credit notes is now pitched as the way to go.
 
-**Coupons**
+### Coupons
 
 * Show coupons and amounts https://github.com/woothemes/woocommerce/tree/Coupon-display
 
-**Account edit**
+### Account edit
 
 * Allow users to change email addresses, first and last names independently of billing email. Profile edit page - separate to billing/shipping.
 
-**Full API**
+### Full API
 
 * For querying orders, customers, products and report data.
 
