@@ -5,7 +5,7 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#2785](https://github.com/woothemes/woocommerce/issues/2785) - Splitting the files
 
 ### Credit notes (formerly known as refunds)
-Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507) Original refunds ticket and [#1982](https://github.com/woothemes/woocommerce/issues/1982) Refunds do not work as we planned, so credit notes is now pitched as the way to go.
+Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507) and [#1982](https://github.com/woothemes/woocommerce/issues/1982)
 * [#3164](https://github.com/woothemes/woocommerce/issues/3164) - Credit notes implementation
 
 ### Coupons
