@@ -1,8 +1,8 @@
 ## 2.1 - Peppy Penguin
 
-* Consider renaming 'shipping' in totals to 'shipping and handling'
-* Add an update notification class so we can show messages to users before updating the plugin.
-* Holding stock - See if more holds can be added to prevent simultaneous checkout.
+* Consider renaming 'shipping' in totals to 'shipping and handling' [#3160](https://github.com/woothemes/woocommerce/issues/3160)
+* Add an update notification class so we can show messages to users before updating the plugin [#3161](https://github.com/woothemes/woocommerce/issues/3161)
+* Holding stock - See if more holds can be added to prevent simultaneous checkout [#3162](https://github.com/woothemes/woocommerce/issues/3162)
 
 **Credit notes**
 
