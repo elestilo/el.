@@ -26,6 +26,8 @@
 * Consider renaming 'shipping' in totals to 'shipping and handling' [#3160](https://github.com/woothemes/woocommerce/issues/3160)
 * Add an update notification class so we can show messages to users before updating the plugin [#3161](https://github.com/woothemes/woocommerce/issues/3161)
 * Holding stock - See if more holds can be added to prevent simultaneous checkout [#3162](https://github.com/woothemes/woocommerce/issues/3162)
+* Conditional logic, add to cart templates and `woocommerce_add_to_cart_url` filter improvements [#3143](https://github.com/woothemes/woocommerce/issues/3143)
+* Tax based on order amount (NYC/NYS states specific) [#3129](https://github.com/woothemes/woocommerce/issues/3129)
 
 ## Ideas or future releases
 
