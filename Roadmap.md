@@ -30,11 +30,10 @@
 - Custom stock statuses [#3051](https://github.com/woothemes/woocommerce/issues/3051)
 - Zones
 - True multi-currency support
-- Promotions/special pages
+- Add dedicated page for products in promotion [#2249](https://github.com/woothemes/woocommerce/issues/2249)
 - Add option to automatically create account at checkout [#3155](https://github.com/woothemes/woocommerce/issues/3155)
 - Allow coupon to work with mixed sale and non sale items [#2696](https://github.com/woothemes/woocommerce/issues/2696)
 - Payment options / Shipping dependencies [#2961](https://github.com/woothemes/woocommerce/issues/2961)
-- [#2249](https://github.com/woothemes/woocommerce/issues/2249) - Add dedicated page for products in promotion
 
 ### Variations rewrite
 
