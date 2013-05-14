@@ -1,10 +1,15 @@
 ## 2.1 - Peppy Penguin
 
+### Refactor
+WooCommerce 2.1 is going to bring some more refactoring of the code to further make it future proof and better customisable.
+
+* [#2786](https://github.com/woothemes/woocommerce/issues/2786) - Filter product data fields instead of offer action
+
 ### Harden parts of code
 We're going to harden parts of the code to make it better compatible with external plugins.
-* [#3064](https://github.com/woothemes/woocommerce/issues/3064) - Problems with duplicate order status / using slugs
 * [#3100](https://github.com/woothemes/woocommerce/issues/3100) - WooCommerce and EDD Incorrectly Share Checkout Page
 * [#3149](https://github.com/woothemes/woocommerce/issues/3149) - Implement better way to track attribute taxonomies
+* [#3064](https://github.com/woothemes/woocommerce/issues/3064) - Problems with duplicate order status / using slugs
 
 ### Splitting CSS: Layout and pretty
 Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
