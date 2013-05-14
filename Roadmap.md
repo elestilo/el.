@@ -8,7 +8,7 @@
 **Splitting CSS: Layout and pretty**
 
 * Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
-* Splitting issue: #2785
+* Splitting the files: [#2785](https://github.com/woothemes/woocommerce/issues/2785)
 
 **Coupons**
 
