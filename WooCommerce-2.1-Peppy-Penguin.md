@@ -1,4 +1,4 @@
-## Refactor
+## Refactor some more!
 WooCommerce 2.1 is going to bring some more refactoring of the code to further make it future proof and better customisable.
 * [#3172](https://github.com/woothemes/woocommerce/issues/3172) - Offer generic payment gateways
 * [#2786](https://github.com/woothemes/woocommerce/issues/2786) - Filter product data fields instead of offer action
