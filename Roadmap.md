@@ -23,19 +23,19 @@
 
 ### Minor/enhancements/tweaks
 
-* [#3160](https://github.com/woothemes/woocommerce/issues/3160) - Consider renaming 'shipping' in totals to 'shipping and handling'
+* [#3160](https://github.com/woothemes/woocommerce/issues/3160) - Rename 'shipping' in totals to 'shipping and handling'
 * [#3161](https://github.com/woothemes/woocommerce/issues/3161) - Add an update notification class so we can show messages to users before updating the plugin
 * [#3162](https://github.com/woothemes/woocommerce/issues/3162) - Holding stock - See if more holds can be added to prevent simultaneous checkout
 * [#3143](https://github.com/woothemes/woocommerce/issues/3143) - Conditional logic, add to cart templates and `woocommerce_add_to_cart_url` filter improvements
 * [#3129](https://github.com/woothemes/woocommerce/issues/3129) - Tax based on order amount (NYC/NYS states specific)
 * [#3126](https://github.com/woothemes/woocommerce/issues/3126) - Prevent updates from removing logs
-* Remove YuppieChef images from dummy content [#3119](https://github.com/woothemes/woocommerce/issues/3119)
-* Fix EDD and WooCommerce sharing checkout (possibly other plugins) pages [#3100](https://github.com/woothemes/woocommerce/issues/3100)
-* Provide support for username/nice name in registration [#3085](https://github.com/woothemes/woocommerce/issues/3085)
-* Tax rates need pagination [#3036](https://github.com/woothemes/woocommerce/issues/3036)
-* Threaded comments should not count as ratings [#2906](https://github.com/woothemes/woocommerce/issues/2906)
-* Improve orders overview columns layout/contents [#2798](https://github.com/woothemes/woocommerce/issues/2798)
-* Order details writepanel made responsive [#2794](https://github.com/woothemes/woocommerce/issues/2794)
+* [#3119](https://github.com/woothemes/woocommerce/issues/3119) - Remove YuppieChef images from dummy content
+* [#3100](https://github.com/woothemes/woocommerce/issues/3100) - Fix EDD and WooCommerce sharing checkout (possibly other plugins) pages
+* [#3085](https://github.com/woothemes/woocommerce/issues/3085) - Provide support for username/nice name in registration
+* [#3036](https://github.com/woothemes/woocommerce/issues/3036) - Tax rates need pagination
+* [#2906](https://github.com/woothemes/woocommerce/issues/2906) - Threaded comments should not count as ratings
+* [#2798](https://github.com/woothemes/woocommerce/issues/2798) - Improve orders overview columns layout/contents
+* [#2794](https://github.com/woothemes/woocommerce/issues/2794) - Order details writepanel made responsive
 
 ## Ideas or future releases
 
