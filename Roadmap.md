@@ -1,14 +1,14 @@
 ## 2.1 - Peppy Penguin
 
+### Splitting CSS: Layout and pretty
+
+* Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
+* [#2785](https://github.com/woothemes/woocommerce/issues/2785) - Splitting the files
+
 **Credit notes**
 
 * [#1507](https://github.com/woothemes/woocommerce/issues/1507) - Original refunds ticket.
 * [#1982](https://github.com/woothemes/woocommerce/issues/1982) - Refunds do not work as we planned, so credit notes is now pitched as the way to go.
-
-**Splitting CSS: Layout and pretty**
-
-* Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
-* Splitting the files: [#2785](https://github.com/woothemes/woocommerce/issues/2785)
 
 **Coupons**
 
