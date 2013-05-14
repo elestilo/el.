@@ -27,6 +27,7 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#3175](https://github.com/woothemes/woocommerce/issues/3175) - API implementation
 
 ## Minor/enhancements/tweaks
+* [#3173](https://github.com/woothemes/woocommerce/issues/3173) - Allow to filter array of to be installed pages
 * [#3171](https://github.com/woothemes/woocommerce/issues/3171) - Strip http/https detection in enqueue and linking
 * [#3170](https://github.com/woothemes/woocommerce/issues/3170) - Pay and Thanks page become endpoints
 * [#3169](https://github.com/woothemes/woocommerce/issues/3169) - Remove default integrations and hide tab by default
