@@ -36,6 +36,7 @@
 * [#2906](https://github.com/woothemes/woocommerce/issues/2906) - Threaded comments should not count as ratings
 * [#2798](https://github.com/woothemes/woocommerce/issues/2798) - Improve orders overview columns layout/contents
 * [#2794](https://github.com/woothemes/woocommerce/issues/2794) - Order details writepanel made responsive
+* [#3151](https://github.com/woothemes/woocommerce/issues/3151) - Currency position in sales reports widgets
 
 ## Ideas or future releases
 
