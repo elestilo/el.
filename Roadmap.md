@@ -10,9 +10,9 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507) and [#1982](https://github.com/woothemes/woocommerce/issues/1982)
 * [#3164](https://github.com/woothemes/woocommerce/issues/3164) - Credit notes implementation
 
-### Coupons
+### Coupon display on checkout
 
-* Show coupons and amounts https://github.com/woothemes/woocommerce/tree/Coupon-display
+* [#3167](https://github.com/woothemes/woocommerce/issues/3167) - Implement display of the coupons used in order
 
 ### Account edit
 
