@@ -4,6 +4,7 @@ Starting the release of this version, we will stop support and compatibility for
 
 ## Refactor some more!
 WooCommerce 2.1 is going to bring some more refactoring of the code to further make it future proof and better customisable.
+* [#3174](https://github.com/woothemes/woocommerce/issues/3174) - Improve overall file and folder structure
 * [#3172](https://github.com/woothemes/woocommerce/issues/3172) - Offer generic payment gateways
 * [#2786](https://github.com/woothemes/woocommerce/issues/2786) - Filter product data fields instead of offer action
 
@@ -23,7 +24,7 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#3164](https://github.com/woothemes/woocommerce/issues/3164) - Credit notes implementation
 
 ## Full API
-* For querying orders, customers, products and report data.
+* [#3175](https://github.com/woothemes/woocommerce/issues/3175) - API implementation
 
 ## Minor/enhancements/tweaks
 * [#3171](https://github.com/woothemes/woocommerce/issues/3171) - Strip http/https detection in enqueue and linking
