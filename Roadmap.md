@@ -1,5 +1,11 @@
 ## 2.1 - Peppy Penguin
 
+### Harden parts of code
+We're going to harden parts of the code to make it better compatible with external plugins.
+* [#3064](https://github.com/woothemes/woocommerce/issues/3064) - Problems with duplicate order status / using slugs
+* [#3100](https://github.com/woothemes/woocommerce/issues/3100) - WooCommerce and EDD Incorrectly Share Checkout Page
+* [#3149](https://github.com/woothemes/woocommerce/issues/3149) - Implement better way to track attribute taxonomies
+
 ### Splitting CSS: Layout and pretty
 Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
 * [#2785](https://github.com/woothemes/woocommerce/issues/2785) - Splitting the files
@@ -22,13 +28,12 @@ Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507)
 * [#3168](https://github.com/woothemes/woocommerce/issues/3168) - Offer more account edit options
 * [#3167](https://github.com/woothemes/woocommerce/issues/3167) - Implement display of the coupons used in order
 * [#3160](https://github.com/woothemes/woocommerce/issues/3160) - Rename 'shipping' in totals to 'shipping and handling'
-* [#3161](https://github.com/woothemes/woocommerce/issues/3161) - Add an update notification class so we can show messages to users before updating the plugin
 * [#3162](https://github.com/woothemes/woocommerce/issues/3162) - Holding stock - See if more holds can be added to prevent simultaneous checkout
+* [#3161](https://github.com/woothemes/woocommerce/issues/3161) - Add an update notification class so we can show messages to users before updating the plugin
 * [#3143](https://github.com/woothemes/woocommerce/issues/3143) - Conditional logic, add to cart templates and `woocommerce_add_to_cart_url` filter improvements
 * [#3129](https://github.com/woothemes/woocommerce/issues/3129) - Tax based on order amount (NYC/NYS states specific)
 * [#3126](https://github.com/woothemes/woocommerce/issues/3126) - Prevent updates from removing logs
 * [#3119](https://github.com/woothemes/woocommerce/issues/3119) - Remove YuppieChef images from dummy content
-* [#3100](https://github.com/woothemes/woocommerce/issues/3100) - Fix EDD and WooCommerce sharing checkout (possibly other plugins) pages
 * [#3085](https://github.com/woothemes/woocommerce/issues/3085) - Provide support for username/nice name in registration
 * [#3036](https://github.com/woothemes/woocommerce/issues/3036) - Tax rates need pagination
 * [#2906](https://github.com/woothemes/woocommerce/issues/2906) - Threaded comments should not count as ratings
