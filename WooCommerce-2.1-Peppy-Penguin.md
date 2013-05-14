@@ -34,6 +34,7 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#3160](https://github.com/woothemes/woocommerce/issues/3160) - Rename 'shipping' in totals to 'shipping and handling'
 * [#3162](https://github.com/woothemes/woocommerce/issues/3162) - Holding stock - See if more holds can be added to prevent simultaneous checkout
 * [#3161](https://github.com/woothemes/woocommerce/issues/3161) - Add an update notification class so we can show messages to users before updating the plugin
+* [#3151](https://github.com/woothemes/woocommerce/issues/3151) - Currency position in sales reports widgets
 * [#3143](https://github.com/woothemes/woocommerce/issues/3143) - Conditional logic, add to cart templates and `woocommerce_add_to_cart_url` filter improvements
 * [#3129](https://github.com/woothemes/woocommerce/issues/3129) - Tax based on order amount (NYC/NYS states specific)
 * [#3126](https://github.com/woothemes/woocommerce/issues/3126) - Prevent updates from removing logs
@@ -43,4 +44,3 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#2906](https://github.com/woothemes/woocommerce/issues/2906) - Threaded comments should not count as ratings
 * [#2798](https://github.com/woothemes/woocommerce/issues/2798) - Improve orders overview columns layout/contents
 * [#2794](https://github.com/woothemes/woocommerce/issues/2794) - Order details writepanel made responsive
-* [#3151](https://github.com/woothemes/woocommerce/issues/3151) - Currency position in sales reports widgets
