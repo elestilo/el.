@@ -14,16 +14,13 @@ Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507)
 
 * [#3167](https://github.com/woothemes/woocommerce/issues/3167) - Implement display of the coupons used in order
 
-### Account edit
-
-* Allow users to change email addresses, first and last names independently of billing email. Profile edit page - separate to billing/shipping.
-
 ### Full API
 
 * For querying orders, customers, products and report data.
 
 ### Minor/enhancements/tweaks
 
+* [#3168](https://github.com/woothemes/woocommerce/issues/3168) - Offer more account edit options
 * [#3160](https://github.com/woothemes/woocommerce/issues/3160) - Rename 'shipping' in totals to 'shipping and handling'
 * [#3161](https://github.com/woothemes/woocommerce/issues/3161) - Add an update notification class so we can show messages to users before updating the plugin
 * [#3162](https://github.com/woothemes/woocommerce/issues/3162) - Holding stock - See if more holds can be added to prevent simultaneous checkout
