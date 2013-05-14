@@ -1,8 +1,7 @@
 ## 2.1 - Peppy Penguin
 
 ### Splitting CSS: Layout and pretty
-
-* Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
+Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
 * [#2785](https://github.com/woothemes/woocommerce/issues/2785) - Splitting the files
 
 **Credit notes**
