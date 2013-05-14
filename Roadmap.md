@@ -20,6 +20,7 @@ Reference tickets: [#1507](https://github.com/woothemes/woocommerce/issues/1507)
 
 ### Minor/enhancements/tweaks
 
+* [#3169](https://github.com/woothemes/woocommerce/issues/3169) - Remove default integrations and hide tab by default
 * [#3168](https://github.com/woothemes/woocommerce/issues/3168) - Offer more account edit options
 * [#3160](https://github.com/woothemes/woocommerce/issues/3160) - Rename 'shipping' in totals to 'shipping and handling'
 * [#3161](https://github.com/woothemes/woocommerce/issues/3161) - Add an update notification class so we can show messages to users before updating the plugin
