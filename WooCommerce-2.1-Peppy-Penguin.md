@@ -14,6 +14,9 @@ We're going to harden parts of the code to make it better compatible with extern
 * [#3149](https://github.com/woothemes/woocommerce/issues/3149) - Implement better way to track attribute taxonomies
 * [#3064](https://github.com/woothemes/woocommerce/issues/3064) - Problems with duplicate order status / using slugs
 
+Along with hardening it, we're also gonna make a start on using unit testing
+* [#3176](https://github.com/woothemes/woocommerce/issues/3176) - Add Unit Test testing suite
+
 ## Splitting CSS: Layout and pretty
 Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
 * [#2785](https://github.com/woothemes/woocommerce/issues/2785) - Splitting the files
