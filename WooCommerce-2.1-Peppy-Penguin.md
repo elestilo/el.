@@ -43,6 +43,7 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#3119](https://github.com/woothemes/woocommerce/issues/3119) - Remove YuppieChef images from dummy content
 * [#3085](https://github.com/woothemes/woocommerce/issues/3085) - Provide support for username/nice name in registration
 * [#3036](https://github.com/woothemes/woocommerce/issues/3036) - Tax rates need pagination
+* [#2982](https://github.com/woothemes/woocommerce/pull/2982) - Added hooks to payment gateway settings page
 * [#2913](https://github.com/woothemes/woocommerce/issues/2913) - Canonicalize Cross-Sells invokation
 * [#2906](https://github.com/woothemes/woocommerce/issues/2906) - Threaded comments should not count as ratings
 * [#2798](https://github.com/woothemes/woocommerce/issues/2798) - Improve orders overview columns layout/contents
