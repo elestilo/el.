@@ -41,6 +41,7 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#3129](https://github.com/woothemes/woocommerce/issues/3129) - Tax based on order amount (NYC/NYS states specific)
 * [#3126](https://github.com/woothemes/woocommerce/issues/3126) - Prevent updates from removing logs
 * [#3119](https://github.com/woothemes/woocommerce/issues/3119) - Remove YuppieChef images from dummy content
+* [#3118](https://github.com/woothemes/woocommerce/issues/3118) - Argument Filter for `woocommerce_related_products()` inside `woocommerce_output_related_products()`
 * [#3085](https://github.com/woothemes/woocommerce/issues/3085) - Provide support for username/nice name in registration
 * [#3036](https://github.com/woothemes/woocommerce/issues/3036) - Tax rates need pagination
 * [#2982](https://github.com/woothemes/woocommerce/pull/2982) - Added hooks to payment gateway settings page
