@@ -27,6 +27,7 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#3175](https://github.com/woothemes/woocommerce/issues/3175) - API implementation
 
 ## Minor/enhancements/tweaks
+* [#3179](https://github.com/woothemes/woocommerce/issues/3179) - Fix invalid shipping issues using non-latin characters
 * [#3173](https://github.com/woothemes/woocommerce/issues/3173) - Allow to filter array of to be installed pages
 * [#3171](https://github.com/woothemes/woocommerce/issues/3171) - Strip http/https detection in enqueue and linking
 * [#3170](https://github.com/woothemes/woocommerce/issues/3170) - Pay and Thanks page become endpoints
