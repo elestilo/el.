@@ -4,6 +4,7 @@
 
 ## Ideas or future releases
 
+- Software download stats #3608
 - Mandatory attributes #3667
 - Attribute grouping #3461 [http://ideas.woothemes.com/forums/133476-woocommerce/suggestions/3368079-attribute-groups-for-woocommerce](http://ideas.woothemes.com/forums/133476-woocommerce/suggestions/3368079-attribute-groups-for-woocommerce)
 - Custom stock statuses [#3051](https://github.com/woothemes/woocommerce/issues/3051)
