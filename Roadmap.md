@@ -4,6 +4,7 @@
 
 ## Ideas or future releases
 
+- Ability to register custom endpoints for pages such as my-account #3708
 - Software download stats #3608
 - Mandatory attributes #3667
 - Attribute grouping #3461 [http://ideas.woothemes.com/forums/133476-woocommerce/suggestions/3368079-attribute-groups-for-woocommerce](http://ideas.woothemes.com/forums/133476-woocommerce/suggestions/3368079-attribute-groups-for-woocommerce)
