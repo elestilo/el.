@@ -4,6 +4,7 @@
 
 ## Ideas or future releases
 
+- Checkout review page #3578
 - Add option to automatically delete expired coupons #3622
 - Ability to register custom endpoints for pages such as my-account #3708
 - Software download stats #3608
