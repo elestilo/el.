@@ -4,6 +4,7 @@
 
 ## Ideas or future releases
 
+- Ability to hook into core classes initializing was implemented. #3689
 - Checkout review page #3578
 - Add option to automatically delete expired coupons #3622
 - Ability to register custom endpoints for pages such as my-account #3708
