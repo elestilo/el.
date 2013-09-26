@@ -17,11 +17,20 @@ We're going to harden parts of the code to make it better compatible with extern
 Along with hardening it, we're also gonna make a start on using unit testing
 * [#3176](https://github.com/woothemes/woocommerce/issues/3176) - Add Unit Test testing suite
 
-## Splitting CSS: Layout and pretty
-Being able to disable **all** CSS or just the prettifying CSS (so layout remains in tact).
+## Splitting CSS: Layout and pretty. Plus responsive!
+Being able to disable **all** CSS, just the prettifying CSS (so layout remains in tact) or the responsive css when not using a responsive theme.
 * [#2785](https://github.com/woothemes/woocommerce/issues/2785) - Splitting the files
 * [#3165](https://github.com/woothemes/woocommerce/issues/3165) - Refactor the conditionals that determine the loading of stylesheets
 * [#3166](https://github.com/woothemes/woocommerce/issues/3166) - Default WooCommerce templates need some responsive love
+
+## Admin UI
+* [#3294](https://github.com/woothemes/woocommerce/issues/3294) - All icons in the WooCommerce UI replaced with a custom font for retina support & extensibility.
+* [#2798](https://github.com/woothemes/woocommerce/issues/2798) - Improve orders overview columns layout/contents.
+* [#2794](https://github.com/woothemes/woocommerce/issues/2794) - Order details writepanel made responsive.
+
+## Frontend UI
+* [3534](https://github.com/woothemes/woocommerce/issues/3534) - Product shortcodes columns applied to layout in all themes that use core wc styles.
+* PrettyPhoto uses new icon font and is optimised for handheld devices.
 
 ## Credit notes (formerly known as refunds)
 * [#3164](https://github.com/woothemes/woocommerce/issues/3164) - Credit notes implementation
@@ -53,5 +62,4 @@ Being able to disable **all** CSS or just the prettifying CSS (so layout remains
 * [#2938](https://github.com/woothemes/woocommerce/issues/2983) - Notification for user
 * [#2913](https://github.com/woothemes/woocommerce/issues/2913) - Canonicalize Cross-Sells invokation
 * [#2906](https://github.com/woothemes/woocommerce/issues/2906) - Threaded comments should not count as ratings
-* [#2798](https://github.com/woothemes/woocommerce/issues/2798) - Improve orders overview columns layout/contents
 * [#2794](https://github.com/woothemes/woocommerce/issues/2794) - Order details writepanel made responsive
