@@ -31,4 +31,3 @@ Here we'll also post links to resources and useful snippets you can make use of 
 ## Third Party Themes
 
 * [Abundance](http://themeforest.net/item/abundance-ecommerce-business-theme/759562?WT.ac=search_item&WT.seg_1=search_item&WT.z_author=Kriesi)
-* [WP Sharp](http://themeforest.net/item/wp-sharp-premium-business-portfolio-wp-theme-/293223?WT.ac=search_item&WT.seg_1=search_item&WT.z_author=PrimaThemes)
