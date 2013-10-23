@@ -19,6 +19,7 @@
 - Add option to automatically create account at checkout [#3155](https://github.com/woothemes/woocommerce/issues/3155)
 - Allow coupon to work with mixed sale and non sale items [#2696](https://github.com/woothemes/woocommerce/issues/2696)
 - Payment options / Shipping dependencies [#2961](https://github.com/woothemes/woocommerce/issues/2961)
+- Add proper revisions to products (as soon as WP core supports this) [#2178](https://github.com/woothemes/woocommerce/issues/2178)
 
 ### Variations rewrite
 
