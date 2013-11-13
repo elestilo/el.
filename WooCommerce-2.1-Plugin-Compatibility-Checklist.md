@@ -1,3 +1,5 @@
+## Gateways can no longer use woocommerce_pay_page_id - use $order->get_checkout_payment_url( true )
+
 ## Filters used for downloadable product URLs
 
 * Downloads are stored with an md5-hash key, and an **array** value consisting of name and url
