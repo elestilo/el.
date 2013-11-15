@@ -20,6 +20,7 @@
 - Allow coupon to work with mixed sale and non sale items [#2696](https://github.com/woothemes/woocommerce/issues/2696)
 - Payment options / Shipping dependencies [#2961](https://github.com/woothemes/woocommerce/issues/2961)
 - Add proper revisions to products (as soon as WP core supports this) [#2178](https://github.com/woothemes/woocommerce/issues/2178)
+- Remove color picker to a separate plugin
 
 ### Variations rewrite
 
