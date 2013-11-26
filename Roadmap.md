@@ -22,6 +22,7 @@
 - Add proper revisions to products (as soon as WP core supports this) [#2178](https://github.com/woothemes/woocommerce/issues/2178)
 - Remove color picker to a separate plugin
 - Allow tax inc prices to remain constant regardless of tax rate #4131
+- discount codes related to Qty purchased, not $ amount of order. #4212
 
 ### Variations rewrite
 
