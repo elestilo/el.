@@ -4,6 +4,7 @@
 
 ## Ideas or future releases
 
+- Onsale layered nav widget #4302
 - Separate business logic for creating new product variation into its own function. #3343
 - Ability to hook into core classes initializing was implemented. #3689
 - Checkout review page #3578
