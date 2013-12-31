@@ -25,6 +25,7 @@
 - Remove color picker to a separate plugin
 - Allow tax inc prices to remain constant regardless of tax rate #4131
 - discount codes related to Qty purchased, not $ amount of order. #4212
+- Shipping inc tax prices #4425
 
 ### Variations rewrite
 
