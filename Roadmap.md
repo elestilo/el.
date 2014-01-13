@@ -4,6 +4,7 @@
 
 ## Ideas or future releases
 
+- clear all filters for each layered nav #4479
 - Allow coupons to be added/edited from orders, with discount calc #4404
 - Onsale layered nav widget #4302
 - Separate business logic for creating new product variation into its own function. #3343
