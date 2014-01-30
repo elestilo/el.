@@ -8,6 +8,7 @@ WooCommerce is compatible to be run in multisite setups up to a certain level. T
 
 ## Ideas or future releases
 
+- Search customers (on order page) by other meta such as tel
 - clear all filters for each layered nav #4479
 - Allow coupons to be added/edited from orders, with discount calc #4404
 - Onsale layered nav widget #4302
