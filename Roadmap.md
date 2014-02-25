@@ -21,7 +21,7 @@ WooCommerce is compatible to be run in multisite setups up to a certain level. T
 - Mandatory attributes #3667
 - Attribute grouping #3461 [http://ideas.woothemes.com/forums/133476-woocommerce/suggestions/3368079-attribute-groups-for-woocommerce](http://ideas.woothemes.com/forums/133476-woocommerce/suggestions/3368079-attribute-groups-for-woocommerce)
 - Custom stock statuses [#3051](https://github.com/woothemes/woocommerce/issues/3051)
-- Zones
+- Zones #4936
 - True multi-currency support
 - Add dedicated page for products in promotion [#2249](https://github.com/woothemes/woocommerce/issues/2249)
 - Add option to automatically create account at checkout [#3155](https://github.com/woothemes/woocommerce/issues/3155)
