@@ -37,3 +37,4 @@ WooCommerce is compatible to be run in multisite setups up to a certain level. T
 
 * [#1984](https://github.com/woothemes/woocommerce/issues/1984) - Validation for variations and more filters to affect the form behaviour.
 * [#2399](https://github.com/woothemes/woocommerce/issues/2399) - Base product would define all properties (price, weight, stock, whatever) and variations can overwrite this for that specific variation.
+* [#5039](https://github.com/woothemes/woocommerce/issues/5039) - AJAX option for variations
