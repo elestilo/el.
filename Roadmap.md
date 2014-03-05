@@ -32,6 +32,8 @@ WooCommerce is compatible to be run in multisite setups up to a certain level. T
 - Allow tax inc prices to remain constant regardless of tax rate #4131
 - discount codes related to Qty purchased, not $ amount of order. #4212
 - Shipping inc tax prices #4425
+- Redesign default skin, rewriting css
+- Less > Sass
 
 ### Variations rewrite
 
