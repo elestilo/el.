@@ -34,6 +34,7 @@ WooCommerce is compatible to be run in multisite setups up to a certain level. T
 - Shipping inc tax prices #4425
 - Redesign default skin, rewriting css
 - Less > Sass
+- Shipping quotes backend
 
 ### Variations rewrite
 
