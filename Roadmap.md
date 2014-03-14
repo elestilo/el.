@@ -6,6 +6,8 @@
 
 WooCommerce is compatible to be run in multisite setups up to a certain level. To further increase support and possibilities to use the plugin in a multisite setup (thinking about multi storefronts and other similar use cases), we're planning on doing a core plugin release dedicated to this topic. This is planned to take place during the WooCommerce 2.3 cycle, but this is not set in stone yet.
 
+For MU should also look at optimising things like #5080
+
 ## Ideas or future releases
 
 - Search customers (on order page) by other meta such as tel
