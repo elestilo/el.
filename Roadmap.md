@@ -37,6 +37,7 @@ For MU should also look at optimising things like #5080
 - Redesign default skin, rewriting css
 - Less > Sass
 - Shipping quotes backend
+- Lazy load cart items from session/DB - cart item class #5252
 
 ### Variations rewrite
 
