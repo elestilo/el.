@@ -26,7 +26,7 @@ Here we'll also post links to resources and useful snippets you can make use of 
 * [Local pickup shipping method](http://wordpress.org/extend/plugins/woocommerce-shipping-local-pickup/)
 * [WooCommerce NL translation](http://wordpress.org/extend/plugins/woocommerce-nl/)
 * [Pronamic iDeal](http://wordpress.org/extend/plugins/pronamic-ideal/)
-* [Piggy](http://wordpress.org/extend/plugins/piggy-lite/) - Sales on your iPhone - supoprts WC.
+* [Piggy](http://wordpress.org/extend/plugins/piggy-lite/) - Sales on your iPhone - supports WC.
 
 ## Third Party Themes
 
