@@ -1,6 +1,6 @@
 ## Versions in active development
 
-* [WooCommerce 2.1 - Peppy Penguin](https://github.com/woothemes/woocommerce/wiki/WooCommerce-2.1-Peppy-Penguin)
+* WooCommerce 2.2 Prowling Pangolin
 
 ## Network and multisite compatibility
 
