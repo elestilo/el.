@@ -2,7 +2,7 @@
 
 Each template file has a header which explains usage, and a version number to track the version of said template:
 
-`
+```php
 <?php
 /**
  * The Template for displaying all single products.
@@ -16,7 +16,7 @@ Each template file has a header which explains usage, and a version number to tr
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-`
+```
 
 ## What Should be Included in Template files
 These items are okay to be included in templates:
@@ -30,9 +30,9 @@ These items should be avoided whenever possible:
 
 Data should be passed in when calling the template file. [wc_get_template()](https://github.com/woothemes/woocommerce/search?utf8=%E2%9C%93&q=wc_get_template) can be used to pass in variables. Example:
 
-`
+```php
 wc_get_template( 'template-file.php', array( 'variable_name' => $variable_name, 'variable2_name' => $variable2_name ) );
-`
+```
 
 ## Overriding Templates
 This doc shows how to override templates via a theme:
