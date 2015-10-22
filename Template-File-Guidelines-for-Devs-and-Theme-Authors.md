@@ -37,7 +37,7 @@ wc_get_template( 'template-file.php', array( 'variable_name' => $variable_name, 
 ## Overriding Templates
 This doc shows how to override templates via a theme:
 
-[http://docs.woothemes.com/document/template-structure/]
+http://docs.woothemes.com/document/template-structure/
 
 ## Changes to Template Versions
 With minor tweaks to template code, this version should be left alone. **Major changes, refactors and fixes should increase the template version to the version of code the template is shipping with.** This is to ensure users are notified when running an old version of the template via an override or theme.
