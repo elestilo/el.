@@ -1,0 +1,1675 @@
+## Getting Started
+
+The support WP-CLI started in WooCommerce 2.5, allowing you to manage products, coupons, orders, customers and more by a command line interface.
+
+### What is WP-CLI?
+
+For those who have never heard before WP-CLI, here's a brief description extracted from the [official website](http://wp-cli.org/).
+
+> **WP-CLI** is a set of command-line tools for managing WordPress installations. You can update plugins, set up multisite installs and much more, without using a web browser.
+
+### WooCommerce Commands
+
+All WooCommerce related commands are grouped into `wp wc` command, see an example:
+
+```
+$ wp wc
+usage: wp wc coupon &lt;command&gt;
+   or: wp wc customer &lt;command&gt;
+   or: wp wc order &lt;command&gt;
+   or: wp wc product &lt;command&gt;
+   or: wp wc report &lt;command&gt;
+   or: wp wc tax &lt;command&gt;
+   or: wp wc tool &lt;command&gt;
+
+See 'wp help wc &lt;command&gt;' for more information on a specific command.
+```
+
+You can see more details about the commands using `wp help wc`:
+
+```
+**NAME**
+
+  wp wc
+
+**DESCRIPTION**
+
+  Manage WooCommerce from CLI.
+
+**SYNOPSIS**
+
+  wp wc <command>
+
+**SUBCOMMANDS**
+
+  customer      Manage Customers.
+  order         Manage Orders.
+  product       Manage Products.
+  report        Show Reports.
+  tax           Manage Taxes.
+  tool          Tools for WooCommerce.
+
+```
+
+## Managing Coupons
+
+```wp wc coupon &lt;command&gt;```
+
+### Create a Coupon
+
+#### Command:
+
+```wp wc coupon create [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]`
+- `[--porcelain]` - Outputs just the new coupon id.
+
+
+#### Available fields:
+
+
+- `code`
+- `type`
+- `amount`
+- `description`
+- `expiry_date`
+- `individual_use`
+- `product_ids`
+- `exclude_product_ids`
+- `usage_limit`
+- `usage_limit_per_user`
+- `limit_usage_to_x_items`
+- `usage_count`
+- `enable_free_shipping`
+- `product_category_ids`
+- `exclude_product_category_ids`
+- `minimum_amount`
+- `maximum_amount`
+- `customer_emails`
+
+
+#### Example:
+
+```wp wc coupon create --code=new-coupon --type=percent```
+
+### Delete Coupons
+
+#### Command:
+
+```wp wc coupon delete &lt;id&gt;...```
+
+#### Options:
+
+
+- `&lt;id&gt;...` - The coupon ID to delete.
+
+
+#### Example:
+
+```
+wp wc coupon delete 123
+wp wc coupon delete $(wp wc coupon list --format=ids)
+```
+
+### Get a Coupon
+
+#### Command:
+
+```wp wc coupon get &lt;coupon&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `&lt;coupon&gt;` - Coupon ID or code
+- `[--field=&lt;field&gt;]` - Instead of returning the whole coupon fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the coupon's fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+
+#### Available fields:
+
+
+- `id`
+- `code`
+- `type`
+- `amount`
+- `description`
+- `expiry_date`
+- `individual_use`
+- `product_ids`
+- `exclude_product_ids`
+- `usage_limit`
+- `usage_limit_per_user`
+- `limit_usage_to_x_items`
+- `usage_count`
+- `enable_free_shipping`
+- `product_category_ids`
+- `exclude_product_category_ids`
+- `minimum_amount`
+- `maximum_amount`
+- `customer_emails`
+
+
+#### Examples:
+
+```
+wp wc coupon get 123 --field=discount_type
+wp wc coupon get disc50 --format=json > disc50.json
+```
+
+### List Coupons
+
+#### Command:
+
+```wp wc coupon list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Filter coupon based on coupon property.
+- `[--field=&lt;field&gt;]` - Prints the value of a single field for each coupon.
+- `[--fields=&lt;fields&gt;]` - Limit the output to specific coupon fields.
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+
+
+#### Available fields:
+
+
+- `id`
+- `code`
+- `type`
+- `amount`
+- `description`
+- `expiry_date`
+
+
+These fields are optionally available:
+
+
+- `individual_use`
+- `product_ids`
+- `exclude_product_ids`
+- `usage_limit`
+- `usage_limit_per_user`
+- `usage_limit_per_user`
+- `limit_usage_to_x_items`
+- `usage_count`
+- `free_shipping`
+- `product_category_ids`
+- `exclude_product_category_ids`
+- `exclude_sale_items`
+- `minimum_amount`
+- `maximum_amount`
+- `customer_emails`
+
+
+Fields for filtering query result also available:
+
+
+- `q` - Filter coupons with search query.
+- `in` - Specify coupon IDs to retrieve.
+- `not_in` - Specify coupon IDs NOT to retrieve.
+- `created_at_min` - Filter coupons created after this date.
+- `created_at_max` - Filter coupons created before this date.
+- `updated_at_min` - Filter coupons updated after this date.
+- `updated_at_max` - Filter coupons updated before this date.
+- `page` - Page number.
+- `offset` - Number of coupon to displace or pass over.
+- `order` - Accepted values: `ASC` and `DESC`. Default: `DESC`.
+- `orderby` - Sort retrieved coupons by parameter. One or more options can be passed.
+
+
+#### Examples:
+
+```
+wp wc coupon list
+wp wc coupon list --field=id
+wp wc coupon list --fields=id,code,type --format=json
+```
+
+### Get Coupon Types
+
+#### Command:
+
+```wp wc coupon types```
+
+#### Examples:
+
+```
+wp wc coupon types
+```
+
+### Update Coupons
+
+#### Command:
+
+```wp wc coupon update &lt;coupon&gt; [--&lt;field&gt;=&lt;value&gt;]```
+
+#### Options:
+
+
+- `&lt;coupon&gt;` - The ID or code of the coupon to update.
+- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update
+
+
+#### Available fields:
+
+
+- `code`
+- `type`
+- `amount`
+- `description`
+- `expiry_date`
+- `individual_use`
+- `product_ids`
+- `exclude_product_ids`
+- `usage_limit`
+- `usage_limit_per_user`
+- `limit_usage_to_x_items`
+- `usage_count`
+- `enable_free_shipping`
+- `product_category_ids`
+- `exclude_product_categories`
+- `exclude_product_category_ids`
+- `minimum_amount`
+- `maximum_amount`
+- `customer_emails`
+
+
+#### Examples:
+
+```
+wp wc coupon list
+wp wc coupon list --field=id
+wp wc coupon list --fields=id,code,type --format=json
+```
+
+## Managing Customers
+
+```wp wc customer &lt;command&gt;```
+
+### Create a Customer
+
+#### Command:
+
+```wp wc customer create &lt;email&gt; [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+
+#### Options:
+
+
+- `&lt;email&gt;` - The email address of the customer to create.
+- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new customer.
+- `[--porcelain]` - Outputs just the new customer id.
+
+
+#### Available fields:
+
+
+- `username`
+- `password`
+- `first_name`
+- `last_name`
+- `billing_address.first_name`
+- `billing_address.company`
+- `billing_address.address_1`
+- `billing_address.address_2`
+- `billing_address.city`
+- `billing_address.state`
+- `billing_address.postcode`
+- `billing_address.country`
+- `billing_address.email`
+- `billing_address.phone`
+- `shipping_address.first_name`
+- `shipping_address.last_name`
+- `shipping_address.company`
+- `shipping_address.address_1`
+- `shipping_address.address_2`
+- `shipping_address.city`
+- `shipping_address.state`
+- `shipping_address.postcode`
+- `shipping_address.country`
+
+
+#### Example:
+
+```wp wc customer create new-customer@example.com --first_name=Akeda```
+
+### Delete Customers
+
+#### Command:
+
+```wp wc customer delete &lt;customer&gt;...```
+
+#### Options:
+
+
+- `&lt;customer&gt;...` - The customer ID, email, or username to delete.
+
+
+#### Example:
+
+```
+wp wc customer delete 123
+wp wc customer delete $(wp wc customer list --format=ids)
+```
+
+### View Customer Downloads
+
+#### Command:
+
+```wp wc customer downloads &lt;customer&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `&lt;customer&gt;` - The customer ID, email or username.
+- `[--field=&lt;field&gt;]` - Instead of returning the whole customer fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the customer&#039;s fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+
+#### Available fields:
+
+
+- `download_id`
+- `download_name`
+- `access_expires`
+
+
+#### Example:
+
+```wp wc customer downloads 123```
+
+### Get a Customer
+
+#### Command:
+
+```wp wc customer get &lt;customer&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `&lt;customer&gt;` - Customer ID, email, or username.
+- `[--field=&lt;field&gt;]` - Instead of returning the whole customer fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the customer&#039;s fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+
+#### Available fields:
+
+
+- `id`
+- `email`
+- `first_name`
+- `last_name`
+- `created_at`
+- `username`
+- `last_order_id`
+- `last_order_date`
+- `orders_count`
+- `total_spent`
+- `avatar_url`
+- `billing_address.first_name`
+- `billing_address.last_name`
+- `billing_address.company`
+- `billing_address.address_1`
+- `billing_address.address_2`
+- `billing_address.city`
+- `billing_address.state`
+- `billing_address.postcode`
+- `billing_address.country`
+- `billing_address.email`
+- `billing_address.phone`
+- `shipping_address.first_name`
+- `shipping_address.last_name`
+- `shipping_address.company`
+- `shipping_address.address_1`
+- `shipping_address.address_2`
+- `shipping_address.city`
+- `shipping_address.state`
+- `shipping_address.postcode`
+- `shipping_address.country`
+
+
+Fields for filtering query result also available:
+
+
+- `role` - Filter customers associated with certain role.
+- `q` - Filter customers with search query.
+- `created_at_min` - Filter customers whose registered after this date.
+- `created_at_max` - Filter customers whose registered before this date.
+- `limit` - The maximum returned number of results.
+- `offset` - Offset the returned results.
+- `order` - Accepted values: `ASC` and `DESC`. Default: `DESC`.
+- `orderby` - Sort retrieved customers by parameter. One or more options can be passed.
+
+
+#### Example:
+
+```
+wp wc customer get 123 --field=email
+wp wc customer get customer-login --format=json
+```
+
+### List Customers
+
+#### Command:
+
+```wp wc customer list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Filter customer based on customer property.
+- `[--field=&lt;field&gt;]` - Prints the value of a single field for each customer.
+- `[--fields=&lt;fields&gt;]` - Limit the output to specific customer fields.
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+
+#### Available fields:
+
+- `id`
+- `email`
+- `first_name`
+- `last_name`
+- `created_at`
+- `username`
+- `last_order_id`
+- `last_order_date`
+- `orders_count`
+- `total_spent`
+- `avatar_url`
+- `billing_address.first_name`
+- `billing_address.last_name`
+- `billing_address.company`
+- `billing_address.address_1`
+- `billing_address.address_2`
+- `billing_address.city`
+- `billing_address.state`
+- `billing_address.postcode`
+- `billing_address.country`
+- `billing_address.email`
+- `billing_address.phone`
+- `shipping_address.first_name`
+- `shipping_address.last_name`
+- `shipping_address.company`
+- `shipping_address.address_1`
+- `shipping_address.address_2`
+- `shipping_address.city`
+- `shipping_address.state`
+- `shipping_address.postcode`
+- `shipping_address.country`
+
+Fields for filtering query result also available:
+
+- `role` - Filter customers associated with certain role.
+- `q` - Filter customers with search query.
+- `created_at_min` - Filter customers whose registered after this date.
+- `created_at_max` - Filter customers whose registered before this date.
+- `limit` - The maximum returned number of results.
+- `offset` - Offset the returned results.
+- `order` - Accepted values: `ASC` and `DESC`. Default: `DESC`.
+- `orderby` - Sort retrieved customers by parameter. One or more options can be passed.
+
+
+#### Example:
+
+```
+wp wc customer list
+wp wc customer list --field=id
+wp wc customer list --fields=id,email,first_name --format=json
+```
+
+### View Customer Orders
+
+#### Command:
+
+```wp wc customer orders &lt;customer&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+- `&lt;customer&gt;` - The customer ID, email or username.
+- `[--field=&lt;field&gt;]` - Instead of returning the whole customer fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the customer&#039;s fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+#### Available fields:
+
+For more fields, see [List Orders fields](#list-order-fields).
+
+#### Example:
+
+```wp wc customer orders 123```
+
+### Update Customers
+
+#### Command:
+
+```wp wc customer update &lt;customer&gt; [--&lt;field&gt;=&lt;value&gt;]```
+
+#### Options:
+
+
+- `&lt;customer&gt;` - Customer ID, email, or username.
+- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update.
+
+
+#### Available fields:
+
+
+- `email`
+- `first_name`
+- `last_name`
+- `billing_address.first_name`
+- `billing_address.last_name`
+- `billing_address.company`
+- `billing_address.address_1`
+- `billing_address.address_2`
+- `billing_address.city`
+- `billing_address.state`
+- `billing_address.postcode`
+- `billing_address.country`
+- `billing_address.email`
+- `billing_address.phone`
+- `shipping_address.first_name`
+- `shipping_address.last_name`
+- `shipping_address.company`
+- `shipping_address.address_1`
+- `shipping_address.address_2`
+- `shipping_address.city`
+- `shipping_address.state`
+- `shipping_address.postcode`
+- `shipping_address.country`
+
+
+#### Example:
+
+```
+wp wc customer update customer-login --first_name=akeda --last_name=bagus
+wp wc customer update customer@example.com --password=new-password
+wp wc customer update customer@example.com --password=new-password
+```
+
+## Managing Orders
+
+```wp wc order &lt;command&gt;```
+
+### Create an Order
+
+#### Command:
+
+```wp wc order create [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+
+#### Options:
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new order.
+- `[--porcelain]` - Outputs just the new order id.
+
+#### <span id="create-an-order-fields">Available fields:</span>
+
+Required fields:
+
+- `customer_id`
+
+Optional fields:
+
+- `status`
+- `note`
+- `currency`
+- `order_meta`
+
+Payment detail fields:
+
+- `payment_details.method_id`
+- `payment_details.method_title`
+- `payment_details.paid`
+
+Billing address fields:
+
+- `billing_address.first_name`
+- `billing_address.last_name`
+- `billing_address.company`
+- `billing_address.address_1`
+- `billing_address.address_2`
+- `billing_address.city`
+- `billing_address.state`
+- `billing_address.postcode`
+- `billing_address.country`
+- `billing_address.email`
+- `billing_address.phone`
+
+
+Shipping address fields:
+
+
+- `shipping_address.first_name`
+- `shipping_address.last_name`
+- `shipping_address.company`
+- `shipping_address.address_1`
+- `shipping_address.address_2`
+- `shipping_address.city`
+- `shipping_address.state`
+- `shipping_address.postcode`
+- `shipping_address.country`
+
+
+Line item fields (numeric array, started with index zero):
+
+
+- `line_items.0.product_id`
+- `line_items.0.quantity`
+- `line_items.0.variations.pa_color`
+
+
+For second line item: `line_items.1.product_id` and so on.
+
+Shipping line fields (numeric array, started with index zero):
+
+
+- `shipping_lines.0.method_id`
+- `shipping_lines.0.method_title`
+- `shipping_lines.0.total`
+
+
+For second shipping item: `shipping_lines.1.method_id` and so on.
+
+#### Example:
+
+```
+wp wc order create --customer_id=1 --status=pending ...
+```
+
+### Delete Orders
+
+#### Command:
+
+```wp wc order delete &lt;id&gt;...```
+
+#### Options:
+
+
+- `&lt;id&gt;...` - The order ID to delete.
+
+
+#### Example:
+
+```wp wc order delete 123```
+
+### Get an Order
+
+#### Command:
+
+```wp wc order get &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `&lt;id&gt;` - Order ID.
+- `[--field=&lt;field&gt;]` - Instead of returning the whole order fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the order&#039;s fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+
+#### Available fields:
+
+
+- `id`
+- `order_number`
+- `customer_id`
+- `total`
+- `status`
+- `created_at`
+
+
+For more fields, see [List Orders fields](#list-order-fields).
+
+#### Example:
+
+```wp wc order get 123 --fields=id,title,sku```
+
+### List Orders
+
+#### Command:
+
+```wp wc order list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Filter orders based on order property.
+- `[--field=&lt;field&gt;]` - Prints the value of a single field for each order.
+- `[--fields=&lt;fields&gt;]` - Limit the output to specific order fields.
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+
+
+#### <span id="list-order-fields">Available fields:</span>
+
+
+- `id`
+- `order_number`
+- `customer_id`
+- `total`
+- `status`
+- `created_at`
+
+
+These fields are optionally available:
+
+
+- `updated_at`
+- `completed_at`
+- `currency`
+- `subtotal`
+- `total_line_items_quantity`
+- `total_tax`
+- `total_shipping`
+- `cart_tax`
+- `shipping_tax`
+- `total_discount`
+- `shipping_methods`
+- `note`
+- `customer_ip`
+- `customer_user_agent`
+- `view_order_url`
+
+
+Payment detail fields:
+
+
+- `payment_details.method_id`
+- `payment_details.method_title`
+- `payment_details.paid`
+
+
+Billing address fields:
+
+
+- `billing_address.first_name`
+- `billing_address.last_name`
+- `billing_address.company`
+- `billing_address.address_1`
+- `billing_address.address_2`
+- `billing_address.city`
+- `billing_address.state`
+- `billing_address.postcode`
+- `billing_address.country`
+- `billing_address.email`
+- `billing_address.phone`
+
+
+Shipping address fields:
+
+
+- `shipping_address.first_name`
+- `shipping_address.last_name`
+- `shipping_address.company`
+- `shipping_address.address_1`
+- `shipping_address.address_2`
+- `shipping_address.city`
+- `shipping_address.state`
+- `shipping_address.postcode`
+- `shipping_address.country`
+
+
+Line item fields (numeric array, started with index zero):
+
+
+- `line_items.0.product_id`
+- `line_items.0.quantity`
+- `line_items.0.variations.pa_color`
+
+
+For second line item: `line_items.1.product_id` and so on.
+
+Shipping line fields (numeric array, started with index zero):
+
+
+- `shipping_lines.0.method_id`
+- `shipping_lines.0.method_title`
+- `shipping_lines.0.total`
+
+
+For second shipping item: `shipping_lines.1.method_id` and so on.
+
+#### Example:
+
+```wp wc order list```
+
+### Update an Order
+
+#### Command:
+
+```wp wc order update &lt;id&gt; [--&lt;field&gt;=&lt;value&gt;]```
+
+#### Options:
+
+
+- `&lt;id&gt;` - Product ID
+- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update.
+
+
+#### Available fields:
+
+For available fields, see [Create an Order fields](#create-an-order-fields).
+
+#### Example:
+
+```wp wc order update 123 --status=completed```
+
+## Managing Products
+
+```wp wc product &lt;command&gt;```
+
+### <span id="create-product-fields">Create a Product</span>
+
+#### Command:
+
+```wp wc product create [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new product.
+- `[--porcelain]` - Outputs just the new product id.
+
+
+#### Available fields:
+
+Required fields:
+
+
+- `title`
+
+
+These fields are optionally available for create command:
+
+
+- `type`
+- `status`
+- `downloadable`
+- `virtual`
+- `sku`
+- `regular_price`
+- `sale_price`
+- `sale_price_dates_from`
+- `sale_price_dates_to`
+- `tax_status`
+- `tax_class`
+- `managing_stock`
+- `stock_quantity`
+- `in_stock`
+- `backorders`
+- `sold_individually`
+- `featured`
+- `shipping_class`
+- `description`
+- `enable_html_description`
+- `short_description`
+- `enable_html_short_description`
+- `reviews_allowed`
+- `upsell_ids`
+- `cross_sell_ids`
+- `parent_id`
+- `categories`
+- `tags`
+
+<div id="create-product-dimensions-fields">Dimensions fields:</div>
+
+- `dimensions.length`
+- `dimensions.width`
+- `dimensions.height`
+- `dimensions.unit`
+
+
+<div id="create-product-images-fields">Images is an array in which element can be set by specifying its index:</div>
+
+- `images`
+- `images.size`
+- `images.0.id`
+- `images.0.created_at`
+- `images.0.updated_at`
+- `images.0.src`
+- `images.0.title`
+- `images.0.alt`
+- `images.0.position`
+
+<div id="create-product-attributes-fields">Attributes is an array in which element can be set by specifying its index:</div>
+
+- `attributes`
+- `attributes.size`
+- `attributes.0.name`
+- `attributes.0.slug`
+- `attributes.0.position`
+- `attributes.0.visible`
+- `attributes.0.variation`
+- `attributes.0.options`
+
+<div id="create-product-downloads-fields">Downloads is an array in which element can be accessed by specifying its index:</div>
+
+- `downloads`
+- `downloads.size`
+- `downloads.0.id`
+- `downloads.0.name`
+- `downloads.0.file`
+
+Variations is an array in which element can be accessed by specifying its index:
+
+- `variations`
+- `variations.size`
+- `variations.0.id`
+- `variations.0.created_at`
+- `variations.0.updated_at`
+- `variations.0.downloadable`
+- `variations.0.virtual`
+- `variations.0.permalink`
+- `variations.0.sku`
+- `variations.0.price`
+- `variations.0.regular_price`
+- `variations.0.sale_price`
+- `variations.0.sale_price_dates_from`
+- `variations.0.sale_price_dates_to`
+- `variations.0.taxable`
+- `variations.0.tax_status`
+- `variations.0.tax_class`
+- `variations.0.managing_stock`
+- `variations.0.stock_quantity`
+- `variations.0.in_stock`
+- `variations.0.backordered`
+- `variations.0.purchaseable`
+- `variations.0.visible`
+- `variations.0.on_sale`
+- `variations.0.weight`
+- `variations.0.dimensions` - [See dimensions fields](#product-dimensions-fields)
+- `variations.0.shipping_class`
+- `variations.0.shipping_class_id`
+- `variations.0.images` - [See images fields](#product-images-fields)
+- `variations.0.attributes` - [See attributes fields](#product-attributes-fields)
+- `variations.0.downloads` - [See downloads fields](#product-downloads-fields)
+- `variations.0.download_limit`
+- `variations.0.download_expiry`
+
+#### Example:
+
+```wp wc product create --title="Product Name"```
+
+### Delete Products
+
+#### Command:
+
+```wp wc product delete &lt;id&gt;...```
+
+#### Options:
+
+
+- `&lt;id&gt;...` - The product ID to delete.
+
+
+#### Example:
+
+```
+wp wc product delete 123
+wp wc product delete $(wp wc product list --format=ids)
+```
+
+### Get a Product
+
+#### Command:
+
+```wp wc product get &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `&lt;id&gt;` - Product ID.
+- `[--field=&lt;field&gt;]` - Instead of returning the whole product fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the product&#039;s fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+
+#### Available fields:
+
+For more fields, see [List Products fields](#list-product-fields).
+
+#### Example:
+
+```wp wc product get 123 --fields=id,title,sku```
+
+### List Products
+
+#### Command:
+
+```wp wc product list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Filter products based on product property.
+- `[--field=&lt;field&gt;]` - Prints the value of a single field for each product.
+- `[--fields=&lt;fields&gt;]` - Limit the output to specific product fields.
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+
+
+#### <span id="list-product-fields">Available fields:</span>
+
+- `id`
+- `title`
+- `sku`
+- `in_stock`
+- `price`
+- `sale_price`
+- `categories`
+- `tags`
+- `type`
+- `created_at`
+
+
+These fields are optionally available:
+
+
+- `updated_at`
+- `status`
+- `downloadable`
+- `virtual`
+- `permalink`
+- `regular_price`
+- `sale_price_dates_from`
+- `sale_price_dates_to`
+- `price_html`
+- `taxable`
+- `tax_status`
+- `tax_class`
+- `managing_stock`
+- `stock_quantity`
+- `backorders_allowed`
+- `backordered`
+- `backorders`
+- `sold_individually`
+- `purchaseable`
+- `featured`
+- `visible`
+- `catalog_visibility`
+- `on_sale`
+- `weight`
+- `shipping_required`
+- `shipping_taxable`
+- `shipping_class`
+- `shipping_class_id`
+- `description`
+- `enable_html_description`
+- `short_description`
+- `enable_html_short_description`
+- `reviews_allowed`
+- `average_rating`
+- `rating_count`
+- `related_ids`
+- `upsell_ids`
+- `cross_sell_ids`
+- `parent_id`
+- `featured_src`
+- `download_limit`
+- `download_expiry`
+- `download_type`
+- `purchase_note`
+- `total_sales`
+- `parent`
+- `product_url`
+- `button_text`
+
+There are some properties that are nested array. In such case, if `array.size` is zero then listing the fields with `array.0.some_field` will results in error that field `array.0.some_field` does not exists.
+
+<div id="list-product-dimensions-fields">Dimensions fields:</div>
+
+- `dimensions.length`
+- `dimensions.width`
+- `dimensions.height`
+- `dimensions.unit`
+
+<div id="list-product-images-fields">Images is an array in which element can be accessed by specifying its index:</div>
+
+- `images`
+- `images.size`
+- `images.0.id`
+- `images.0.created_at`
+- `images.0.updated_at`
+- `images.0.src`
+- `images.0.title`
+- `images.0.alt`
+- `images.0.position`
+
+<div id="list-product-attributes-fields">Attributes is an array in which element can be accessed by specifying its index:</div>
+
+- `attributes`
+- `attributes.size`
+- `attributes.0.name`
+- `attributes.0.slug`
+- `attributes.0.position`
+- `attributes.0.visible`
+- `attributes.0.variation`
+- `attributes.0.options`
+
+<div id="list-product-downloads-fields">Downloads is an array in which element can be accessed by specifying its index:</div>
+
+- `downloads`
+- `downloads.size`
+- `downloads.0.id`
+- `downloads.0.name`
+- `downloads.0.file`
+
+Variations is an array in which element can be accessed by specifying its index:
+
+- `variations`
+- `variations.size`
+- `variations.0.id`
+- `variations.0.created_at`
+- `variations.0.updated_at`
+- `variations.0.downloadable`
+- `variations.0.virtual`
+- `variations.0.permalink`
+- `variations.0.sku`
+- `variations.0.price`
+- `variations.0.regular_price`
+- `variations.0.sale_price`
+- `variations.0.sale_price_dates_from`
+- `variations.0.sale_price_dates_to`
+- `variations.0.taxable`
+- `variations.0.tax_status`
+- `variations.0.tax_class`
+- `variations.0.managing_stock`
+- `variations.0.stock_quantity`
+- `variations.0.in_stock`
+- `variations.0.backordered`
+- `variations.0.purchaseable`
+- `variations.0.visible`
+- `variations.0.on_sale`
+- `variations.0.weight`
+- `variations.0.dimensions` - [See dimensions fields](#list-product-dimensions-fields)
+- `variations.0.shipping_class`
+- `variations.0.shipping_class_id`
+- `variations.0.images` - [See images fields](#list-product-images-fields)
+- `variations.0.attributes` - [See attributes fields](#list-product-attributes-fields)
+- `variations.0.downloads` - [See downloads fields](#list-product-downloads-fields)
+- `variations.0.download_limit`
+- `variations.0.download_expiry`
+
+Fields for filtering query result also available:
+
+- `q` - Filter products with search query.
+- `created_at_min` - Filter products whose created after this date.
+- `created_at_max` - Filter products whose created before this date.
+- `updated_at_min` - Filter products whose updated after this date.
+- `updated_at_max` - Filter products whose updated before this date.
+- `limit` - The maximum returned number of results.
+- `offset` - Offset the returned results.
+- `order` - Accepted values: `ASC` and `DESC`. Default: `DESC`.
+- `orderby` - Sort retrieved products by parameter. One or more options can be passed.
+
+#### Example:
+
+```
+wp wc product list
+wp wc product list --field=id
+wp wc product list --fields=id,title,type --format=json
+```
+
+### Update Products
+
+#### Command:
+
+```wp wc product update &lt;id&gt; [--&lt;field&gt;=&lt;value&gt;]```
+
+#### Options:
+
+- `&lt;id&gt;` - Product ID.
+- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update.
+
+#### Available fields:
+
+For more fields, see [Create a Product fields](#create-product-fields).
+
+#### Example:
+
+```wp wc product update 123 --title="New Product Title" --description="New description"```
+
+### List of Product Reviews
+
+#### Command:
+
+```wp wc product reviews &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `&lt;id&gt;` - Product ID.
+- `[--field=&lt;field&gt;]` - Instead of returning the whole review fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the review&#039;s fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+
+#### Available fields:
+
+
+- `id`
+- `rating`
+- `reviewer_name`
+- `reviewer_email`
+- `verified`
+- `created_at`
+
+
+#### Example:
+
+```
+wp wc product reviews 123
+wp wc product reviews 123 --fields=id,rating,reviewer_email
+```
+
+### Get Product Types
+
+#### Command:
+
+```wp wc product types```
+
+#### Example:
+
+```wp wc product types```
+
+### Get Product Category
+
+#### Command:
+
+```wp wc product category get &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `&lt;id&gt;` - Product category ID.
+- `[--field=&lt;field&gt;]` - Instead of returning the whole product category fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the product category's fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+
+#### <span id="get-product-category-fields">Available fields:</span>
+
+- `id`
+- `name`
+- `slug`
+- `parent`
+- `description`
+- `display`
+- `image`
+- `count`
+
+
+#### Example:
+
+```wp wc product category get 123```
+
+### List of Product Categories
+
+#### Command:
+
+```wp wc coupon create```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Filter products based on product property.
+- `[--field=&lt;field&gt;]` - Prints the value of a single field for each product.
+- `[--fields=&lt;fields&gt;]` - Limit the output to specific product fields.
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+
+
+#### Available fields:
+
+For more fields, see [Get Product Category fields](#get-product-category-fields).
+
+#### Example:
+
+```
+wp wc product category list
+wp wc product category list --fields=id,name --format=json
+```
+
+## Getting Reports
+
+```wp wc report &lt;command&gt;```
+
+### List Reports
+
+#### Command:
+
+```wp wc report list [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+
+
+#### Example:
+
+```wp wc report list```
+
+### View Sales Report
+
+#### Command:
+
+```wp wc report sales [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;] [--period=&lt;period&gt;] [--date_min] [--date_max] [--limit]```
+
+#### Options:
+
+
+- `[--field=&lt;field&gt;]` - Instead of returning the whole report fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the report's fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `[--period=&lt;period&gt;]` - The supported periods are: week, month, last_month, and year. If invalid period is supplied, week is used. If period is not specified, the current day is used.
+- `[--date_min]` - Return sales for a specific start date. The date need to be in the `YYYY-MM-AA` format.
+- `[--date_max]` - Return sales for a specific end date. The dates need to be in the `YYYY-MM-AA` format.
+- `[--limit]` - Limit report result. Default: `12`.
+
+
+#### Available fields:
+
+
+- `total_sales`
+- `average_sales`
+- `total_orders`
+- `total_items`
+- `total_tax`
+- `total_shipping`
+- `total_discount`
+- `totals_grouped_by`
+- `totals`
+- `total_customers`
+
+
+#### Example:
+
+```
+wp wc report sales
+wp wc report sales --period=last_month
+```
+
+### View Report of Top Sellers
+
+#### Command:
+
+```wp wc report top_sellers [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;] [--period=&lt;period&gt;] [--date_min] [--date_max] [--limit]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Filter report based on report property.
+- `[--field=&lt;field&gt;]` - Prints the value of a single field for each seller.
+- `[--fields=&lt;fields&gt;]` - Limit the output to specific report fields.
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--period=&lt;period&gt;]` - The supported periods are: week, month, last_month, and year. If invalid period is supplied, week is used. If period is not specified, the current day is used.
+- `[--date_min]` - Return sales for a specific start date. The date need to be in the `YYYY-MM-AA` format.
+- `[--date_max]` - Return sales for a specific end date. The dates need to be in the `YYYY-MM-AA` format.
+- `[--limit]` - Limit report result. Default: `12`.
+
+
+#### Available fields:
+
+
+- `title`
+- `product_id`
+- `quantity`
+
+
+#### Example:
+
+```
+wp wc report top_sellers
+wp wc report top_sellers --period=last_month
+```
+
+## Managing Taxes
+
+```wp wc tax &lt;command&gt;```
+
+### Create a Tax Rate
+
+#### Command:
+
+```wp wc tax create [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new tax rate.
+- `[--porcelain]` - Outputs just the new tax rate id.
+
+
+#### Available fields:
+
+
+- `country`
+- `state`
+- `postcode`
+- `city`
+- `rate`
+- `name`
+- `priority`
+- `compound`
+- `shipping`
+- `class`
+- `order`
+
+
+#### Example:
+
+```wp wc tax create --country=US --rate=5 --class=standard --type=percent```
+
+### Create a Tax Class
+
+#### Command:
+
+```wp wc tax create_class [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new tax class.
+- `[--porcelain]` - Outputs just the new tax class slug.
+
+
+#### Available fields:
+
+- `name`
+
+#### Example:
+
+```wp wc tax create_class --name="Reduced Rate"```
+
+### Delete Tax Rates
+
+#### Command:
+
+```wp wc tax delete &lt;id&gt;...```
+
+#### Options:
+
+- `&lt;id&gt;...` - The tax rate ID to delete.
+
+#### Example:
+
+```
+wp wc tax delete 123
+wp wc tax delete $(wp wc tax list --format=ids)
+```
+
+### Delete Tax Classes
+
+#### Command:
+
+```wp wc tax delete_class &lt;slug&gt;...```
+
+#### Options:
+
+- `&lt;slug&gt;...` - The tax class slug to delete.
+
+#### Example:
+
+```
+wp wc tax delete_class reduced-rate
+wp wc tax delete_class $(wp wc tax list_class --format=ids)
+```
+
+### Get a Tax Rate
+
+#### Command:
+
+```wp wc tax get &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+- `&lt;id&gt;` - Tax rate ID
+- `[--field=&lt;field&gt;]` - Instead of returning the whole tax rate fields, returns the value of a single fields.
+- `[--fields=&lt;fields&gt;]` - Get a specific subset of the tax rates fields.
+- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+
+#### Available fields:
+
+- `id`
+- `country`
+- `state`
+- `postcode`
+- `city`
+- `rate`
+- `name`
+- `priority`
+- `compound`
+- `shipping`
+- `order`
+- `class`
+
+#### Example:
+
+```
+wp wc tax get 123 --field=rate
+wp wc tax get 321 --format=json > rate321.json
+```
+
+### List Tax Rates
+
+#### Command:
+
+```wp wc tax list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Filter tax based on tax property.
+- `[--field=&lt;field&gt;]` - Prints the value of a single field for each tax.
+- `[--fields=&lt;fields&gt;]` - Limit the output to specific tax fields.
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+
+#### Available fields:
+
+- `id`
+- `country`
+- `state`
+- `postcode`
+- `city`
+- `rate`
+- `name`
+- `priority`
+- `compound`
+- `shipping`
+- `class`
+
+These fields are optionally available:
+
+- `order`
+
+Fields for filtering query result also available:
+
+
+- `class` - Sort by tax class.
+- `page` - Page number.
+
+
+#### Example:
+
+```
+wp wc tax list
+wp wc tax list --field=id
+wp wc tax list --fields=id,rate,class --format=json
+```
+
+### List Tax Classes
+
+#### Command:
+
+```wp wc tax list_class [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+
+#### Options:
+
+
+- `[--&lt;field&gt;=&lt;value&gt;]` - Filter tax class based on tax class property.
+- `[--field=&lt;field&gt;]` - Prints the value of a single field for each tax class.
+- `[--fields=&lt;fields&gt;]` - Limit the output to specific tax class fields.
+- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+
+
+#### Available fields:
+
+
+- `slug`
+- `name`
+
+
+#### Example:
+
+```
+wp wc tax list_class
+wp wc tax list_class --field=slug
+wp wc tax list_class --format=json
+```
+
+### Update a Tax Rate
+
+#### Command:
+
+```wp wc tax update &lt;id&gt; [--&lt;field&gt;=&lt;value&gt;]```
+
+#### Options:
+
+
+- `&lt;id&gt;` - The ID of the tax rate to update.
+- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update.
+
+
+#### Available fields:
+
+
+- `country`
+- `state`
+- `postcode`
+- `city`
+- `rate`
+- `name`
+- `priority`
+- `compound`
+- `shipping`
+- `class`
+
+
+#### Example:
+
+```wp wc tax update 123 --rate=5```
+
+## Tools
+
+```wp wc tool &lt;command&gt;```
+
+### Clear Product/Shop Transients
+
+#### Command:
+
+```wp wc tool clear_transients```
+
+#### Example:
+
+```wp wc tool clear_transients```
