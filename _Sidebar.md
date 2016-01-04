@@ -1,4 +1,4 @@
-**Developer Guides**
+**Developer Resources**
 
 [Template File Guidelines](https://github.com/woothemes/woocommerce/wiki/Template-File-Guidelines-for-Devs-and-Theme-Authors)
 
