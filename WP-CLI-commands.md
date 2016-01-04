@@ -536,7 +536,7 @@ wp wc customer list --fields=id,email,first_name --format=json
 
 #### Available fields:
 
-For more fields, see [List Orders fields](#list-order-fields).
+For more fields, see [List Orders fields](#list-orders).
 
 #### Example:
 
@@ -606,7 +606,7 @@ wp wc customer update customer@example.com --password=new-password
 - `[--<field>=<value>]` - Associative args for the new order.
 - `[--porcelain]` - Outputs just the new order id.
 
-#### <span id="create-an-order-fields">Available fields:</span>
+#### Available fields:
 
 Required fields:
 
@@ -722,7 +722,7 @@ wp wc order create --customer_id=1 --status=pending ...
 - `created_at`
 
 
-For more fields, see [List Orders fields](#list-order-fields).
+For more fields, see [List Orders fields](#list-orders).
 
 #### Example:
 
@@ -743,7 +743,7 @@ For more fields, see [List Orders fields](#list-order-fields).
 - `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 
-#### <span id="list-order-fields">Available fields:</span>
+#### Available fields:
 
 
 - `id`
@@ -851,7 +851,7 @@ For second shipping item: `shipping_lines.1.method_id` and so on.
 
 #### Available fields:
 
-For available fields, see [Create an Order fields](#create-an-order-fields).
+For available fields, see [Create an Order fields](#create-an-order).
 
 #### Example:
 
@@ -861,7 +861,7 @@ For available fields, see [Create an Order fields](#create-an-order-fields).
 
 ```wp wc product <command>```
 
-### <span id="create-product-fields">Create a Product</span>
+### Create a Product
 
 #### Command:
 
@@ -869,21 +869,16 @@ For available fields, see [Create an Order fields](#create-an-order-fields).
 
 #### Options:
 
-
 - `[--<field>=<value>]` - Associative args for the new product.
 - `[--porcelain]` - Outputs just the new product id.
-
 
 #### Available fields:
 
 Required fields:
 
-
 - `title`
 
-
 These fields are optionally available for create command:
-
 
 - `type`
 - `status`
@@ -1029,7 +1024,7 @@ wp wc product delete $(wp wc product list --format=ids)
 
 #### Available fields:
 
-For more fields, see [List Products fields](#list-product-fields).
+For more fields, see [List Products fields](#list-product).
 
 #### Example:
 
@@ -1050,7 +1045,7 @@ For more fields, see [List Products fields](#list-product-fields).
 - `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 
-#### <span id="list-product-fields">Available fields:</span>
+#### Available fields:
 
 - `id`
 - `title`
@@ -1225,7 +1220,7 @@ wp wc product list --fields=id,title,type --format=json
 
 #### Available fields:
 
-For more fields, see [Create a Product fields](#create-product-fields).
+For more fields, see [Create a Product fields](#create-a-product).
 
 #### Example:
 
@@ -1282,14 +1277,12 @@ wp wc product reviews 123 --fields=id,rating,reviewer_email
 
 #### Options:
 
-
 - `<id>` - Product category ID.
 - `[--field=<field>]` - Instead of returning the whole product category fields, returns the value of a single fields.
 - `[--fields=<fields>]` - Get a specific subset of the product category's fields.
 - `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
-
-#### <span id="get-product-category-fields">Available fields:</span>
+#### Available fields:
 
 - `id`
 - `name`
@@ -1299,7 +1292,6 @@ wp wc product reviews 123 --fields=id,rating,reviewer_email
 - `display`
 - `image`
 - `count`
-
 
 #### Example:
 
@@ -1313,16 +1305,14 @@ wp wc product reviews 123 --fields=id,rating,reviewer_email
 
 #### Options:
 
-
 - `[--<field>=<value>]` - Filter products based on product property.
 - `[--field=<field>]` - Prints the value of a single field for each product.
 - `[--fields=<fields>]` - Limit the output to specific product fields.
 - `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
-
 #### Available fields:
 
-For more fields, see [Get Product Category fields](#get-product-category-fields).
+For more fields, see [Get Product Category fields](#get-product-category).
 
 #### Example:
 
