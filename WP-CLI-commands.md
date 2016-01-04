@@ -14,15 +14,15 @@ All WooCommerce related commands are grouped into `wp wc` command, see an exampl
 
 ```
 $ wp wc
-usage: wp wc coupon &lt;command&gt;
-   or: wp wc customer &lt;command&gt;
-   or: wp wc order &lt;command&gt;
-   or: wp wc product &lt;command&gt;
-   or: wp wc report &lt;command&gt;
-   or: wp wc tax &lt;command&gt;
-   or: wp wc tool &lt;command&gt;
+usage: wp wc coupon <command>
+   or: wp wc customer <command>
+   or: wp wc order <command>
+   or: wp wc product <command>
+   or: wp wc report <command>
+   or: wp wc tax <command>
+   or: wp wc tool <command>
 
-See 'wp help wc &lt;command&gt;' for more information on a specific command.
+See 'wp help wc <command>' for more information on a specific command.
 ```
 
 You can see more details about the commands using `wp help wc`:
@@ -53,18 +53,18 @@ You can see more details about the commands using `wp help wc`:
 
 ## Managing Coupons
 
-```wp wc coupon &lt;command&gt;```
+```wp wc coupon <command>```
 
 ### Create a Coupon
 
 #### Command:
 
-```wp wc coupon create [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+```wp wc coupon create [--<field>=<value>] [--porcelain]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]`
+- `[--<field>=<value>]`
 - `[--porcelain]` - Outputs just the new coupon id.
 
 
@@ -99,12 +99,12 @@ You can see more details about the commands using `wp help wc`:
 
 #### Command:
 
-```wp wc coupon delete &lt;id&gt;...```
+```wp wc coupon delete <id>...```
 
 #### Options:
 
 
-- `&lt;id&gt;...` - The coupon ID to delete.
+- `<id>...` - The coupon ID to delete.
 
 
 #### Example:
@@ -118,15 +118,15 @@ wp wc coupon delete $(wp wc coupon list --format=ids)
 
 #### Command:
 
-```wp wc coupon get &lt;coupon&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc coupon get <coupon> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `&lt;coupon&gt;` - Coupon ID or code
-- `[--field=&lt;field&gt;]` - Instead of returning the whole coupon fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the coupon's fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<coupon>` - Coupon ID or code
+- `[--field=<field>]` - Instead of returning the whole coupon fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the coupon's fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 
 #### Available fields:
@@ -164,15 +164,15 @@ wp wc coupon get disc50 --format=json > disc50.json
 
 #### Command:
 
-```wp wc coupon list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc coupon list [--<field>=<value>] [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Filter coupon based on coupon property.
-- `[--field=&lt;field&gt;]` - Prints the value of a single field for each coupon.
-- `[--fields=&lt;fields&gt;]` - Limit the output to specific coupon fields.
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--<field>=<value>]` - Filter coupon based on coupon property.
+- `[--field=<field>]` - Prints the value of a single field for each coupon.
+- `[--fields=<fields>]` - Limit the output to specific coupon fields.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 
 #### Available fields:
@@ -246,13 +246,13 @@ wp wc coupon types
 
 #### Command:
 
-```wp wc coupon update &lt;coupon&gt; [--&lt;field&gt;=&lt;value&gt;]```
+```wp wc coupon update <coupon> [--<field>=<value>]```
 
 #### Options:
 
 
-- `&lt;coupon&gt;` - The ID or code of the coupon to update.
-- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update
+- `<coupon>` - The ID or code of the coupon to update.
+- `[--<field>=<value>]` - One or more fields to update
 
 
 #### Available fields:
@@ -289,19 +289,19 @@ wp wc coupon list --fields=id,code,type --format=json
 
 ## Managing Customers
 
-```wp wc customer &lt;command&gt;```
+```wp wc customer <command>```
 
 ### Create a Customer
 
 #### Command:
 
-```wp wc customer create &lt;email&gt; [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+```wp wc customer create <email> [--<field>=<value>] [--porcelain]```
 
 #### Options:
 
 
-- `&lt;email&gt;` - The email address of the customer to create.
-- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new customer.
+- `<email>` - The email address of the customer to create.
+- `[--<field>=<value>]` - Associative args for the new customer.
 - `[--porcelain]` - Outputs just the new customer id.
 
 
@@ -341,12 +341,12 @@ wp wc coupon list --fields=id,code,type --format=json
 
 #### Command:
 
-```wp wc customer delete &lt;customer&gt;...```
+```wp wc customer delete <customer>...```
 
 #### Options:
 
 
-- `&lt;customer&gt;...` - The customer ID, email, or username to delete.
+- `<customer>...` - The customer ID, email, or username to delete.
 
 
 #### Example:
@@ -360,15 +360,15 @@ wp wc customer delete $(wp wc customer list --format=ids)
 
 #### Command:
 
-```wp wc customer downloads &lt;customer&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc customer downloads <customer> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `&lt;customer&gt;` - The customer ID, email or username.
-- `[--field=&lt;field&gt;]` - Instead of returning the whole customer fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the customer&#039;s fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<customer>` - The customer ID, email or username.
+- `[--field=<field>]` - Instead of returning the whole customer fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the customer&#039;s fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 
 #### Available fields:
@@ -387,15 +387,15 @@ wp wc customer delete $(wp wc customer list --format=ids)
 
 #### Command:
 
-```wp wc customer get &lt;customer&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc customer get <customer> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `&lt;customer&gt;` - Customer ID, email, or username.
-- `[--field=&lt;field&gt;]` - Instead of returning the whole customer fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the customer&#039;s fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<customer>` - Customer ID, email, or username.
+- `[--field=<field>]` - Instead of returning the whole customer fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the customer&#039;s fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 
 #### Available fields:
@@ -458,14 +458,14 @@ wp wc customer get customer-login --format=json
 
 #### Command:
 
-```wp wc customer list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc customer list [--<field>=<value>] [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Filter customer based on customer property.
-- `[--field=&lt;field&gt;]` - Prints the value of a single field for each customer.
-- `[--fields=&lt;fields&gt;]` - Limit the output to specific customer fields.
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--<field>=<value>]` - Filter customer based on customer property.
+- `[--field=<field>]` - Prints the value of a single field for each customer.
+- `[--fields=<fields>]` - Limit the output to specific customer fields.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 #### Available fields:
 
@@ -525,14 +525,14 @@ wp wc customer list --fields=id,email,first_name --format=json
 
 #### Command:
 
-```wp wc customer orders &lt;customer&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc customer orders <customer> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
-- `&lt;customer&gt;` - The customer ID, email or username.
-- `[--field=&lt;field&gt;]` - Instead of returning the whole customer fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the customer&#039;s fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<customer>` - The customer ID, email or username.
+- `[--field=<field>]` - Instead of returning the whole customer fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the customer&#039;s fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 #### Available fields:
 
@@ -546,13 +546,13 @@ For more fields, see [List Orders fields](#list-order-fields).
 
 #### Command:
 
-```wp wc customer update &lt;customer&gt; [--&lt;field&gt;=&lt;value&gt;]```
+```wp wc customer update <customer> [--<field>=<value>]```
 
 #### Options:
 
 
-- `&lt;customer&gt;` - Customer ID, email, or username.
-- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update.
+- `<customer>` - Customer ID, email, or username.
+- `[--<field>=<value>]` - One or more fields to update.
 
 
 #### Available fields:
@@ -593,17 +593,17 @@ wp wc customer update customer@example.com --password=new-password
 
 ## Managing Orders
 
-```wp wc order &lt;command&gt;```
+```wp wc order <command>```
 
 ### Create an Order
 
 #### Command:
 
-```wp wc order create [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+```wp wc order create [--<field>=<value>] [--porcelain]```
 
 #### Options:
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new order.
+- `[--<field>=<value>]` - Associative args for the new order.
 - `[--porcelain]` - Outputs just the new order id.
 
 #### <span id="create-an-order-fields">Available fields:</span>
@@ -684,12 +684,12 @@ wp wc order create --customer_id=1 --status=pending ...
 
 #### Command:
 
-```wp wc order delete &lt;id&gt;...```
+```wp wc order delete <id>...```
 
 #### Options:
 
 
-- `&lt;id&gt;...` - The order ID to delete.
+- `<id>...` - The order ID to delete.
 
 
 #### Example:
@@ -700,15 +700,15 @@ wp wc order create --customer_id=1 --status=pending ...
 
 #### Command:
 
-```wp wc order get &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc order get <id> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `&lt;id&gt;` - Order ID.
-- `[--field=&lt;field&gt;]` - Instead of returning the whole order fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the order&#039;s fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<id>` - Order ID.
+- `[--field=<field>]` - Instead of returning the whole order fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the order&#039;s fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 
 #### Available fields:
@@ -732,15 +732,15 @@ For more fields, see [List Orders fields](#list-order-fields).
 
 #### Command:
 
-```wp wc order list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc order list [--<field>=<value>] [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Filter orders based on order property.
-- `[--field=&lt;field&gt;]` - Prints the value of a single field for each order.
-- `[--fields=&lt;fields&gt;]` - Limit the output to specific order fields.
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--<field>=<value>]` - Filter orders based on order property.
+- `[--field=<field>]` - Prints the value of a single field for each order.
+- `[--fields=<fields>]` - Limit the output to specific order fields.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 
 #### <span id="list-order-fields">Available fields:</span>
@@ -840,13 +840,13 @@ For second shipping item: `shipping_lines.1.method_id` and so on.
 
 #### Command:
 
-```wp wc order update &lt;id&gt; [--&lt;field&gt;=&lt;value&gt;]```
+```wp wc order update <id> [--<field>=<value>]```
 
 #### Options:
 
 
-- `&lt;id&gt;` - Product ID
-- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update.
+- `<id>` - Product ID
+- `[--<field>=<value>]` - One or more fields to update.
 
 
 #### Available fields:
@@ -859,18 +859,18 @@ For available fields, see [Create an Order fields](#create-an-order-fields).
 
 ## Managing Products
 
-```wp wc product &lt;command&gt;```
+```wp wc product <command>```
 
 ### <span id="create-product-fields">Create a Product</span>
 
 #### Command:
 
-```wp wc product create [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+```wp wc product create [--<field>=<value>] [--porcelain]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new product.
+- `[--<field>=<value>]` - Associative args for the new product.
 - `[--porcelain]` - Outputs just the new product id.
 
 
@@ -997,12 +997,12 @@ Variations is an array in which element can be accessed by specifying its index:
 
 #### Command:
 
-```wp wc product delete &lt;id&gt;...```
+```wp wc product delete <id>...```
 
 #### Options:
 
 
-- `&lt;id&gt;...` - The product ID to delete.
+- `<id>...` - The product ID to delete.
 
 
 #### Example:
@@ -1016,15 +1016,15 @@ wp wc product delete $(wp wc product list --format=ids)
 
 #### Command:
 
-```wp wc product get &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc product get <id> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `&lt;id&gt;` - Product ID.
-- `[--field=&lt;field&gt;]` - Instead of returning the whole product fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the product&#039;s fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<id>` - Product ID.
+- `[--field=<field>]` - Instead of returning the whole product fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the product&#039;s fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 
 #### Available fields:
@@ -1039,15 +1039,15 @@ For more fields, see [List Products fields](#list-product-fields).
 
 #### Command:
 
-```wp wc product list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc product list [--<field>=<value>] [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Filter products based on product property.
-- `[--field=&lt;field&gt;]` - Prints the value of a single field for each product.
-- `[--fields=&lt;fields&gt;]` - Limit the output to specific product fields.
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--<field>=<value>]` - Filter products based on product property.
+- `[--field=<field>]` - Prints the value of a single field for each product.
+- `[--fields=<fields>]` - Limit the output to specific product fields.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 
 #### <span id="list-product-fields">Available fields:</span>
@@ -1216,12 +1216,12 @@ wp wc product list --fields=id,title,type --format=json
 
 #### Command:
 
-```wp wc product update &lt;id&gt; [--&lt;field&gt;=&lt;value&gt;]```
+```wp wc product update <id> [--<field>=<value>]```
 
 #### Options:
 
-- `&lt;id&gt;` - Product ID.
-- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update.
+- `<id>` - Product ID.
+- `[--<field>=<value>]` - One or more fields to update.
 
 #### Available fields:
 
@@ -1235,15 +1235,15 @@ For more fields, see [Create a Product fields](#create-product-fields).
 
 #### Command:
 
-```wp wc product reviews &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc product reviews <id> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `&lt;id&gt;` - Product ID.
-- `[--field=&lt;field&gt;]` - Instead of returning the whole review fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the review&#039;s fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<id>` - Product ID.
+- `[--field=<field>]` - Instead of returning the whole review fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the review&#039;s fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 
 #### Available fields:
@@ -1278,15 +1278,15 @@ wp wc product reviews 123 --fields=id,rating,reviewer_email
 
 #### Command:
 
-```wp wc product category get &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc product category get <id> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `&lt;id&gt;` - Product category ID.
-- `[--field=&lt;field&gt;]` - Instead of returning the whole product category fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the product category's fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<id>` - Product category ID.
+- `[--field=<field>]` - Instead of returning the whole product category fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the product category's fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 
 #### <span id="get-product-category-fields">Available fields:</span>
@@ -1314,10 +1314,10 @@ wp wc product reviews 123 --fields=id,rating,reviewer_email
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Filter products based on product property.
-- `[--field=&lt;field&gt;]` - Prints the value of a single field for each product.
-- `[--fields=&lt;fields&gt;]` - Limit the output to specific product fields.
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--<field>=<value>]` - Filter products based on product property.
+- `[--field=<field>]` - Prints the value of a single field for each product.
+- `[--fields=<fields>]` - Limit the output to specific product fields.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 
 #### Available fields:
@@ -1333,18 +1333,18 @@ wp wc product category list --fields=id,name --format=json
 
 ## Getting Reports
 
-```wp wc report &lt;command&gt;```
+```wp wc report <command>```
 
 ### List Reports
 
 #### Command:
 
-```wp wc report list [--format=&lt;format&gt;]```
+```wp wc report list [--format=<format>]```
 
 #### Options:
 
 
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 
 #### Example:
@@ -1355,15 +1355,15 @@ wp wc product category list --fields=id,name --format=json
 
 #### Command:
 
-```wp wc report sales [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;] [--period=&lt;period&gt;] [--date_min] [--date_max] [--limit]```
+```wp wc report sales [--field=<field>] [--fields=<fields>] [--format=<format>] [--period=<period>] [--date_min] [--date_max] [--limit]```
 
 #### Options:
 
 
-- `[--field=&lt;field&gt;]` - Instead of returning the whole report fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the report's fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
-- `[--period=&lt;period&gt;]` - The supported periods are: week, month, last_month, and year. If invalid period is supplied, week is used. If period is not specified, the current day is used.
+- `[--field=<field>]` - Instead of returning the whole report fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the report's fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
+- `[--period=<period>]` - The supported periods are: week, month, last_month, and year. If invalid period is supplied, week is used. If period is not specified, the current day is used.
 - `[--date_min]` - Return sales for a specific start date. The date need to be in the `YYYY-MM-AA` format.
 - `[--date_max]` - Return sales for a specific end date. The dates need to be in the `YYYY-MM-AA` format.
 - `[--limit]` - Limit report result. Default: `12`.
@@ -1395,16 +1395,16 @@ wp wc report sales --period=last_month
 
 #### Command:
 
-```wp wc report top_sellers [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;] [--period=&lt;period&gt;] [--date_min] [--date_max] [--limit]```
+```wp wc report top_sellers [--<field>=<value>] [--field=<field>] [--fields=<fields>] [--format=<format>] [--period=<period>] [--date_min] [--date_max] [--limit]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Filter report based on report property.
-- `[--field=&lt;field&gt;]` - Prints the value of a single field for each seller.
-- `[--fields=&lt;fields&gt;]` - Limit the output to specific report fields.
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
-- `[--period=&lt;period&gt;]` - The supported periods are: week, month, last_month, and year. If invalid period is supplied, week is used. If period is not specified, the current day is used.
+- `[--<field>=<value>]` - Filter report based on report property.
+- `[--field=<field>]` - Prints the value of a single field for each seller.
+- `[--fields=<fields>]` - Limit the output to specific report fields.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--period=<period>]` - The supported periods are: week, month, last_month, and year. If invalid period is supplied, week is used. If period is not specified, the current day is used.
 - `[--date_min]` - Return sales for a specific start date. The date need to be in the `YYYY-MM-AA` format.
 - `[--date_max]` - Return sales for a specific end date. The dates need to be in the `YYYY-MM-AA` format.
 - `[--limit]` - Limit report result. Default: `12`.
@@ -1427,18 +1427,18 @@ wp wc report top_sellers --period=last_month
 
 ## Managing Taxes
 
-```wp wc tax &lt;command&gt;```
+```wp wc tax <command>```
 
 ### Create a Tax Rate
 
 #### Command:
 
-```wp wc tax create [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+```wp wc tax create [--<field>=<value>] [--porcelain]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new tax rate.
+- `[--<field>=<value>]` - Associative args for the new tax rate.
 - `[--porcelain]` - Outputs just the new tax rate id.
 
 
@@ -1466,12 +1466,12 @@ wp wc report top_sellers --period=last_month
 
 #### Command:
 
-```wp wc tax create_class [--&lt;field&gt;=&lt;value&gt;] [--porcelain]```
+```wp wc tax create_class [--<field>=<value>] [--porcelain]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Associative args for the new tax class.
+- `[--<field>=<value>]` - Associative args for the new tax class.
 - `[--porcelain]` - Outputs just the new tax class slug.
 
 
@@ -1487,11 +1487,11 @@ wp wc report top_sellers --period=last_month
 
 #### Command:
 
-```wp wc tax delete &lt;id&gt;...```
+```wp wc tax delete <id>...```
 
 #### Options:
 
-- `&lt;id&gt;...` - The tax rate ID to delete.
+- `<id>...` - The tax rate ID to delete.
 
 #### Example:
 
@@ -1504,11 +1504,11 @@ wp wc tax delete $(wp wc tax list --format=ids)
 
 #### Command:
 
-```wp wc tax delete_class &lt;slug&gt;...```
+```wp wc tax delete_class <slug>...```
 
 #### Options:
 
-- `&lt;slug&gt;...` - The tax class slug to delete.
+- `<slug>...` - The tax class slug to delete.
 
 #### Example:
 
@@ -1521,14 +1521,14 @@ wp wc tax delete_class $(wp wc tax list_class --format=ids)
 
 #### Command:
 
-```wp wc tax get &lt;id&gt; [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc tax get <id> [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
-- `&lt;id&gt;` - Tax rate ID
-- `[--field=&lt;field&gt;]` - Instead of returning the whole tax rate fields, returns the value of a single fields.
-- `[--fields=&lt;fields&gt;]` - Get a specific subset of the tax rates fields.
-- `[--format=&lt;format&gt;]` - Accepted values: table, json, csv. Default: table.
+- `<id>` - Tax rate ID
+- `[--field=<field>]` - Instead of returning the whole tax rate fields, returns the value of a single fields.
+- `[--fields=<fields>]` - Get a specific subset of the tax rates fields.
+- `[--format=<format>]` - Accepted values: table, json, csv. Default: table.
 
 #### Available fields:
 
@@ -1556,14 +1556,14 @@ wp wc tax get 321 --format=json > rate321.json
 
 #### Command:
 
-```wp wc tax list [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc tax list [--<field>=<value>] [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Filter tax based on tax property.
-- `[--field=&lt;field&gt;]` - Prints the value of a single field for each tax.
-- `[--fields=&lt;fields&gt;]` - Limit the output to specific tax fields.
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--<field>=<value>]` - Filter tax based on tax property.
+- `[--field=<field>]` - Prints the value of a single field for each tax.
+- `[--fields=<fields>]` - Limit the output to specific tax fields.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 #### Available fields:
 
@@ -1602,15 +1602,15 @@ wp wc tax list --fields=id,rate,class --format=json
 
 #### Command:
 
-```wp wc tax list_class [--&lt;field&gt;=&lt;value&gt;] [--field=&lt;field&gt;] [--fields=&lt;fields&gt;] [--format=&lt;format&gt;]```
+```wp wc tax list_class [--<field>=<value>] [--field=<field>] [--fields=<fields>] [--format=<format>]```
 
 #### Options:
 
 
-- `[--&lt;field&gt;=&lt;value&gt;]` - Filter tax class based on tax class property.
-- `[--field=&lt;field&gt;]` - Prints the value of a single field for each tax class.
-- `[--fields=&lt;fields&gt;]` - Limit the output to specific tax class fields.
-- `[--format=&lt;format&gt;]` - Acceptec values: table, csv, json, count, ids. Default: table.
+- `[--<field>=<value>]` - Filter tax class based on tax class property.
+- `[--field=<field>]` - Prints the value of a single field for each tax class.
+- `[--fields=<fields>]` - Limit the output to specific tax class fields.
+- `[--format=<format>]` - Acceptec values: table, csv, json, count, ids. Default: table.
 
 
 #### Available fields:
@@ -1632,13 +1632,13 @@ wp wc tax list_class --format=json
 
 #### Command:
 
-```wp wc tax update &lt;id&gt; [--&lt;field&gt;=&lt;value&gt;]```
+```wp wc tax update <id> [--<field>=<value>]```
 
 #### Options:
 
 
-- `&lt;id&gt;` - The ID of the tax rate to update.
-- `[--&lt;field&gt;=&lt;value&gt;]` - One or more fields to update.
+- `<id>` - The ID of the tax rate to update.
+- `[--<field>=<value>]` - One or more fields to update.
 
 
 #### Available fields:
@@ -1662,7 +1662,7 @@ wp wc tax list_class --format=json
 
 ## Tools
 
-```wp wc tool &lt;command&gt;```
+```wp wc tool <command>```
 
 ### Clear Product/Shop Transients
 
