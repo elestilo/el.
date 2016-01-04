@@ -909,15 +909,14 @@ These fields are optionally available for create command:
 - `categories`
 - `tags`
 
-<div id="create-product-dimensions-fields">Dimensions fields:</div>
+<a name="create-product-dimensions-fields"></a>Dimensions fields:
 
 - `dimensions.length`
 - `dimensions.width`
 - `dimensions.height`
 - `dimensions.unit`
 
-
-<div id="create-product-images-fields">Images is an array in which element can be set by specifying its index:</div>
+<a name="create-product-images-fields"></a>Images is an array in which element can be set by specifying its index:
 
 - `images`
 - `images.size`
@@ -929,7 +928,7 @@ These fields are optionally available for create command:
 - `images.0.alt`
 - `images.0.position`
 
-<div id="create-product-attributes-fields">Attributes is an array in which element can be set by specifying its index:</div>
+<a name="create-product-attributes-fields"></a>Attributes is an array in which element can be set by specifying its index:
 
 - `attributes`
 - `attributes.size`
@@ -940,7 +939,7 @@ These fields are optionally available for create command:
 - `attributes.0.variation`
 - `attributes.0.options`
 
-<div id="create-product-downloads-fields">Downloads is an array in which element can be accessed by specifying its index:</div>
+<a name="create-product-downloads-fields"></a>Downloads is an array in which element can be accessed by specifying its index:
 
 - `downloads`
 - `downloads.size`
@@ -1113,14 +1112,14 @@ These fields are optionally available:
 
 There are some properties that are nested array. In such case, if `array.size` is zero then listing the fields with `array.0.some_field` will results in error that field `array.0.some_field` does not exists.
 
-<div id="list-product-dimensions-fields">Dimensions fields:</div>
+<a name="list-product-dimensions-fields"></a>Dimensions fields:
 
 - `dimensions.length`
 - `dimensions.width`
 - `dimensions.height`
 - `dimensions.unit`
 
-<div id="list-product-images-fields">Images is an array in which element can be accessed by specifying its index:</div>
+<a name="list-product-images-fields"></a>Images is an array in which element can be accessed by specifying its index:
 
 - `images`
 - `images.size`
@@ -1132,7 +1131,7 @@ There are some properties that are nested array. In such case, if `array.size` i
 - `images.0.alt`
 - `images.0.position`
 
-<div id="list-product-attributes-fields">Attributes is an array in which element can be accessed by specifying its index:</div>
+<a name="list-product-attributes-fields"></a>Attributes is an array in which element can be accessed by specifying its index:
 
 - `attributes`
 - `attributes.size`
@@ -1143,7 +1142,7 @@ There are some properties that are nested array. In such case, if `array.size` i
 - `attributes.0.variation`
 - `attributes.0.options`
 
-<div id="list-product-downloads-fields">Downloads is an array in which element can be accessed by specifying its index:</div>
+<a name="list-product-downloads-fields"></a>Downloads is an array in which element can be accessed by specifying its index:
 
 - `downloads`
 - `downloads.size`
