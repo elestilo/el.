@@ -4,6 +4,12 @@
 
 [WC CLI Commands](https://github.com/woothemes/woocommerce/wiki/WP-CLI-commands)
 
+[WC REST API Docs](https://woothemes.github.io/woocommerce-rest-api-docs/)
+
+[API Docs](https://docs.woothemes.com/wc-apidocs/)
+
 **Contributing**
 
 [Minifying Styles and Scripts](https://github.com/woothemes/woocommerce/wiki/Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
+
+[Guidelines](https://github.com/woothemes/woocommerce/blob/master/CONTRIBUTING.md)
