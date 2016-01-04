@@ -1,1 +1,1 @@
--
+This WIKI is used for developer resources and documentation. Check out the links on the right.
