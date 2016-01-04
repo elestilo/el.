@@ -974,12 +974,12 @@ Variations is an array in which element can be accessed by specifying its index:
 - `variations.0.visible`
 - `variations.0.on_sale`
 - `variations.0.weight`
-- `variations.0.dimensions` - [See dimensions fields](#user-content-product-dimensions-fields)
+- `variations.0.dimensions` - [See dimensions fields](#user-content-create-product-dimensions-fields)
 - `variations.0.shipping_class`
 - `variations.0.shipping_class_id`
-- `variations.0.images` - [See images fields](#user-content-product-images-fields)
-- `variations.0.attributes` - [See attributes fields](#user-content-product-attributes-fields)
-- `variations.0.downloads` - [See downloads fields](#user-content-product-downloads-fields)
+- `variations.0.images` - [See images fields](#user-content-create-product-images-fields)
+- `variations.0.attributes` - [See attributes fields](#user-content-create-product-attributes-fields)
+- `variations.0.downloads` - [See downloads fields](#user-content-create-product-downloads-fields)
 - `variations.0.download_limit`
 - `variations.0.download_expiry`
 
