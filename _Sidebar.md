@@ -15,3 +15,5 @@
 [Guidelines](https://github.com/woothemes/woocommerce/blob/master/CONTRIBUTING.md)
 
 [Roadmap](https://trello.com/b/YgRbpuze/woocommerce-roadmap)
+
+[Core Test Checklist](https://github.com/woothemes/woocommerce/wiki/Core-Testing-Checklist)
