@@ -31,7 +31,7 @@ Calculating taxes across various countries for tax exclusive prices is simple; *
 
 For prices including tax this is slightly more complicated.
 
-**Prices including tax - Default v2.5.x Behavior**
+### Prices including tax - Default v2.5.x Behavior
 
 **Example 1**: Let's take an example of selling from GB (with their 20% tax rate) to Germany. The price of the product is 9.99 including tax. GB based sellers do not need to charge tax for physical goods in Germany so:
 
@@ -47,7 +47,7 @@ New price = ( 9.99 / 1.2 ) * 1.19 = 9.90675
 
 The German would pay 9.91.
 
-**Prices including tax - Experimental Behavior**
+### Prices including tax - Experimental Behavior
 
 A common feature request is to charge the same amount everywhere and absorb the differences in taxes. To enable this feature in 2.5 you would use the code:
 
