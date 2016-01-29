@@ -8,6 +8,8 @@
 
 [API Docs](https://docs.woothemes.com/wc-apidocs/)
 
+[How Taxes Work](https://github.com/woothemes/woocommerce/wiki/How-Taxes-Work-in-WooCommerce)
+
 **Contributing**
 
 [Minifying Styles and Scripts](https://github.com/woothemes/woocommerce/wiki/Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
