@@ -10,6 +10,8 @@
 
 [How Taxes Work](https://github.com/woothemes/woocommerce/wiki/How-Taxes-Work-in-WooCommerce)
 
+[2.6 Shipping Method API](https://github.com/woothemes/woocommerce/wiki/Shipping-Method-API-(2.6))
+
 **Contributing**
 
 [Minifying Styles and Scripts](https://github.com/woothemes/woocommerce/wiki/Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
