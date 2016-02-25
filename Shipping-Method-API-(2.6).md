@@ -64,7 +64,7 @@ To register your shipping method for use there are filters which you can use to 
 
 This filter lets you tell WooCommerce your method's ID and its classname. Use this to register a method for us, like this:
 
-```
+```php
 add_filter( 'woocommerce_shipping_methods', 'register_test_method' );
 
 function register_test_method( $methods ) {
@@ -77,7 +77,7 @@ If the method supports instances and zones, users will be able to add an instanc
 
 Whilst this supports an ID and classname, you can also pass an already initialised method to the filter e.g.
 
-```
+```php
 $methods[ 'test_method' ] = new WC_Shipping_Test_Method();
 ```
 
