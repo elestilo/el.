@@ -54,6 +54,8 @@ Shipping methods can also now have 2 levels of settings; global, and instance se
 
 Here is a basic example demonstrating an instance based shipping method class.
 
+<script src="https://gist.github.com/mikejolley/3b37b9cc19a774665f31.js"></script>
+
 https://gist.github.com/mikejolley/3b37b9cc19a774665f31
 
 ## Registering your shipping method
