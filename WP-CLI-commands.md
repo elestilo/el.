@@ -1300,7 +1300,7 @@ wp wc product reviews 123 --fields=id,rating,reviewer_email
 
 #### Command:
 
-```wp wc coupon create```
+```wp wc product category list```
 
 #### Options:
 
