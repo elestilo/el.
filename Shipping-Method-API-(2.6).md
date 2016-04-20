@@ -40,7 +40,7 @@ Shipping methods can also now have 2 levels of settings; global, and instance se
 | `get_method_description ` | Returns current method description. | | string |
 | `get_title ` | Returns title to display on frontend. | | string |
 | `get_rates_for_package( package )` | If method is valid for the `$package`, calls `calculate_shipping` and returns added rates. | array Package of items to ship. | array |
-| `add_rate( args, package (optional) )` | Adds a rate to offer the customer. | array `array( 'id' => 'flat_rate', 'label'     => 'Flat Rate', 'cost'      => '100', 'taxes' => '', 'calc_tax'  => 'per_order', 'meta_data' => array( 'meta_key' => 'meta_value ) ) )` | void |
+| `add_rate( args )` | Adds a rate to offer the customer. | array `array( 'id' => 'flat_rate', 'label'     => 'Flat Rate', 'cost'      => '100', 'taxes' => '', 'calc_tax'  => 'per_order', 'package' => false, 'meta_data' => array( 'meta_key' => 'meta_value ) ) )` | void |
 | `get_taxes_per_item` | Calcs taxes per item. Used by `add_rate`. | array of costs | array of taxes |
 | `get_fee ` | Calculates a fee based on total cost. | | float |
 | `admin_options ` | Outputs global or instance settings. | | void |
