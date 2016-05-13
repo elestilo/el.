@@ -1,0 +1,1 @@
+[WooCommerce](https://wordpress.org/plugins/woocommerce/) is an [Automattic project](https://automattic.com/)
