@@ -41,7 +41,7 @@ The following tables are installed with WooCommerce. Please note, each table nam
 |:------|:----:|:----:|:---:|:--------|:-----:|
 | `key_id` | `bigint(20)` | | Primary | | auto_increment |
 | `user_id` | `bigint(20)` | | | | |
-| `description` | `longtext | Yes | | | |
+| `description` | `longtext` | Yes | | | |
 | `permissions` | `varchar(10)` | | | | |
 | `consumer_key` | `char(64)` | | `consumer_key` | | |
 | `consumer_secret` | `char(43)` | | `consumer_secret` | | |
