@@ -1,5 +1,3 @@
+Welcome to the WooCommerce wiki. 
 
-<div style="background:#A46497; color: #fff;">
-Welcome to the WooCommerce wiki!
-</div>
-
+Here you'll find an array of **developer focussed documentation** for the **core WooCommerce project**. See the links on the right.
