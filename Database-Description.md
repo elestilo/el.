@@ -1,13 +1,8 @@
 Since WooCommerce is a WordPress plugin, it makes use of many of the WordPress tables. Therefore, to understand the structure of WordPress, please see the [WordPress Database Description doc](https://codex.wordpress.org/Database_Description). 
 
-Note that the posts tables are used for Custom Post Types, and we use those for:
+Note that the posts tables is used by Custom Post Types, and WooCommerce uses those for products, coupons, orders, and webhooks.
 
-- Products
-- Coupons
-- Orders
-- Webhooks
-
-We do however also add some of our own custom tables. These are listed below.
+WooCommerce also add some of it's own custom tables. These are listed below.
 
 ## Table Overview
 
@@ -28,3 +23,147 @@ The following tables are installed with WooCommerce. Please note, each table nam
 | `woocommerce_shipping_zone_methods` | Stores shipping methods linked to your shipping zones. |
 | `woocommerce_payment_tokens` | Stores customer payment tokens (used by gateways). |
 | `woocommerce_payment_tokenmeta` | Stores meta data about payment tokens. |
+
+## Table Details
+
+### Table: woocommerce_sessions
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `session_id` | `bigint(20)` | Unique | | auto_increment |
+| `session_key` | `char(32)` | Primary | | |
+| `session_value` | `longtext` | | | | |
+| `session_expiry` | `bigint(20)` | | | | |
+
+### Table: woocommerce_api_keys
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `key_id` | `bigint(20)` | | Primary | | auto_increment |
+| `user_id` | `bigint(20)` | | | | |
+| `description` | `longtext | Yes | | | |
+| `permissions` | `varchar(10)` | | | | |
+| `consumer_key` | `char(64)` | | `consumer_key` | | |
+| `consumer_secret` | `char(43)` | | `consumer_secret` | | |
+| `nonces` | `longtext` | Yes | | | |
+| `truncated_key` | `char(7)` | | | | |
+| `last_access` | `datetime` | Yes | | null | |
+
+### Table: woocommerce_attribute_taxonomies
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `attribute_id` | `bigint(20)` | | Primary | | auto_increment |
+| `attribute_name` | `varchar(200)` | | `attribute_name` | | |
+| `attribute_label` | `longtext` | Yes | | | |
+| `attribute_type` | `varchar(200)` | | | | |
+| `attribute_orderby` | `varchar(200)` | | | | |
+| `attribute_public` | `int(1)` | | | `1` | |
+
+### Table: woocommerce_downloadable_product_permissions
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `permission_id` | `bigint(20)` | | Primary | | auto_increment |
+| `download_id` | `varchar(32)` | | `download_order_product` | | |
+| `product_id` | `bigint(20)` | | `download_order_key_product`, `download_order_product` | | |
+| `order_id` | `bigint(20)` | | `download_order_key_product`, `download_order_product` | `0` | |
+| `order_key` | `varchar(200)` | | `download_order_key_product` | | |
+| `user_email` | `varchar(200)` | | | | |
+| `user_id` | `bigint(20)` | Yes | | | |
+| `downloads_remaining` | `varchar(9)` | Yes | | | |
+| `access_granted` | `datetime` | | | '0000-00-00 00:00:00' | |
+| `access_expires` | `datetime` | Yes | | null | |
+| `download_count` | `bigint(20)` | | | `0` | |
+
+### Table: woocommerce_order_items
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `order_item_id` | `bigint(20)` | | Primary | | auto_increment |
+| `order_item_name` | `longtext` | | | | |
+| `order_item_type` | `varchar(200)` | | | `` | |
+| `order_id` | `bigint(20)` | | `order_id` | | |
+
+### Table: woocommerce_order_itemmeta
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `meta_id` | `bigint(20)` | | Primary | | auto_increment |
+| `order_item_id` | `bigint(20)` | | `order_item_id` | | |
+| `meta_key` | `varchar(255)`  | | `meta_key` | null | |
+| `meta_value` | `longtext` | Yes | | | |
+
+### Table: woocommerce_tax_rates
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `tax_rate_id` | `bigint(20)` | | Primary | | auto_increment |
+| `tax_rate_country` | `varchar(200)` | | `tax_rate_country` | `` | |
+| `tax_rate_state` | `varchar(200)` | | `tax_rate_state` | `` | |
+| `tax_rate` | `varchar(200)` | | | `` | |
+| `tax_rate_name` | `varchar(200)` | | | `` | |
+| `tax_rate_priority` | `bigint(20)` | | `tax_rate_priority` | `` | |
+| `tax_rate_compound` | `int(1)` | | | `0` | |
+| `tax_rate_shipping` | `int(1)` | | | `1` | |
+| `tax_rate_order` | `bigint(20)` | | | | |
+| `tax_rate_class` | `varchar(200)` | | `tax_rate_class` | `` | |
+
+### Table: woocommerce_tax_rate_locations
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `location_id` | `bigint(20)` | | Primary | | auto_increment |
+| `location_code` | `varchar(255)` | | `location_type_code` | | |
+| `tax_rate_id` | `bigint(20)` | | `tax_rate_id` | | |
+| `location_type` | `varchar(40)` | | `location_type`, `location_type_code` | | |
+
+### Table: woocommerce_shipping_zones
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `zone_id` | `bigint(20)` | | Primary | | auto_increment |
+| `zone_name` | `varchar(255)` | |,
+| `zone_order` | `bigint(20)` | |,
+
+### Table: woocommerce_shipping_zone_locations
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `location_id` | `bigint(20)` | | Primary | | auto_increment |
+| `zone_id` | `bigint(20)` | | | | |
+| `location_code` | `varchar(255)` | | `location_type_code` | | |
+| `location_type` | `varchar(40)` | | `location_type`, `location_type_code` | | |
+
+### Table: woocommerce_shipping_zone_methods
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `zone_id` | `bigint(20)` | | | | |
+| `instance_id` | `bigint(20)` | | Primary | | auto_increment |
+| `method_id` | `varchar(255)` | | | | |
+| `method_order` | `bigint(20)` | | | | |
+| `is_enabled` | `tinyint(1)` | | | `1` | |
+
+### Table: woocommerce_payment_tokens
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `token_id` | `bigint(20)` | | Primary | | auto_increment |
+| `gateway_id` | `varchar(255)` | | | | |
+| `token` | `text` | | | | |
+| `user_id` | `bigint(20)` | | `user_id` | `0` | |
+| `type` | `varchar(255)` | | | | |
+| `is_default` | `tinyint(1)` | | | `0` | |
+
+### Table: woocommerce_payment_tokenmeta
+
+| Field	| Type | Null | Key | Default | Extra |
+|:------|:----:|:----:|:---:|:--------|:-----:|
+| `meta_id` | `bigint(20)` | | Primary | | auto_increment |
+| `payment_token_id` | `bigint(20)` | | `payment_token_id` | | |
+| `meta_key` | `varchar(255)` | Yes | `meta_key` | | |
+| `meta_value` | `longtext` | Yes | | | |
+
+## Source File
+The database scheme is defined in `woocommerce/includes/class-wc-install.php`
