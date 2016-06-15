@@ -10,7 +10,7 @@
 **WooCommerce 2.6 Docs**
 - [2.6 Shipping Method API](https://github.com/woothemes/woocommerce/wiki/Shipping-Method-API-(2.6))
 - [2.6 Payment Token API](https://github.com/woothemes/woocommerce/wiki/Payment-Token-API)
-- [2.6 My Account page](https://github.com/woothemes/woocommerce/wiki/2.6-Tabbed-My-Accout-page)
+- [2.6 My Account page](https://github.com/woothemes/woocommerce/wiki/2.6-Tabbed-My-Account-page)
 
 **WooCommerce 2.7 Draft Docs**
 - [Order/Line Item Data](https://github.com/woothemes/woocommerce/wiki/2.7---Order-and-Order-Line-Item-Data)
