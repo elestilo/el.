@@ -67,3 +67,11 @@ The German would pay 9.99 for the product, the same as GB people.
 
 The German would again pay 9.99.
 
+## Showing 0 value taxes
+
+These are hidden by default. To show empty taxes, use the snippet:
+
+`
+add_filter( 'woocommerce_order_hide_zero_taxes', '__return_false' );
+`
+
