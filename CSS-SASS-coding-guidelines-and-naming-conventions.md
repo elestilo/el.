@@ -12,7 +12,7 @@ When adding classes just remember;
 * **Element** - Parts of a block and have no standalone meaning. They are semantically tied to its block.
 * **Modifier** - Flags on blocks or elements. Use them to change appearance or behaviour.
 
-### Example
+#### Example
 * `.woocommerce-catalog {}` (block).
 * `.woocommerce-catalog-product {}` (nested block).
 * `.woocommerce-catalog-product--sale {}` (modifier).
