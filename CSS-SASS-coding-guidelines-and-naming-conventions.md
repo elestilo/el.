@@ -1,7 +1,7 @@
 Our guidelines are based on those used in [Calypso](https://github.com/Automattic/wp-calypso) which itself follows the BEM methodology. Refer to [this doc](https://wpcalypso.wordpress.com/devdocs/docs/coding-guidelines/css.md?term=css) for full details. There are a few differences in WooCommerce however which are outlined below;
 
 ### Prefixing
-WooCommerce is a WordPress plugin and has to play nicely with WordPress core and other plugins / themes. To minimise conflict potential all classes should be prefixed with `.woocommerce-`.
+As a WordPress plugin WooCommerce has to play nicely with WordPress core and other plugins / themes. To minimise conflict potential all classes should be prefixed with `.woocommerce-`.
 
 ### Class names
 Calypso is built in React and uses components to formulate CSS class names. WooCommerce Core has none of these components so uses a more traditional [BEM](http://getbem.com/) approach to [naming classes](http://cssguidelin.es/#bem-like-naming). 
