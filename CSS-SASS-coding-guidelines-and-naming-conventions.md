@@ -8,11 +8,9 @@ Calypso is built in React and uses components to formulate CSS class names. WooC
 
 When adding classes just remember;
 
-**Block** - Standalone entity that is meaningful on its own.
-
-**Element** - Parts of a block and have no standalone meaning. They are semantically tied to its block.
-
-**Modifier** - Flags on blocks or elements. Use them to change appearance or behaviour.
+* **Block** - Standalone entity that is meaningful on its own.
+* **Element** - Parts of a block and have no standalone meaning. They are semantically tied to its block.
+* **Modifier** - Flags on blocks or elements. Use them to change appearance or behaviour.
 
 ### Example
 * `.woocommerce-catalog {}` (block).
