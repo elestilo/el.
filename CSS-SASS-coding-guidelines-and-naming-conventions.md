@@ -13,15 +13,15 @@ When adding classes just remember;
 * **Modifier** - Flags on blocks or elements. Use them to change appearance or behaviour.
 
 #### Example
-* `.woocommerce-catalog {}` (block).
-* `.woocommerce-catalog-product {}` (nested block).
-* `.woocommerce-catalog-product--sale {}` (modifier).
-* `.woocommerce-catalog-product__link {}` (element).
-* `.woocommerce-catalog-product__title {}` (element).
-* `.woocommerce-catalog-product__price {}` (element).
-* `.woocommerce-catalog-product__rating {}` (element).
-* `.woocommerce-catalog-product__button-add-to-cart {}` (element).
-* `.woocommerce-catalog-product__button-add-to-cart--added {}` (modifier).
+* `.woocommerce-products {}` (block).
+* `.woocommerce-products-product {}` (nested block).
+* `.woocommerce-products-product--sale {}` (modifier).
+* `.woocommerce-products-product__link {}` (element).
+* `.woocommerce-products-product__title {}` (element).
+* `.woocommerce-products-product__price {}` (element).
+* `.woocommerce-products-product__rating {}` (element).
+* `.woocommerce-products-product__button-add-to-cart {}` (element).
+* `.woocommerce-products-product__button-add-to-cart--added {}` (modifier).
 
 You can read more about BEM key concepts [here](https://en.bem.info/methodology/key-concepts/).
 
