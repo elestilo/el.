@@ -4,7 +4,7 @@ Our guidelines are based on those used in [Calypso](https://github.com/Automatti
 As a WordPress plugin WooCommerce has to play nicely with WordPress core and other plugins / themes. To minimise conflict potential all classes should be prefixed with `.woocommerce-`.
 
 ### Class names
-Calypso is built in React and uses components to formulate CSS class names. WooCommerce Core has none of these components so uses a more traditional [BEM](http://getbem.com/) approach to [naming classes](http://cssguidelin.es/#bem-like-naming). 
+Calypso is built in React and uses component names to formulate CSS class names. WooCommerce Core has none of these components so uses a more traditional [BEM](http://getbem.com/) approach to [naming classes](http://cssguidelin.es/#bem-like-naming). 
 
 When adding classes just remember;
 
