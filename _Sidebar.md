@@ -21,6 +21,6 @@
 **Contributing**
 
 - [Minifying Styles and Scripts](https://github.com/woothemes/woocommerce/wiki/Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
-- [Guidelines](https://github.com/woothemes/woocommerce/blob/master/CONTRIBUTING.md)
+- [Guidelines](https://github.com/woocommerce/woocommerce/blob/master/.github/CONTRIBUTING.md)
 - [Roadmap](https://trello.com/b/YgRbpuze/woocommerce-roadmap)
 - [Core Test Checklist](https://github.com/woothemes/woocommerce/wiki/Core-Testing-Checklist)
