@@ -315,7 +315,7 @@ Update a coupon.
 
 Get a coupon.
 
-`$wp wc shop_coupon get 45 --user=1`
+`$ wp wc shop_coupon get 45 --user=1`
 
 #### Response:
 
