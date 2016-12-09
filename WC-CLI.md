@@ -189,3 +189,42 @@ llo'`
 ### Examples
 
 Full documentation for every command is available using `--help`. Below are some example commands to show what the CLI can do.
+
+All the examples below use user ID 1 (usually an admin account), but you should replace that with your own user account.
+
+#### Command:
+
+`$ wp wc tool run clear_transients --user=1`
+(This tool will clear the product/shop transients cache).
+
+#### Example:
+
+`Success: Updated system_status_tool clear_transients.`
+
+#### Command:
+
+`$ wp wc tool list --user=1`
+
+#### Example:
+
+```
++----------------------------+----------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
+| id                         | name                             | action                        | description                                                                       |
++----------------------------+----------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
+| clear_transients           | WC transients                    | Clear transients              | This tool will clear the product/shop transients cache.                           |
+| clear_expired_transients   | Expired transients               | Clear expired transients      | This tool will clear ALL expired transients from WordPress.                       |
+| delete_orphaned_variations | Orphaned variations              | Delete orphaned variations    | This tool will delete all variations which have no parent.                        |
+| recount_terms              | Term counts                      | Recount terms                 | This tool will recount product terms - useful when changing your settings in a wa |
+|                            |                                  |                               | y which hides products from the catalog.                                          |
+| reset_roles                | Capabilities                     | Reset capabilities            | This tool will reset the admin, customer and shop_manager roles to default. Use t |
+|                            |                                  |                               | his if your users cannot access all of the WooCommerce admin pages.               |
+| clear_sessions             | Customer sessions                | Clear all sessions            | <strong class="red">Note:</strong> This tool will delete all customer session dat |
+|                            |                                  |                               | a from the database, including any current live carts.                            |
+| install_pages              | Install WooCommerce pages        | Install pages                 | <strong class="red">Note:</strong> This tool will install all the missing WooComm |
+|                            |                                  |                               | erce pages. Pages already defined and set up will not be replaced.                |
+| delete_taxes               | Delete all WooCommerce tax rates | Delete ALL tax rates          | <strong class="red">Note:</strong> This option will delete ALL of your tax rates, |
+|                            |                                  |                               |  use with caution.                                                                |
+| reset_tracking             | Reset usage tracking settings    | Reset usage tracking settings | This will reset your usage tracking settings, causing it to show the opt-in banne |
+|                            |                                  |                               | r again and not sending any data.                                                 |
++----------------------------+----------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
+````
