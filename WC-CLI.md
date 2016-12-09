@@ -198,7 +198,7 @@ Clear the product/shop transients cache.
 
 `$ wp wc tool run clear_transients --user=1`
 
-#### Example:
+#### Response:
 
 `Success: Updated system_status_tool clear_transients.`
 
@@ -208,7 +208,7 @@ List all system tools.
 
 `$ wp wc tool list --user=1`
 
-#### Example:
+#### Response:
 
 ```
 +----------------------------+----------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
@@ -231,3 +231,43 @@ List all system tools.
 |                            |                                  |                               | r again and not sending any data.                                                 |
 +----------------------------+----------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
 ````
+
+#### Command:
+
+Create a customer
+
+`$ wp wc customer create --email='woo@woo.local' --user=1 --billing='{"first_name":"Bob","last_name":"Tester","company":"Woo", "address_1": "123 Main St.", "city":"New York", "state:": "NY", "country":"USA"}' --shipping='{"first_name":"Bob","last_name":"Tester","company":"Woo", "address_1": "123 Main St.", "city":"New York", "state:": "NY", "country":"USA"}' --password='hunter2' --username='mrbob' --first_name='Bob' --last_name='Tester'`
+
+
+#### Response:
+
+`Success: Created customer 17.`
+
+#### Command:
+
+Get a customer in CSV format
+
+`$ wp wc customer get 17 --user=1 --format=csv`
+
+#### Response:
+
+```
+Field,Value
+id,17
+date_created,2016-12-09T20:22:10
+date_modified,2016-12-09T20:22:10
+email,woo@woo.local
+first_name,Bob
+last_name,Tester
+role,customer
+username,mrbob
+billing,"{""first_name"":""Bob"",""last_name"":""Tester"",""company"":""Woo"",""address_1"":""123 Main St."",""address_2"":"""",""city"":""New York"",""state"":"""",""postcode"":"""","
+"country"":""USA"",""email"":"""",""phone"":""""}"
+shipping,"{""first_name"":""Bob"",""last_name"":""Tester"",""company"":""Woo"",""address_1"":""123 Main St."",""address_2"":"""",""city"":""New York"",""state"":"""",""postcode"":"""",
+""country"":""USA""}"
+is_paying_customer,false
+meta_data,"[{""id"":825,""key"":""shipping_company"",""value"":""Woo""},{""id"":829,""key"":""_order_count"",""value"":""0""},{""id"":830,""key"":""_money_spent"",""value"":""0""}]"
+orders_count,0
+total_spent,0.00
+avatar_url,http://2.gravatar.com/avatar/5791d33f7d6472478c0b5fa69133f09a?s=96
+```
