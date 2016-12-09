@@ -194,14 +194,17 @@ All the examples below use user ID 1 (usually an admin account), but you should 
 
 #### Command:
 
+Clear the product/shop transients cache.
+
 `$ wp wc tool run clear_transients --user=1`
-(This tool will clear the product/shop transients cache).
 
 #### Example:
 
 `Success: Updated system_status_tool clear_transients.`
 
 #### Command:
+
+List all system tools.
 
 `$ wp wc tool list --user=1`
 
