@@ -288,6 +288,8 @@ Get an order note.
 
 `$ wp wc order_note get 355 286 --user=1`
 
+#### Response:
+
 ```
 +---------------+-----------------------+
 | Field         | Value                 |
@@ -297,4 +299,54 @@ Get an order note.
 | note          | Great repeat customer |
 | customer_note | true                  |
 +---------------+-----------------------+
+```
+
+#### Command:
+
+Update a coupon.
+
+`$ wp wc shop_coupon update 45 --amount='10' --discount_type='percent' --free_shipping=true --user=1`
+
+#### Response:
+
+`Success: Updated shop_coupon 45.`
+
+#### Command:
+
+Get a coupon.
+
+`$wp wc shop_coupon get 45 --user=1`
+
+#### Response:
+
+```
++-----------------------------+---------------------+
+| Field                       | Value               |
+
++-----------------------------+---------------------+
+| id                          | 45                  |
+| code                        | hello               |
+| amount                      | 10.00               |
+| date_created                | 2016-08-09T17:37:28 |
+| date_modified               | 2016-12-09T20:30:32 |
+| discount_type               | percent             |
+| description                 | Yay                 |
+| date_expires                | 2016-10-22T00:00:00 |
+| usage_count                 | 2                   |
+| individual_use              | false               |
+| product_ids                 | []                  |
+| excluded_product_ids        | []                  |
+| usage_limit                 | null                |
+| usage_limit_per_user        | null                |
+| limit_usage_to_x_items      | null                |
+| free_shipping               | true                |
+| product_categories          | []                  |
+| excluded_product_categories | []                  |
+| exclude_sale_items          | false               |
+| minimum_amount              | 0.00                |
+| maximum_amount              | 0.00                |
+| email_restrictions          | []                  |
+| used_by                     | ["1","1"]           |
+| meta_data                   | []                  |
++-----------------------------+---------------------+
 ```
