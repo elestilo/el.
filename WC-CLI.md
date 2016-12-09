@@ -271,3 +271,30 @@ orders_count,0
 total_spent,0.00
 avatar_url,http://2.gravatar.com/avatar/5791d33f7d6472478c0b5fa69133f09a?s=96
 ```
+
+#### Command:
+
+Add a customer note on order 355.
+
+`$ wp wc order_note create 355 --note="Great repeat customer" --customer_note=true --user=1`
+
+#### Response:
+
+`Success: Created order_note 286.`
+
+#### Command:
+
+Get an order note.
+
+`$ wp wc order_note get 355 286 --user=1`
+
+```
++---------------+-----------------------+
+| Field         | Value                 |
++---------------+-----------------------+
+| id            | 286                   |
+| date_created  | 2016-12-09T20:27:26   |
+| note          | Great repeat customer |
+| customer_note | true                  |
++---------------+-----------------------+
+```
