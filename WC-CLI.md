@@ -192,6 +192,10 @@ Full documentation for every command is available using `--help`. Below are some
 
 All the examples below use user ID 1 (usually an admin account), but you should replace that with your own user account.
 
+You can also find other examples (without output) by looking at the testing files for our CLI tests: https://github.com/woocommerce/woocommerce/tree/master/tests/cli/features
+
+Each command will have a `.feature` file. Here are some payment gateway commands, for example: https://github.com/woocommerce/woocommerce/blob/master/tests/cli/features/payment_gateway.feature.
+
 #### Command:
 
 Clear the product/shop transients cache.
