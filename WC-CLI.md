@@ -1,6 +1,6 @@
-WooCommerce CLI (WC CLI) offers the ability to manage WooCommerce (WC) via the command-line, using WP CLI. The documentation here covers the version of WC CLI that started shipping in WC 2.7 and later. There is documentation on[https://github.com/woocommerce/woocommerce/wiki/WP-CLI-commands](WC 2.5 and 2.6's CLI).
+WooCommerce CLI (WC CLI) offers the ability to manage WooCommerce (WC) via the command-line, using WP CLI. The documentation here covers the version of WC CLI that started shipping in WC 2.7 and later. There is documentation on [WC 2.5 and 2.6's CLI](https://github.com/woocommerce/woocommerce/wiki/WP-CLI-commands).
 
-WC CLI is powered by the [https://woocommerce.github.io/woocommerce-rest-api-docs/](WC REST API), meaning most of what is possible with the REST API can also be achieved via the command-line.
+WC CLI is powered by the [WC REST API](https://woocommerce.github.io/woocommerce-rest-api-docs/), meaning most of what is possible with the REST API can also be achieved via the command-line.
 
 ### What is WP-CLI?
 
