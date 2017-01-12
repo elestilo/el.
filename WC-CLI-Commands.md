@@ -1,27 +1,27 @@
 <h1>Commands</h1>
-<ul><li><a href="#tax">tax</a></li>
-<li><a href="#shop_coupon">shop_coupon</a></li>
-<li><a href="#customer_download">customer_download</a></li>
-<li><a href="#customer">customer</a></li>
-<li><a href="#order_note">order_note</a></li>
-<li><a href="#shop_order_refund">shop_order_refund</a></li>
-<li><a href="#shop_order">shop_order</a></li>
-<li><a href="#product_attribute_term">product_attribute_term</a></li>
-<li><a href="#product_attribute">product_attribute</a></li>
-<li><a href="#product_cat">product_cat</a></li>
-<li><a href="#product_review">product_review</a></li>
-<li><a href="#product_shipping_class">product_shipping_class</a></li>
-<li><a href="#product_tag">product_tag</a></li>
-<li><a href="#product">product</a></li>
-<li><a href="#product_variation">product_variation</a></li>
-<li><a href="#shipping_zone">shipping_zone</a></li>
-<li><a href="#shipping_zone_location">shipping_zone_location</a></li>
-<li><a href="#shipping_zone_method">shipping_zone_method</a></li>
-<li><a href="#tax_class">tax_class</a></li>
-<li><a href="#webhook_delivery">webhook_delivery</a></li>
-<li><a href="#webhook">webhook</a></li>
-<li><a href="#shipping_method">shipping_method</a></li>
-<li><a href="#payment_gateway">payment_gateway</a></li>
+<ul><li><a href="#wc-tax">wc tax</a></li>
+<li><a href="#wc-shop_coupon">wc shop_coupon</a></li>
+<li><a href="#wc-customer_download">wc customer_download</a></li>
+<li><a href="#wc-customer">wc customer</a></li>
+<li><a href="#wc-order_note">wc order_note</a></li>
+<li><a href="#wc-shop_order_refund">wc shop_order_refund</a></li>
+<li><a href="#wc-shop_order">wc shop_order</a></li>
+<li><a href="#wc-product_attribute_term">wc product_attribute_term</a></li>
+<li><a href="#wc-product_attribute">wc product_attribute</a></li>
+<li><a href="#wc-product_cat">wc product_cat</a></li>
+<li><a href="#wc-product_review">wc product_review</a></li>
+<li><a href="#wc-product_shipping_class">wc product_shipping_class</a></li>
+<li><a href="#wc-product_tag">wc product_tag</a></li>
+<li><a href="#wc-product">wc product</a></li>
+<li><a href="#wc-product_variation">wc product_variation</a></li>
+<li><a href="#wc-shipping_zone">wc shipping_zone</a></li>
+<li><a href="#wc-shipping_zone_location">wc shipping_zone_location</a></li>
+<li><a href="#wc-shipping_zone_method">wc shipping_zone_method</a></li>
+<li><a href="#wc-tax_class">wc tax_class</a></li>
+<li><a href="#wc-webhook_delivery">wc webhook_delivery</a></li>
+<li><a href="#wc-webhook">wc webhook</a></li>
+<li><a href="#wc-shipping_method">wc shipping_method</a></li>
+<li><a href="#wc-payment_gateway">wc payment_gateway</a></li>
 </ul>
 <h2>wc tax</h2>
 <h3>wc tax list &lt;order_id&gt;</h3>
