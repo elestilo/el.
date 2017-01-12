@@ -17,7 +17,8 @@
 - [Coupon Data](https://github.com/woothemes/woocommerce/wiki/2.7-Coupon-Data)
 - [Customer Data](https://github.com/woothemes/woocommerce/wiki/2.7-Customer-Data)
 - [Settings API](https://github.com/woothemes/woocommerce/wiki/2.7:-Settings-API)
-- [WC-CLI](https://github.com/woocommerce/woocommerce/wiki/WC-CLI)
+- [WC-CLI Intro](https://github.com/woocommerce/woocommerce/wiki/WC-CLI)
+- [WC-CLI Commands](https://github.com/woocommerce/woocommerce/wiki/WC-CLI-Commands)
 
 **Contributing**
 
