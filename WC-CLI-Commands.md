@@ -1,5 +1,30 @@
-
-<h2>wc tax list &lt;order_id&gt;</h2>
+<h1>Commands</h1>
+<ul><li><a href="#tax">tax</a></li>
+<li><a href="#shop_coupon">shop_coupon</a></li>
+<li><a href="#customer_download">customer_download</a></li>
+<li><a href="#customer">customer</a></li>
+<li><a href="#order_note">order_note</a></li>
+<li><a href="#shop_order_refund">shop_order_refund</a></li>
+<li><a href="#shop_order">shop_order</a></li>
+<li><a href="#product_attribute_term">product_attribute_term</a></li>
+<li><a href="#product_attribute">product_attribute</a></li>
+<li><a href="#product_cat">product_cat</a></li>
+<li><a href="#product_review">product_review</a></li>
+<li><a href="#product_shipping_class">product_shipping_class</a></li>
+<li><a href="#product_tag">product_tag</a></li>
+<li><a href="#product">product</a></li>
+<li><a href="#product_variation">product_variation</a></li>
+<li><a href="#shipping_zone">shipping_zone</a></li>
+<li><a href="#shipping_zone_location">shipping_zone_location</a></li>
+<li><a href="#shipping_zone_method">shipping_zone_method</a></li>
+<li><a href="#tax_class">tax_class</a></li>
+<li><a href="#webhook_delivery">webhook_delivery</a></li>
+<li><a href="#webhook">webhook</a></li>
+<li><a href="#shipping_method">shipping_method</a></li>
+<li><a href="#payment_gateway">payment_gateway</a></li>
+</ul>
+<h2>wc tax</h2>
+<h3>wc tax list &lt;order_id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -7,8 +32,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc tax create &lt;order_id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc tax create &lt;order_id&gt;</h3>
 <h4>--tracking_provider</h4>
 <p>Tracking provider name.</p>
 <h4>--custom_tracking_provider</h4>
@@ -16,12 +41,12 @@
 <h4>--custom_tracking_link</h4>
 <p>Custom tracking provider link.</p>
 <h4>--tracking_number</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--date_shipped</h4>
 <p>Date when package was shipped.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc tax get &lt;order_id&gt; &lt;id&gt;</h2>
+<h3>wc tax get &lt;order_id&gt; &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -29,11 +54,12 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc tax delete &lt;order_id&gt; &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc tax delete &lt;order_id&gt; &lt;id&gt;</h3>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shop_coupon list</h2>
+<h2>wc shop_coupon</h2>
+<h3>wc shop_coupon list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -65,10 +91,10 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shop_coupon create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shop_coupon create</h3>
 <h4>--code</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--description</h4>
 <p>Coupon description.</p>
 <h4>--discount_type</h4>
@@ -107,7 +133,7 @@
 <p>Order meta data.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shop_coupon get &lt;id&gt;</h2>
+<h3>wc shop_coupon get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -115,8 +141,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shop_coupon update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shop_coupon update &lt;id&gt;</h3>
 <h4>--code</h4>
 <p>Coupon code.</p>
 <h4>--description</h4>
@@ -157,12 +183,13 @@
 <p>Order meta data.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shop_coupon delete &lt;id&gt;</h2>
+<h3>wc shop_coupon delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Whether to bypass trash and force deletion.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc customer_download list &lt;customer_id&gt;</h2>
+<h2>wc customer_download</h2>
+<h3>wc customer_download list &lt;customer_id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -170,8 +197,9 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc customer list</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h2>wc customer</h2>
+<h3>wc customer list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -199,10 +227,10 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc customer create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc customer create</h3>
 <h4>--email</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--first_name</h4>
 <p>Customer first name.</p>
 <h4>--last_name</h4>
@@ -210,7 +238,7 @@
 <h4>--username</h4>
 <p></p>
 <h4>--password</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--billing</h4>
 <p>List of billing address data.</p>
 <h4>--shipping</h4>
@@ -219,7 +247,7 @@
 <p>Order meta data.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc customer get &lt;id&gt;</h2>
+<h3>wc customer get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -227,8 +255,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc customer update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc customer update &lt;id&gt;</h3>
 <h4>--email</h4>
 <p>The email address for the customer.</p>
 <h4>--first_name</h4>
@@ -247,14 +275,15 @@
 <p>Order meta data.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc customer delete &lt;id&gt;</h2>
+<h3>wc customer delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--reassign</h4>
 <p></p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc order_note list &lt;order_id&gt;</h2>
+<h2>wc order_note</h2>
+<h3>wc order_note list &lt;order_id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--type</h4>
@@ -264,15 +293,15 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc order_note create &lt;order_id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc order_note create &lt;order_id&gt;</h3>
 <h4>--note</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--customer_note</h4>
 <p>Shows/define if the note is only for reference or for the customer (the user will be notified).</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc order_note get &lt;order_id&gt; &lt;id&gt;</h2>
+<h3>wc order_note get &lt;order_id&gt; &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -280,13 +309,14 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc order_note delete &lt;order_id&gt; &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc order_note delete &lt;order_id&gt; &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shop_order_refund list &lt;order_id&gt;</h2>
+<h2>wc shop_order_refund</h2>
+<h3>wc shop_order_refund list &lt;order_id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -324,8 +354,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shop_order_refund create &lt;order_id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shop_order_refund create &lt;order_id&gt;</h3>
 <h4>--amount</h4>
 <p>Refund amount.</p>
 <h4>--reason</h4>
@@ -338,7 +368,7 @@
 <p>Line items data.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shop_order_refund get &lt;order_id&gt; &lt;id&gt;</h2>
+<h3>wc shop_order_refund get &lt;order_id&gt; &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -346,15 +376,16 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shop_order_refund delete &lt;order_id&gt; &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shop_order_refund delete &lt;order_id&gt; &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--reassign</h4>
 <p></p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shop_order list</h2>
+<h2>wc shop_order</h2>
+<h3>wc shop_order list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -392,8 +423,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shop_order create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shop_order create</h3>
 <h4>--parent_id</h4>
 <p>Parent order ID.</p>
 <h4>--status</h4>
@@ -434,7 +465,7 @@
 <p>Define if the order is paid. It will set the status to processing and reduce stock items.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shop_order get &lt;id&gt;</h2>
+<h3>wc shop_order get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -442,8 +473,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shop_order update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shop_order update &lt;id&gt;</h3>
 <h4>--parent_id</h4>
 <p>Parent order ID.</p>
 <h4>--status</h4>
@@ -484,14 +515,15 @@
 <p>Define if the order is paid. It will set the status to processing and reduce stock items.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shop_order delete &lt;id&gt;</h2>
+<h3>wc shop_order delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Whether to bypass trash and force deletion.</p>
 <h4>--reassign</h4>
 <p></p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_attribute_term list</h2>
+<h2>wc product_attribute_term</h2>
+<h3>wc product_attribute_term list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -521,10 +553,10 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_attribute_term create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_attribute_term create</h3>
 <h4>--name</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--slug</h4>
 <p>An alphanumeric identifier for the resource unique to its type.</p>
 <h4>--description</h4>
@@ -533,7 +565,7 @@
 <p>Menu order, used to custom sort the resource.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_attribute_term get &lt;id&gt;</h2>
+<h3>wc product_attribute_term get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -541,8 +573,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_attribute_term update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_attribute_term update &lt;id&gt;</h3>
 <h4>--name</h4>
 <p>Term name.</p>
 <h4>--slug</h4>
@@ -553,12 +585,13 @@
 <p>Menu order, used to custom sort the resource.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_attribute_term delete &lt;id&gt;</h2>
+<h3>wc product_attribute_term delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_attribute list</h2>
+<h2>wc product_attribute</h2>
+<h3>wc product_attribute list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -566,10 +599,10 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_attribute create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_attribute create</h3>
 <h4>--name</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--slug</h4>
 <p>An alphanumeric identifier for the resource unique to its type.</p>
 <h4>--type</h4>
@@ -580,7 +613,7 @@
 <p>Enable/Disable attribute archives.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_attribute get &lt;id&gt;</h2>
+<h3>wc product_attribute get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -588,8 +621,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_attribute update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_attribute update &lt;id&gt;</h3>
 <h4>--name</h4>
 <p>Attribute name.</p>
 <h4>--slug</h4>
@@ -602,12 +635,13 @@
 <p>Enable/Disable attribute archives.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_attribute delete &lt;id&gt;</h2>
+<h3>wc product_attribute delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_cat list</h2>
+<h2>wc product_cat</h2>
+<h3>wc product_cat list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -637,10 +671,10 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_cat create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_cat create</h3>
 <h4>--name</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--slug</h4>
 <p>An alphanumeric identifier for the resource unique to its type.</p>
 <h4>--parent</h4>
@@ -655,7 +689,7 @@
 <p>Menu order, used to custom sort the resource.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_cat get &lt;id&gt;</h2>
+<h3>wc product_cat get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -663,8 +697,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_cat update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_cat update &lt;id&gt;</h3>
 <h4>--name</h4>
 <p>Category name.</p>
 <h4>--slug</h4>
@@ -681,12 +715,13 @@
 <p>Menu order, used to custom sort the resource.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_cat delete &lt;id&gt;</h2>
+<h3>wc product_cat delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_review list &lt;product_id&gt;</h2>
+<h2>wc product_review</h2>
+<h3>wc product_review list &lt;product_id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -694,21 +729,21 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_review create &lt;product_id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_review create &lt;product_id&gt;</h3>
 <h4>--review</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--date_created</h4>
 <p>The date the review was created, in the site's timezone.</p>
 <h4>--rating</h4>
 <p>Review rating (0 to 5).</p>
 <h4>--name</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--email</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_review get &lt;product_id&gt; &lt;id&gt;</h2>
+<h3>wc product_review get &lt;product_id&gt; &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -716,8 +751,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_review update &lt;product_id&gt; &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_review update &lt;product_id&gt; &lt;id&gt;</h3>
 <h4>--review</h4>
 <p>The content of the review.</p>
 <h4>--date_created</h4>
@@ -730,12 +765,13 @@
 <p>Reviewer email.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_review delete &lt;product_id&gt; &lt;id&gt;</h2>
+<h3>wc product_review delete &lt;product_id&gt; &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Whether to bypass trash and force deletion.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_shipping_class list</h2>
+<h2>wc product_shipping_class</h2>
+<h3>wc product_shipping_class list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -765,17 +801,17 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_shipping_class create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_shipping_class create</h3>
 <h4>--name</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--slug</h4>
 <p>An alphanumeric identifier for the resource unique to its type.</p>
 <h4>--description</h4>
 <p>HTML description of the resource.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_shipping_class get &lt;id&gt;</h2>
+<h3>wc product_shipping_class get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -783,8 +819,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_shipping_class update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_shipping_class update &lt;id&gt;</h3>
 <h4>--name</h4>
 <p>Shipping class name.</p>
 <h4>--slug</h4>
@@ -793,12 +829,13 @@
 <p>HTML description of the resource.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_shipping_class delete &lt;id&gt;</h2>
+<h3>wc product_shipping_class delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_tag list</h2>
+<h2>wc product_tag</h2>
+<h3>wc product_tag list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -828,17 +865,17 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_tag create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_tag create</h3>
 <h4>--name</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--slug</h4>
 <p>An alphanumeric identifier for the resource unique to its type.</p>
 <h4>--description</h4>
 <p>HTML description of the resource.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_tag get &lt;id&gt;</h2>
+<h3>wc product_tag get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -846,8 +883,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_tag update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_tag update &lt;id&gt;</h3>
 <h4>--name</h4>
 <p>Tag name.</p>
 <h4>--slug</h4>
@@ -856,12 +893,13 @@
 <p>HTML description of the resource.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_tag delete &lt;id&gt;</h2>
+<h3>wc product_tag delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product list</h2>
+<h2>wc product</h2>
+<h3>wc product list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -921,8 +959,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product create</h3>
 <h4>--name</h4>
 <p>Product name.</p>
 <h4>--slug</h4>
@@ -1011,7 +1049,7 @@
 <p>Menu order, used to custom sort products.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product get &lt;id&gt;</h2>
+<h3>wc product get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1019,8 +1057,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product update &lt;id&gt;</h3>
 <h4>--name</h4>
 <p>Product name.</p>
 <h4>--slug</h4>
@@ -1109,14 +1147,15 @@
 <p>Menu order, used to custom sort products.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product delete &lt;id&gt;</h2>
+<h3>wc product delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Whether to bypass trash and force deletion.</p>
 <h4>--reassign</h4>
 <p></p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_variation list &lt;product_id&gt;</h2>
+<h2>wc product_variation</h2>
+<h3>wc product_variation list &lt;product_id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -1176,8 +1215,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_variation create &lt;product_id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_variation create &lt;product_id&gt;</h3>
 <h4>--description</h4>
 <p>Variation description.</p>
 <h4>--sku</h4>
@@ -1226,7 +1265,7 @@
 <p>List of attributes.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_variation get &lt;product_id&gt; &lt;id&gt;</h2>
+<h3>wc product_variation get &lt;product_id&gt; &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1234,8 +1273,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc product_variation update &lt;product_id&gt; &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc product_variation update &lt;product_id&gt; &lt;id&gt;</h3>
 <h4>--description</h4>
 <p>Variation description.</p>
 <h4>--sku</h4>
@@ -1284,61 +1323,64 @@
 <p>List of attributes.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc product_variation delete &lt;product_id&gt; &lt;id&gt;</h2>
+<h3>wc product_variation delete &lt;product_id&gt; &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Whether to bypass trash and force deletion.</p>
 <h4>--reassign</h4>
 <p></p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shipping_zone list</h2>
+<h2>wc shipping_zone</h2>
+<h3>wc shipping_zone list</h3>
 <h4>--fields</h4>
 <p>Limit response to specific fields. Defaults to all fields.</p>
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shipping_zone create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shipping_zone create</h3>
 <h4>--name</h4>
-<p>Shipping zone name. <strong>(required)</strong></p>
+<p>Shipping zone name. (<strong>Required</strong>)</p>
 <h4>--order</h4>
 <p>Shipping zone order.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shipping_zone get &lt;id&gt;</h2>
+<h3>wc shipping_zone get &lt;id&gt;</h3>
 <h4>--fields</h4>
 <p>Limit response to specific fields. Defaults to all fields.</p>
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shipping_zone update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shipping_zone update &lt;id&gt;</h3>
 <h4>--name</h4>
 <p>Shipping zone name.</p>
 <h4>--order</h4>
 <p>Shipping zone order.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shipping_zone delete &lt;id&gt;</h2>
+<h3>wc shipping_zone delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Whether to bypass trash and force deletion.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shipping_zone_location list</h2>
+<h2>wc shipping_zone_location</h2>
+<h3>wc shipping_zone_location list</h3>
 <h4>--fields</h4>
 <p>Limit response to specific fields. Defaults to all fields.</p>
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shipping_zone_method list</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h2>wc shipping_zone_method</h2>
+<h3>wc shipping_zone_method list</h3>
 <h4>--fields</h4>
 <p>Limit response to specific fields. Defaults to all fields.</p>
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shipping_zone_method create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shipping_zone_method create</h3>
 <h4>--order</h4>
 <p>Shipping method sort order.</p>
 <h4>--enabled</h4>
@@ -1349,14 +1391,14 @@
 <p>Shipping method settings.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shipping_zone_method get &lt;id&gt;</h2>
+<h3>wc shipping_zone_method get &lt;id&gt;</h3>
 <h4>--fields</h4>
 <p>Limit response to specific fields. Defaults to all fields.</p>
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shipping_zone_method update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shipping_zone_method update &lt;id&gt;</h3>
 <h4>--order</h4>
 <p>Shipping method sort order.</p>
 <h4>--enabled</h4>
@@ -1367,12 +1409,13 @@
 <p>Shipping method settings.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shipping_zone_method delete &lt;id&gt;</h2>
+<h3>wc shipping_zone_method delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Whether to bypass trash and force deletion.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc tax_class list</h2>
+<h2>wc tax_class</h2>
+<h3>wc tax_class list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1380,18 +1423,18 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc tax_class create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc tax_class create</h3>
 <h4>--name</h4>
-<p>Tax class name. <strong>(required)</strong></p>
+<p>Tax class name. (<strong>Required</strong>)</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc tax_class delete &lt;id&gt;</h2>
+<h3>wc tax_class delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc tax list</h2>
+<h3>wc tax list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -1417,8 +1460,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc tax create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc tax create</h3>
 <h4>--country</h4>
 <p>Country ISO 3166 code.</p>
 <h4>--state</h4>
@@ -1443,7 +1486,7 @@
 <p>Tax class.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc tax get &lt;id&gt;</h2>
+<h3>wc tax get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1451,8 +1494,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc tax update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc tax update &lt;id&gt;</h3>
 <h4>--country</h4>
 <p>Country ISO 3166 code.</p>
 <h4>--state</h4>
@@ -1477,12 +1520,13 @@
 <p>Tax class.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc tax delete &lt;id&gt;</h2>
+<h3>wc tax delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc webhook_delivery list</h2>
+<h2>wc webhook_delivery</h2>
+<h3>wc webhook_delivery list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1490,8 +1534,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc webhook_delivery get &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc webhook_delivery get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1499,8 +1543,9 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc webhook list</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h2>wc webhook</h2>
+<h3>wc webhook list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--page</h4>
@@ -1532,21 +1577,21 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc webhook create</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc webhook create</h3>
 <h4>--name</h4>
 <p>A friendly name for the webhook.</p>
 <h4>--status</h4>
 <p>Webhook status.</p>
 <h4>--topic</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--secret</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--delivery_url</h4>
-<p> <strong>(required)</strong></p>
+<p> (<strong>Required</strong>)</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc webhook get &lt;id&gt;</h2>
+<h3>wc webhook get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1554,8 +1599,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc webhook update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc webhook update &lt;id&gt;</h3>
 <h4>--name</h4>
 <p>A friendly name for the webhook.</p>
 <h4>--status</h4>
@@ -1566,12 +1611,13 @@
 <p>Secret key used to generate a hash of the delivered webhook and provided in the request headers. This will default is a MD5 hash from the current user's ID|username if not provided.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc webhook delete &lt;id&gt;</h2>
+<h3>wc webhook delete &lt;id&gt;</h3>
 <h4>--force</h4>
 <p>Required to be true, as resource does not support trashing.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
-<h2>wc shipping_method list</h2>
+<h2>wc shipping_method</h2>
+<h3>wc shipping_method list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1579,8 +1625,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc shipping_method get &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc shipping_method get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1588,8 +1634,9 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc payment_gateway list</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h2>wc payment_gateway</h2>
+<h3>wc payment_gateway list</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1597,8 +1644,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc payment_gateway get &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc payment_gateway get &lt;id&gt;</h3>
 <h4>--context</h4>
 <p>Scope under which the request is made; determines fields present in response.</p>
 <h4>--fields</h4>
@@ -1606,8 +1653,8 @@
 <h4>--field</h4>
 <p>Get the value of an individual field.</p>
 <h4>--format</h4>
-<p>Render response in a particular format.</p>
-<h2>wc payment_gateway update &lt;id&gt;</h2>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc payment_gateway update &lt;id&gt;</h3>
 <h4>--title</h4>
 <p>Payment gateway title on checkout.</p>
 <h4>--description</h4>
