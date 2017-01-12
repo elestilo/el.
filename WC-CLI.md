@@ -10,6 +10,8 @@ For those who have never heard before WP-CLI, here's a brief description extract
 
 ### WooCommerce Commands
 
+A full listing WC-CLI commands and their accepted arguments can be found on the [commands page](https://github.com/woocommerce/woocommerce/wiki/WC-CLI-Commands).
+
 All WooCommerce related commands are grouped into `wp wc` command. The available commands (as of WC 2.7) are:
 
 ```
