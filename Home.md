@@ -7,4 +7,4 @@ You may also be interested in referencing:
 - **[The REST API Documentation](http://woocommerce.github.io/woocommerce-rest-api-docs/)** - Covers our latest REST API and legacy versions v1, v2 and v3.
 - **[Internal API Documentation](https://docs.woocommerce.com/wc-apidocs/index.html)** - Automagically generated from our source code.
 - **[End-user Documentation](https://docs.woocommerce.com/)** - Docs for users, including documentation for extensions.
-- **[Our development blog](https://woocommerce.wordpress.com) where we post about new features and work we're doing on core.
+- **[The Development Blog](https://woocommerce.wordpress.com)** where we post about new features and work we're doing on core.
