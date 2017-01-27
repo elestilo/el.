@@ -1,14 +1,14 @@
 **Release Notes**
 - [2.6.x to 2.7.x Developer Migration Notes](2.6.x-to-2.7.x-Developer-Migration-Notes)
 
-**Data & CRUD (Create Read Update Delete)**
+**Data Descriptions**
 - [Database Description](https://github.com/woocommerce/woocommerce/wiki/Database-Description)
 - [Order and Order Line Item Data](2.7---Order-and-Order-Line-Item-Data)
 - [Coupon Data](2.7-Coupon-Data)
 - [Customer Data](2.7-Customer-Data)
 
 **Internal APIs**
-- [Settings API (2.7+)](2.7:-Settings-API)
+- [Settings API (2.7+)](Settings-API)
 - [Payment Token API](Payment-Token-API)
 - [Shipping Method API](Shipping-Method-API)
 
