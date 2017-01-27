@@ -27,5 +27,4 @@
 - [String localisation guidelines](String-localisation-guidelines)
 - [Template File Guidelines for Devs and Theme Authors](Template-File-Guidelines-for-Devs-and-Theme-Authors)
 
-**REST API**
-- [Documentation →](http://woocommerce.github.io/woocommerce-rest-api-docs/)
+**[REST API Documentation→](http://woocommerce.github.io/woocommerce-rest-api-docs/)**
