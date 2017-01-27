@@ -1,5 +1,6 @@
 **Release Notes**
 - [2.6.x to 2.7.x Developer Migration Notes](2.6.x-to-2.7.x-Developer-Migration-Notes)
+- [Enabling product gallery features (zoom, swipe, lightbox, 2.7 )](Enabling-product-gallery-features-(zoom,-swipe,-lightbox,-2.7-))
 
 **Data Descriptions**
 - [Database Description](https://github.com/woocommerce/woocommerce/wiki/Database-Description)
