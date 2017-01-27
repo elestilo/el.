@@ -16,9 +16,6 @@
 - [WC CLI Overview](WC-CLI-Overview)
 - [WC CLI Commands](WC-CLI-Commands)
 
-**REST API**
-- [Documentation →](http://woocommerce.github.io/woocommerce-rest-api-docs/)
-
 **Other Guides**
 - [How Taxes Work in WooCommerce](How-Taxes-Work-in-WooCommerce)
 - [Customising "My Account" tabs](Customising-"My-Account"-tabs)
@@ -29,3 +26,6 @@
 - [Core Testing Checklist](https://github.com/woocommerce/woocommerce/wiki/Core-Testing-Checklist)
 - [String localisation guidelines](String-localisation-guidelines)
 - [Template File Guidelines for Devs and Theme Authors](Template-File-Guidelines-for-Devs-and-Theme-Authors)
+
+**REST API**
+- [Documentation →](http://woocommerce.github.io/woocommerce-rest-api-docs/)
