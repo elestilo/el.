@@ -1,4 +1,4 @@
-[[https://github.com/woocommerce/woocommerce/blob/master/.github/wiki.png?v=2|alt=WooCommerce WIKI]]
+[[https://github.com/woocommerce/woocommerce/blob/master/.github/wiki.png|alt=WooCommerce WIKI]]
 
 Howdy! The WooCommerce Wiki is where we place our **developer focussed documentation** for the **core WooCommerce project**. If you're looking for end-user documentation, [please instead see our docs site here](https://docs.woocommerce.com/).
 
