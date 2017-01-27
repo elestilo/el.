@@ -16,7 +16,7 @@
 - [WC CLI Overview](WC-CLI-Overview)
 - [WC CLI Commands](WC-CLI-Commands)
 
-**Other Guides**
+**Examples / Guides**
 - [How Taxes Work in WooCommerce](How-Taxes-Work-in-WooCommerce)
 - [Customising "My Account" tabs](Customising-"My-Account"-tabs)
 
