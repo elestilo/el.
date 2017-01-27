@@ -1,6 +1,6 @@
 [[https://github.com/woocommerce/woocommerce/blob/master/.github/wiki.png|alt=WooCommerce WIKI]]
 
-Howdy! The WooCommerce Wiki is where we place our **developer focussed documentation** for the **core WooCommerce project**.
+Howdy! The WooCommerce Wiki is where we place our **developer focussed documentation** for the **core WooCommerce project**. See the links on the right side of the page to navigate around!
 
 You may also be interested in referencing the following resources:
 
