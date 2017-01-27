@@ -2,9 +2,12 @@
 
 Howdy! The WooCommerce Wiki is where we place our **developer focussed documentation** for the **core WooCommerce project**.
 
-You may also be interested in referencing:
+You may also be interested in referencing the following resources:
 
-- **[The REST API Documentation](http://woocommerce.github.io/woocommerce-rest-api-docs/)** - Covers our latest REST API and legacy versions v1, v2 and v3.
-- **[Internal API Documentation](https://docs.woocommerce.com/wc-apidocs/index.html)** - Automagically generated from our source code.
-- **[End-user Documentation](https://docs.woocommerce.com/)** - Docs for users, including documentation for extensions.
-- **[The Development Blog](https://woocommerce.wordpress.com)** where we post about new features and work we're doing on core.
+| Resource      | Description   |
+| ------------- | ------------- |
+| **[REST API Documentation](http://woocommerce.github.io/woocommerce-rest-api-docs/)** | Covers our latest REST API and legacy versions v1, v2 and v3. |
+| **[Internal API Documentation](https://docs.woocommerce.com/wc-apidocs/index.html)** | Automagically generated from our source code. |
+| **[End-user Documentation](https://docs.woocommerce.com/)** | Docs for users, including documentation for extensions. |
+| **[The Development Blog](https://woocommerce.wordpress.com)** | Where we post about new features and work we're doing on core. |
+| **[How to contribute](https://github.com/woocommerce/woocommerce/blob/master/.github/CONTRIBUTING.md)** | How to contribute to WooCommerce core. |
