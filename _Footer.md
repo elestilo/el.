@@ -1,1 +1,1 @@
-[WooCommerce](https://wordpress.org/plugins/woocommerce/) is an [Automattic project](https://automattic.com/)
+[WooCommerce](https://wordpress.org/plugins/woocommerce/) is an open source eCommerce platform built for [WordPress](https://wordpress.org/) and lovingly crafted by [Automattic](https://automattic.com/) and the WooCommerce community ❤
