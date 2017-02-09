@@ -46,7 +46,7 @@ usage: wp wc customer <command>
 See 'wp help wc <command>' for more information on a specific command.
 ```
 
-When using the commands, you must specify your username or user ID using the `--user` argument. This is to let the REST API know which user should be used.
+**Note**: When using the commands, you must specify your username or user ID using the `--user` argument. This is to let the REST API know which user should be used.
  
 You can see more details about the commands using `wp help wc` or with the `--help` flag, which explains arguments and subcommands.
 
@@ -358,3 +358,12 @@ Get a coupon.
 | meta_data                   | []                  |
 +-----------------------------+---------------------+
 ```
+
+### Frequently Asked Questions
+
+**I get a 401 error when using commands, what do I do?**
+
+If you are getting a 401 error, for example like
+`Error: Sorry, you cannot list resources. {"status":401}`
+
+You are trying to use the command unauthenticated. The WooCommerce CLI as of 2.7 requires you to provide a proper user to run the action as. Pass in your user ID using the `--user` flag.
