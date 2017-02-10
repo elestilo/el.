@@ -2,11 +2,12 @@
 - [2.6.x to 2.7.x Developer Migration Notes](2.6.x-to-2.7.x-Developer-Migration-Notes)
 - [Enabling product gallery features (zoom, swipe, lightbox, 2.7 )](Enabling-product-gallery-features-(zoom,-swipe,-lightbox,-2.7-))
 
-**Data Descriptions**
+**CRUD & Data Descriptions**
 - [Database Description](https://github.com/woocommerce/woocommerce/wiki/Database-Description)
 - [Order and Order Line Item Data](2.7---Order-and-Order-Line-Item-Data)
 - [Coupon Data](2.7-Coupon-Data)
 - [Customer Data](2.7-Customer-Data)
+- [Data Stores](Data-Stores)
 
 **Internal APIs**
 - [Settings API (2.7+)](Settings-API)
