@@ -7,6 +7,7 @@
 - [Order and Order Line Item Data](2.7---Order-and-Order-Line-Item-Data)
 - [Coupon Data](2.7-Coupon-Data)
 - [Customer Data](2.7-Customer-Data)
+- [Product Data](Product-Data-Schema-(2.7))
 - [Data Stores](Data-Stores)
 
 **Internal APIs**
