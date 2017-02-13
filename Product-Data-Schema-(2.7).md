@@ -34,8 +34,8 @@ Name | Type | Description | Example
 `length` | `string` | Product length. | `3`
 `width` | `string ` | Product width. | `2`
 `height` | `string ` | Product height. | `2`
-`upsell_ids` | `array` | Array of product IDs which are upsold. | `[ 1, 2, 3 ]`
-`cross_sell_ids` | `array` | Array of product IDs which are cross-sold. | `[ 1, 2, 3 ]`
+`upsell_ids` | `array` | Array of product IDs which are upsold. | `array( 1, 2, 3 )`
+`cross_sell_ids` | `array` | Array of product IDs which are cross-sold. | `array( 1, 2, 3 )`
 `parent_id` | `int` | Parent post ID | `200`
 `reviews_allowed` | `bool` | Are reviews (comments) allowed? | `true`
 `purchase_note` | `string` | A note sent to customers who purchase this product. | `Thanks for buying X.`
@@ -44,15 +44,15 @@ Name | Type | Description | Example
 `menu_order ` | `int` | Menu order (sort order) for the product. | `1`
 `virtual` | `bool` | Is this a virtual product? | `true`
 `downloadable` | `bool` | Is this a downloadable product? | `true`
-`category_ids ` | `array` | Array of category IDs assigned to the product. | `[ 1, 2, 3 ]`
-`tag_ids` | `array` | Array of tag IDs assigned to the product. | `[ 1, 2, 3 ]`
+`category_ids ` | `array` | Array of category IDs assigned to the product. | `array( 1, 2, 3 )`
+`tag_ids` | `array` | Array of tag IDs assigned to the product. | `array( 1, 2, 3 )`
 `shipping_class_id` | `int` | ID of the shipping class assigned to this product, or 0 for none. | `1`
-`downloads ` | `array` | Array of downloadable files customers get access to after purchase. |
+`downloads ` | `array` | Array of downloadable files customers get access to after purchase. | Array of WC_Product_Download objects.
 `image_id ` | `int` | ID of the gallery image assigned to this product, or 0 for none. | `1`
-`gallery_image_ids ` | `array` | Array of gallery image IDs assigned to this product. |
+`gallery_image_ids ` | `array` | Array of gallery image IDs assigned to this product. | array( 1, 2, 3 )
 `download_limit` | `int` | Download limit for files, or -1 for no limit. | `1`
 `download_expiry` | `int` | Number of days files are downloadable or -1 for no limit. | `1`
-`rating_counts ` | `array` | Array of rating counts for this product. | `[ 1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 4 ]`
+`rating_counts ` | `array` | Array of rating counts for this product. | `array( 1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 4 )`
 `average_rating` | `float` | Average rating out of 5. | `4.5`
 `review_count` | `int` | Total number of ratings. | `19`
 
@@ -67,7 +67,7 @@ Name | Type | Description | Example
 
 Name | Type | Description | Example
 ---- | ---- | ----------- | -------
-`children` | `array` | Array of product IDs in this group. | `[ 100, 200, 205 ]`
+`children` | `array` | Array of product IDs in this group. | `array( 100, 200, 205 )`
 
 ## Product Variations
 
