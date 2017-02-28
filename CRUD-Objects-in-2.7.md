@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [The benefits of CRUD](#the-benefits-of-crud)
+- [CRUD object structure](#crud-object-structure)
+  - [Data](#data)
+  - [Getters and setters](#getters-and-setters)
+  - [The constructor](#the-constructor)
+  - [Saving and deleting](#saving-and-deleting)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 CRUD is an abbreviation of the 4 basic operations you can do to a database or resource – Create, Read, Update, Delete.
 
 [WooCommerce 2.7 introduces CRUD objects](https://woocommerce.wordpress.com/2016/10/27/the-new-crud-classes-in-woocommerce-2-7/) for working with WooCommerce data. The following objects are handled by CRUD objects and data-stores:

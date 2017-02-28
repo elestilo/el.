@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Defining Prices](#defining-prices)
+- [Tax Calculations (simplified)](#tax-calculations-simplified)
+- [Cross-border/country/region taxes](#cross-bordercountryregion-taxes)
+  - [Prices including tax - Default v2.5.x Behavior](#prices-including-tax---default-v25x-behavior)
+  - [Prices including tax - Experimental Behavior](#prices-including-tax---experimental-behavior)
+- [Showing 0 value taxes](#showing-0-value-taxes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Some confusion is present to the way WooCommerce does it's tax calculations. This post should hopefully clear that up.
 
 ## Defining Prices

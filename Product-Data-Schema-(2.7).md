@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Abstract Product](#abstract-product)
+- [External Products](#external-products)
+- [Grouped Products](#grouped-products)
+- [Product Variations](#product-variations)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 In an effort to unify CLI, API, and WP Admin, new CRUD classes were implemented in v2.7 to form a new 'data manipulation API'.
 
 Each CRUD class contains a representation of the data in array format. This document lists properties available for products - each property has a `get_` getter and `set_` setter method for accessing and setting values.

@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [What Should be Included in Template files](#what-should-be-included-in-template-files)
+- [Overriding Templates](#overriding-templates)
+- [Changes to Template Versions](#changes-to-template-versions)
+- [Bundling Templates in Themes](#bundling-templates-in-themes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 [Template files in WooCommerce](https://github.com/woothemes/woocommerce/tree/master/templates) are in place to allow modifications to frontend code without editing core.
 
 Each template file has a header which explains usage, and a version number to track the version of said template:

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [How do we deprecate functions?](#how-do-we-deprecate-functions)
+- [What happens when a deprecated function is called?](#what-happens-when-a-deprecated-function-is-called)
+  - [Warnings in production (store owners read this!)](#warnings-in-production-store-owners-read-this)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Deprecation is a method of discouraging usage of a feature, or practice, in favour of something else without breaking backwards compatibility or totally prohibiting it’s usage. To quote the Wikipedia article on Deprecation:
 
 > While a deprecated software feature remains in the software, its use may raise warning messages recommending alternative practices; deprecated status may also indicate the feature will be removed in the future. Features are deprecated rather than immediately removed, to provide backward compatibility and give programmers time to bring affected code into compliance with the new standard.
