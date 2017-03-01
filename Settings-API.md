@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Registering](#registering)
+  - [Registering a group](#registering-a-group)
+  - [Registering a setting](#registering-a-setting)
+- [REST API](#rest-api)
+  - [GET /wc/v1/settings](#get-wcv1settings)
+  - [GET /wc/v1/settings/$group](#get-wcv1settingsgroup)
+  - [GET /wc/v1/settings/$group/$setting](#get-wcv1settingsgroupsetting)
+  - [POST /wc/v1/settings/$group/batch](#post-wcv1settingsgroupbatch)
+  - [POST /wc/v1/settings/$group/batch](#post-wcv1settingsgroupbatch-1)
+  - [PUT /wc/v1/settings/$group/$setting](#put-wcv1settingsgroupsetting)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Notice: This page is a draft for an unmerged and unreleased API. The new API allows settings to be registered (outside of the context of admin) and returned by the REST API. Things are subject to change while the API is in development.
 
 There are two concepts to understand before diving in and working with the Settings API:

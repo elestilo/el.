@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Creating new endpoints](#creating-new-endpoints)
+- [Manipulating the menu](#manipulating-the-menu)
+  - [Adding a new item on the menu](#adding-a-new-item-on-the-menu)
+- [Manipulating the content displayed on endpoints](#manipulating-the-content-displayed-on-endpoints)
+  - [Default WooCommerce endpoint hooks](#default-woocommerce-endpoint-hooks)
+  - [Adding content to an endpoint](#adding-content-to-an-endpoint)
+  - [Changing an endpoint title](#changing-an-endpoint-title)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 This guide covers how to manipulate the tabbed "My Account" page endpoints found within WooCommerce 2.6.
 
 ## Creating new endpoints

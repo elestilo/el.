@@ -1,3 +1,26 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Table Overview](#table-overview)
+- [Table Details](#table-details)
+  - [Table: woocommerce_sessions](#table-woocommerce_sessions)
+  - [Table: woocommerce_api_keys](#table-woocommerce_api_keys)
+  - [Table: woocommerce_attribute_taxonomies](#table-woocommerce_attribute_taxonomies)
+  - [Table: woocommerce_downloadable_product_permissions](#table-woocommerce_downloadable_product_permissions)
+  - [Table: woocommerce_order_items](#table-woocommerce_order_items)
+  - [Table: woocommerce_order_itemmeta](#table-woocommerce_order_itemmeta)
+  - [Table: woocommerce_tax_rates](#table-woocommerce_tax_rates)
+  - [Table: woocommerce_tax_rate_locations](#table-woocommerce_tax_rate_locations)
+  - [Table: woocommerce_shipping_zones](#table-woocommerce_shipping_zones)
+  - [Table: woocommerce_shipping_zone_locations](#table-woocommerce_shipping_zone_locations)
+  - [Table: woocommerce_shipping_zone_methods](#table-woocommerce_shipping_zone_methods)
+  - [Table: woocommerce_payment_tokens](#table-woocommerce_payment_tokens)
+  - [Table: woocommerce_payment_tokenmeta](#table-woocommerce_payment_tokenmeta)
+- [Source File](#source-file)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Since WooCommerce is a WordPress plugin, it makes use of many of the WordPress tables. Therefore, to understand the structure of WordPress, please see the [WordPress Database Description doc](https://codex.wordpress.org/Database_Description). 
 
 Note that the posts tables is used by Custom Post Types, and WooCommerce uses those for products, coupons, orders, and webhooks.

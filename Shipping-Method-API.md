@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Extending `WC_Shipping_Method`](#extending-wc_shipping_method)
+  - [Properties](#properties)
+  - [Methods](#methods)
+  - [Example](#example)
+- [Registering your shipping method](#registering-your-shipping-method)
+  - [`woocommerce_shipping_methods` filter](#woocommerce_shipping_methods-filter)
+  - [`woocommerce_load_shipping_methods` filter](#woocommerce_load_shipping_methods-filter)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 This guide covers how to create shipping methods with WooCommerce 2.6.
 
 In versions prior to 2.6, each shipping method could only be used 'once'. 2.6 introduces 'instances' as well as shipping zones, which can contain many instances of each shipping method if supported.

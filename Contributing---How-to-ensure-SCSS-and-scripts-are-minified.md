@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Installing Grunt](#installing-grunt)
+- [Setting up Grunt for WooCommerce](#setting-up-grunt-for-woocommerce)
+- [Watching for changes](#watching-for-changes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 To handle minification, WooCommerce uses [Grunt](http://gruntjs.com). 
 
 ## Installing Grunt

@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Structure](#structure)
+- [Replacing a data store](#replacing-a-data-store)
+- [Creating a new data store](#creating-a-new-data-store)
+    - [Defining a new product type](#defining-a-new-product-type)
+    - [Data store for custom data](#data-store-for-custom-data)
+- [Calling a data store](#calling-a-data-store)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Introduction
 
 Data store classes act as a bridge between WooCommerce's Data CRUD classes (`WC_Product`, `WC_Order`, `WC_Customer`, etc) and the database layer. With the database logic separate from data, WooCommerce becomes more flexible. The data stores shipped with WooCommerce core (powered by WordPress' custom posts system and a couple custom tables) can be swapped out for a different database structure, type, or even be powered by an external API.
