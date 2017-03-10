@@ -35,8 +35,8 @@ Name | Type | Description | Example
 `currency` | `string` | Currency the order was created with | `GBP`
 `version ` | `string` | Version of WooCommerce when the order was made. | `2.5.0`
 `prices_include_tax ` | `bool` | Did the prices include tax during checkout? | `true`
-`date_created` | `string` | Timestamp order was created | `1456237333`
-`date_modified` | `string` | Timestamp order was last modified | `1456237333`
+`date_created` | `WC_DateTime|NULL` | WC_DateTime object for when order was created or null if not set |
+`date_modified` | `WC_DateTime|NULL` | WC_DateTime object for when order was last modified or null if not set |
 `customer_id` | `int` | User ID who owns the order. 0 for guests | `1`
 `discount_total ` | `string` | Total discount amount for the order. Ran through `wc_format_decimal`. Sum of line item discounts. | `20.00`
 `discount_tax ` | `string` | Total discount tax amount for the order. Ran through `wc_format_decimal`. Sum of line item tax discounts. | `2.00`
@@ -77,7 +77,8 @@ Name | Type | Description | Example
 `customer_user_agent ` | `string` | User agent of the customer. | `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36`
 `created_via ` | `string` | What created the order? | `checkout`
 `customer_note ` | `string` | Note left by customer during checkout. | `Please leave package by the back gate.`
-`date_paid ` | `string` | Timestamp of payment date. | `1456237333 `
+`date_paid ` | `WC_DateTime|NULL` | WC_DateTime object for order payment date or null if not set. |
+`date_completed ` | `WC_DateTime|NULL` | WC_DateTime object for order completion date or null if not set. |
 `cart_hash` | `string` | md5 hash of cart items to ensure orders are not modified. |
 
 ### Billing address
