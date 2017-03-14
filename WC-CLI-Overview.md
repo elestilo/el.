@@ -25,7 +25,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-WooCommerce CLI (WC-CLI) offers the ability to manage WooCommerce (WC) via the command-line, using WP CLI. The documentation here covers the version of WC CLI that started shipping in WC 2.7 and later.
+WooCommerce CLI (WC-CLI) offers the ability to manage WooCommerce (WC) via the command-line, using WP CLI. The documentation here covers the version of WC CLI that started shipping in WC 3.0.0 and later.
 
 WC CLI is powered by the [WC REST API](https://woocommerce.github.io/woocommerce-rest-api-docs/), meaning most of what is possible with the REST API can also be achieved via the command-line.
 
@@ -41,7 +41,7 @@ For those who have never heard before WP-CLI, here's a brief description extract
 
 A full listing WC-CLI commands and their accepted arguments can be found on the [commands page](https://github.com/woocommerce/woocommerce/wiki/WC-CLI-Commands).
 
-All WooCommerce related commands are grouped into `wp wc` command. The available commands (as of WC 2.7) are:
+All WooCommerce related commands are grouped into `wp wc` command. The available commands (as of WC 3.0) are:
 
 ```
 $ wp wc
@@ -393,4 +393,4 @@ Get a coupon.
 If you are getting a 401 error, for example like
 `Error: Sorry, you cannot list resources. {"status":401}`
 
-You are trying to use the command unauthenticated. The WooCommerce CLI as of 2.7 requires you to provide a proper user to run the action as. Pass in your user ID using the `--user` flag.
+You are trying to use the command unauthenticated. The WooCommerce CLI as of 3.0 requires you to provide a proper user to run the action as. Pass in your user ID using the `--user` flag.
