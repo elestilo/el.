@@ -6,8 +6,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-[[_TOC_]]
-
 In an effort to unify CLI, API, and WP Admin, new CRUD classes are being implemented to form a new 'data manipulation API'.
 
 Each CRUD class contains a representation of the data in array format which can be used by endpoints. This representation may differ from the actual stored 'meta keys' mainly due to legacy, but should represent the objects more clearly.
