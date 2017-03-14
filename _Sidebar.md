@@ -1,5 +1,5 @@
 **Release Notes**
-- [2.6.x to 2.7.x Developer Migration Notes](2.6.x-to-2.7.x-Developer-Migration-Notes)
+- [2.6.x to 3.0.0 Developer Migration Notes](2.6.x-to-3.0.0-Developer-Migration-Notes)
 - [Enabling product gallery features (zoom, swipe, lightbox, 2.7 )](Enabling-product-gallery-features-(zoom,-swipe,-lightbox,-2.7-))
 
 **CRUD & Data Descriptions**
