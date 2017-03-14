@@ -21,7 +21,7 @@ This guide will walk through the structure of a data store class, how to create 
 
 The examples in this guide will look at the [`WC_Coupon`](https://github.com/woocommerce/woocommerce/blob/dcecf0f22890f3cd92fbea13a98c11b2537df2a8/includes/class-wc-coupon.php#L19) CRUD data class and [`WC_Coupon_Data_Store_CPT`](https://github.com/woocommerce/woocommerce/blob/dcecf0f22890f3cd92fbea13a98c11b2537df2a8/includes/data-stores/class-wc-coupon-data-store-cpt.php), an implementation of a coupon data store using WordPress custom post types. This is how coupons are currently stored in WooCommerce.
 
-The important thing to know about `WC_Coupon` or any other CRUD data class when working with data stores is what props (properties) they contain. This is defined in the [`data`](https://github.com/woocommerce/woocommerce/blob/dcecf0f22890f3cd92fbea13a98c11b2537df2a8/includes/class-wc-coupon.php#L26) array of each class. The Wiki also contains data descriptions for the different classes. See the [WC_Coupon Data](https://github.com/woocommerce/woocommerce/wiki/2.7-Coupon-Data) document for the different coupon props.
+The important thing to know about `WC_Coupon` or any other CRUD data class when working with data stores is what props (properties) they contain. This is defined in the [`data`](https://github.com/woocommerce/woocommerce/blob/dcecf0f22890f3cd92fbea13a98c11b2537df2a8/includes/class-wc-coupon.php#L26) array of each class. The Wiki also contains data descriptions for the different classes. See the [WC_Coupon Data](https://github.com/woocommerce/woocommerce/wiki/Coupon-Data) document for the different coupon props.
 
 
 ## Structure 
