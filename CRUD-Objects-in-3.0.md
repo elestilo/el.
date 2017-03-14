@@ -13,7 +13,7 @@
 
 CRUD is an abbreviation of the 4 basic operations you can do to a database or resource – Create, Read, Update, Delete.
 
-[WooCommerce 2.7 introduces CRUD objects](https://woocommerce.wordpress.com/2016/10/27/the-new-crud-classes-in-woocommerce-2-7/) for working with WooCommerce data. The following objects are handled by CRUD objects and data-stores:
+[WooCommerce 3.0 introduces CRUD objects](https://woocommerce.wordpress.com/2016/10/27/the-new-crud-classes-in-woocommerce-2-7/) for working with WooCommerce data. The following objects are handled by CRUD objects and data-stores:
 
 - [Orders](https://github.com/woocommerce/woocommerce/wiki/2.7---Order-and-Order-Line-Item-Data)
 - [Order line items](https://github.com/woocommerce/woocommerce/wiki/2.7---Order-and-Order-Line-Item-Data)
