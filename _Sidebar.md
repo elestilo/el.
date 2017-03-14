@@ -4,15 +4,15 @@
 
 **CRUD & Data Descriptions**
 - [Database Description](https://github.com/woocommerce/woocommerce/wiki/Database-Description)
-- [CRUD Objects in 2.7](https://github.com/woocommerce/woocommerce/wiki/CRUD-Objects-in-2.7)
-- [Order and Order Line Item Data](2.7---Order-and-Order-Line-Item-Data)
-- [Coupon Data](2.7-Coupon-Data)
-- [Customer Data](2.7-Customer-Data)
-- [Product Data](Product-Data-Schema-(2.7))
+- [CRUD Objects in 3.0](https://github.com/woocommerce/woocommerce/wiki/CRUD-Objects-in-3.0)
+- [Order and Order Line Item Data](Order-and-Order-Line-Item-Data)
+- [Coupon Data](Coupon-Data)
+- [Customer Data](Customer-Data)
+- [Product Data](Product-Data-Schema)
 - [Data Stores](Data-Stores)
 
 **Internal APIs**
-- [Settings API (2.7+)](Settings-API)
+- [Settings API](Settings-API)
 - [Payment Token API](Payment-Token-API)
 - [Shipping Method API](Shipping-Method-API)
 
