@@ -15,11 +15,11 @@ CRUD is an abbreviation of the 4 basic operations you can do to a database or re
 
 [WooCommerce 3.0 introduces CRUD objects](https://woocommerce.wordpress.com/2016/10/27/the-new-crud-classes-in-woocommerce-2-7/) for working with WooCommerce data. The following objects are handled by CRUD objects and data-stores:
 
-- [Orders](https://github.com/woocommerce/woocommerce/wiki/2.7---Order-and-Order-Line-Item-Data)
-- [Order line items](https://github.com/woocommerce/woocommerce/wiki/2.7---Order-and-Order-Line-Item-Data)
-- [Products](https://github.com/woocommerce/woocommerce/wiki/Product-Data-Schema-(2.7))
-- [Coupons](https://github.com/woocommerce/woocommerce/wiki/2.7-Coupon-Data)
-- [Customers](https://github.com/woocommerce/woocommerce/wiki/2.7-Customer-Data)
+- [Orders](https://github.com/woocommerce/woocommerce/wiki/Order-and-Order-Line-Item-Data)
+- [Order line items](https://github.com/woocommerce/woocommerce/wiki/Order-and-Order-Line-Item-Data)
+- [Products](https://github.com/woocommerce/woocommerce/wiki/Product-Data-Schema)
+- [Coupons](https://github.com/woocommerce/woocommerce/wiki/Coupon-Data)
+- [Customers](https://github.com/woocommerce/woocommerce/wiki/Customer-Data)
 - Customer downloads
 - Payment tokens
 - Shipping zones
@@ -54,7 +54,7 @@ The most important parts to note; `$data` is an array of props supported in each
 ```
         /**
 	 * Data array, with defaults.
-	 * @since 2.7.0
+	 * @since 3.0.0
 	 * @var array
 	 */
 	protected $data = array(
@@ -93,7 +93,7 @@ Example getter:
 
 	/**
 	 * Get records of all users who have used the current coupon.
-	 * @since  2.7.0
+	 * @since  3.0.0
 	 * @param  string $context
 	 * @return array
 	 */
@@ -107,7 +107,7 @@ Example setter:
 ```
 	/**
 	 * Set which users have used this coupon.
-	 * @since 2.7.0
+	 * @since 3.0.0
 	 * @param array $used_by
 	 * @throws WC_Data_Exception
 	 */
