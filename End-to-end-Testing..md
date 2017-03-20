@@ -19,7 +19,7 @@ Getting set up with and running the end-to-end tests is a fairly straightforward
 6. Run `npm install` to get all of the dependencies.
 7. Copy the file `tests/frontend-tests/config/local-sample.json` to `tests/frontend-tests/config/local-development.json`.
 8. Fill in the correct details in `local-development.json`.
-9. To run all of the tests run `grunt e2e_tests`. If you want to run only one file's tests you can use the `e2e-test` command with the `--file` flag: `grunt e2e_test --file="checkout-page.js"`.
+9. To run all of the tests run `grunt e2e-tests`. If you want to run only one file's tests you can use the `e2e-test` command with the `--file` flag: `grunt e2e-test --file="checkout-page.js"`.
 10. Sit back and relax while the computer does all of the work.
 
 ## Using the end-to-end components in extension testing
