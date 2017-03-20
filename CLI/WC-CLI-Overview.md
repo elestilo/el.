@@ -74,7 +74,7 @@ See 'wp help wc <command>' for more information on a specific command.
 ```
 
 **Note**: When using the commands, you must specify your username or user ID using the `--user` argument. This is to let the REST API know which user should be used.
- 
+
 You can see more details about the commands using `wp help wc` or with the `--help` flag, which explains arguments and subcommands.
 
 Example:

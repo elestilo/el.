@@ -3,6 +3,6 @@
 #
 # Requirements:
 # npm install -g doctoc
-#
+# Ack: https://beyondgrep.com/documentation/
 
-doctoc . --title '## Table of Contents'
+ack -L 'DOCTOC SKIP' | xargs doctoc *.md --title '## Table of Contents' --github 

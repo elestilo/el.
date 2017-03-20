@@ -22,7 +22,7 @@
 
 **Examples / Guides**
 - [How Taxes Work in WooCommerce](How-Taxes-Work-in-WooCommerce)
-- [Customising "My Account" tabs](Customising-"My-Account"-tabs)
+- [Customising account page tabs](Customising-account-page-tabs.md)
 
 **Contribution / Guidelines**
 - [How to ensure SCSS and scripts are minified](Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
