@@ -10,7 +10,7 @@ The end-to-end tests bundled in WooCommerce can be used to verify WooCommerce is
 
 Getting set up with and running the end-to-end tests is a fairly straightforward process that should take you less than 15 minutes. In the future, some of these steps are going to get automated for an easier and quicker set up.
 1. Start with a clean WooCommerce install.
-2. Use one of the standard WordPress twenty-* themes.
+2. Use one of the following themes: twenty-twelve, twenty-fifteen, Storefront.
 3. Import the WooCommerce dummy data using the WordPress Importer. The dummy data can be found in the WooCommerce plugin folder at `dummy-data/dummy-data.xml`.
 4. Add a flat rate shipping method to the default "Rest of the World" shipping zone.
 5. `cd` to the WooCommerce plugin folder.
