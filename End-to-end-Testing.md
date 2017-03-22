@@ -26,9 +26,9 @@ The end-to-end testing components are designed in an extendable, reusable way th
 
 You can import the library into your test suite and save a lot of time by not having to implement all of the basic actions a user can do in WooCommerce. The WooCommerce end-to-end testing library is implemented as a series of objects, each representing a WooCommerce screen. 
 
-To get started, follow along with our [Using WooCommerce End-to-end Objects in Extension Testing guide](#todo).
+To get started, follow along with our [tutorial](#todo).
 
-If you're already familiar, and are just looking for documentation on the objects and their methods, that is available [here](#needstogolive).
+If you're already familiar, and are just looking for documentation on the objects and their methods, that is available [here](https://woocommerce.github.io/wc-e2e-page-objects/wc-e2e-page-objects/0.2.2/).
 
 ## Contributing
 
