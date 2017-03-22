@@ -23,6 +23,7 @@
 **Examples / Guides**
 - [How Taxes Work in WooCommerce](How-Taxes-Work-in-WooCommerce)
 - [Customising account page tabs](Customising-account-page-tabs)
+- [End-to-end Testing](End-to-end-Testing)
 
 **Contribution / Guidelines**
 - [How to ensure SCSS and scripts are minified](Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
