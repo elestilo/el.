@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Overview](#overview)
+- [Getting started](#getting-started)
+- [Using the end-to-end components for testing your extensions](#using-the-end-to-end-components-for-testing-your-extensions)
+- [Contributing](#contributing)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Overview
 
 End-to-end testing tests whether the whole flow of an application is working as expected. This is different from unit testing, which tests only individual components to verify they work properly. Unit testing doesn't test whether visible components are rendering and working correctly, and doesn't test the system as a whole (e.g. "can a user complete the checkout process successfully?"). End-to-end testing can fill in those gaps.
