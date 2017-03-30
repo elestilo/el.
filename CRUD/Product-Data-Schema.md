@@ -18,8 +18,8 @@ Each CRUD class contains a representation of the data in array format. This docu
 Name | Type | Description | Example
 ---- | ---- | ----------- | -------
 `id` | `int` | Product ID | `1`
-`name` | `int` | Product name | `My Product`
-`slug` | `int` | Product permalink slug | `my-product`
+`name` | `string` | Product name | `My Product`
+`slug` | `string` | Product permalink slug | `my-product`
 `date_created` | `WC_DateTime|NULL` | WC_DateTime object for when order was created or null if not set |
 `date_modified` | `WC_DateTime|NULL` | WC_DateTime object for when order was created or null if not set |
 `status` | `string|bool` | Product status, e.g. `publish`. Initial state (no status) is `false`. | `publish`
