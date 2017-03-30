@@ -29,7 +29,7 @@ First you need to generate some API keys and enable the REST API so you can star
 4. Click *generate api key*.
 5. Your keys will be shown - do not close this tab yet, the secret will be hidden if you try to view the key again.
 
-![Generated API Keys](images/keys.png)
+![Generated API Keys](examples-guides/images/keys.png)
 
 ## Making a basic request
 
