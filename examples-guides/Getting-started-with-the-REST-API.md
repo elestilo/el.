@@ -39,11 +39,11 @@ In Postman, you need to set the fields for request type, request URL, and the se
 
 Once done, hit send and you'll see the JSON response from the API if all worked well. You should see something like this:
 
-![Generated API Keys](images/postman.png)
+![Generated API Keys](examples-guides/images/postman.png)
 
 Insomnia is almost identical to Postman; fill in the same fields and again use basic auth.
 
-![Insomnia](images/insomnia.png)
+![Insomnia](examples-guides/images/insomnia.png)
 
 Thats it! The API is working.
 
@@ -55,15 +55,15 @@ If you have problems connnecting, you may need to disable SSL verification - see
 
 If you're having problems connecting to the REST API on your localhost and seeing errors like this:
 
-![SSL Error](images/sslerror.png)
+![SSL Error](examples-guides/images/sslerror.png)
 
 You need to disable SSL verification. In Postman you can find this in the settings:
 
-![Postman settings](images/postman-ssl.png)
+![Postman settings](examples-guides/images/postman-ssl.png)
 
 Insomnia also has this setting the preferences area:
 
-![Insomnia settings](images/insomnia-ssl.png)
+![Insomnia settings](examples-guides/images/insomnia-ssl.png)
 
 ### 401 Unauthorized
 
