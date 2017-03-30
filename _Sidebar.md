@@ -24,7 +24,7 @@
 - [How Taxes Work in WooCommerce](How-Taxes-Work-in-WooCommerce)
 - [Customising account page tabs](Customising-account-page-tabs)
 - [End-to-end Testing](End-to-end-Testing)
-- [Getting-started-with-the-REST-API](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
+- [Getting started with the REST API](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
 
 **Contribution / Guidelines**
 - [How to ensure SCSS and scripts are minified](Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
