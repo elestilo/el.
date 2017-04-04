@@ -27,6 +27,7 @@
 - [Getting started with the REST API](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
 
 **Contribution / Guidelines**
+- [Our Git Flow](https://github.com/woocommerce/woocommerce/wiki/WooCommerce-Git-Flow)
 - [How to ensure SCSS and scripts are minified](Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
 - [CSS SASS coding guidelines and naming conventions](CSS-SASS-coding-guidelines-and-naming-conventions)
 - [Core Testing Checklist](https://github.com/woocommerce/woocommerce/wiki/Core-Testing-Checklist)
