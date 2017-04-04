@@ -17,11 +17,13 @@ This document explains the Coupon CRUD.
 Name | Type | Description | Example
 ---- | ---- | ----------- | -------
 `id` | `int` | Coupon ID | `1`
+`date_created ` | `WC_DateTime|null` | `WC_DateTime` object for when coupon was created or `null` if not set. Read only. | `1450186657`
+`date_modified` | `WC_DateTime|null` | `WC_DateTime` object for when coupon was last modified or `null` if not set. Read only. | `1457549521`
 `code` | `string` | Coupon code | `test-coupon`
 `description` | `string` | Explanation of what the coupon does. | `Take 50% off your next order of $10 or more + free shipping!`
 `discount_type` | `string` | Type of discount. Valid values: `fixed_cart`, `percent`, `fixed_product`, `percent_product`. | `percent`
 `amount` | `float` | Amount off provided by the coupon. Ran through `wc_format_decimal`. | `50`
-`expiry_date` | `string` | Date the coupon expires. | `1456237333`
+`date_expires` | `WC_DateTime|null` | `WC_DateTime` object for when the coupon expires or `null` if not set. | `1450186657`
 `usage_count ` | `int` | How many times the coupon has been used. | `15`
 `individual_use ` | `bool` | Individual use means this coupon cannot be used in conjunction with other coupons. | `true`
 `product_ids` | `array` | Product IDs this coupon can be used with. | `array( 322, 345 )`

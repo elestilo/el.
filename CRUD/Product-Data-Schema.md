@@ -9,7 +9,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-In an effort to unify CLI, API, and WP Admin, new CRUD classes were implemented in v2.7 to form a new 'data manipulation API'.
+In an effort to unify CLI, API, and WP Admin, new CRUD classes were implemented in `3.0.0` to form a new 'data manipulation API'.
 
 Each CRUD class contains a representation of the data in array format. This document lists properties available for products - each property has a `get_` getter and `set_` setter method for accessing and setting values.
 
@@ -18,10 +18,10 @@ Each CRUD class contains a representation of the data in array format. This docu
 Name | Type | Description | Example
 ---- | ---- | ----------- | -------
 `id` | `int` | Product ID | `1`
-`name` | `int` | Product name | `My Product`
-`slug` | `int` | Product permalink slug | `my-product`
-`date_created` | `int` | Date created timestamp | `1486997289`
-`date_modified` | `int` | Date modified timestamp | `1486997289`
+`name` | `string` | Product name | `My Product`
+`slug` | `string` | Product permalink slug | `my-product`
+`date_created` | `WC_DateTime|NULL` | WC_DateTime object for when order was created or null if not set |
+`date_modified` | `WC_DateTime|NULL` | WC_DateTime object for when order was created or null if not set |
 `status` | `string|bool` | Product status, e.g. `publish`. Initial state (no status) is `false`. | `publish`
 `featured` | `bool` | Is the product featured? | `true`
 `catalog_visibility` | `string` | Where the product is visible in the catalog. Valid values; visible, search, catalog, hidden | `visible`
@@ -31,8 +31,8 @@ Name | Type | Description | Example
 `price` | `string` | Product price the user will pay. | `20.99`
 `regular_price` | `string` | Product regular price (main price/price when no on sale) | `20.99`
 `sale_price` | `string` | Product sale price. | `10.99`
-`date_on_sale_from` | `int` | Timestamp the sale should start. | `1486997289`
-`date_on_sale_to` | `int` | Timestamp the sale should end. | `1486997289`
+`date_on_sale_from` | `WC_DateTime|NULL` | WC_DateTime object for when order was created or null if not set |
+`date_on_sale_to` | `WC_DateTime|NULL` | WC_DateTime object for when order was created or null if not set |
 `total_sales` | `int` | Count of sales for this product. | `2`
 `tax_status` | `string` | Tax status of the product. Valid values: taxable, shipping, none. | `taxable`
 `tax_class` | `string` | Tax class for the product. Empty string is the standard tax class. | `reduced-rate`
