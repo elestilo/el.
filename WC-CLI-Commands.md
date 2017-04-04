@@ -14,6 +14,7 @@
 <li><a href="#wc-product_tag">wc product_tag</a></li>
 <li><a href="#wc-product">wc product</a></li>
 <li><a href="#wc-product_variation">wc product_variation</a></li>
+<li><a href="#wc-setting">wc setting</a></li>
 <li><a href="#wc-shipping_zone">wc shipping_zone</a></li>
 <li><a href="#wc-shipping_zone_location">wc shipping_zone_location</a></li>
 <li><a href="#wc-shipping_zone_method">wc shipping_zone_method</a></li>
@@ -60,33 +61,35 @@
 <h4>--code</h4>
 <p>Coupon code. (<strong>Required</strong>)</p>
 <h4>--amount</h4>
-<p>The amount of discount.</p>
+<p>The amount of discount. Should always be numeric, even if setting a percentage.</p>
 <h4>--discount_type</h4>
 <p>Determines the type of discount that will be applied.</p>
 <h4>--description</h4>
 <p>Coupon description.</p>
 <h4>--date_expires</h4>
-<p>UTC DateTime when the coupon expires.</p>
+<p>The date the coupon expires, in the site's timezone.</p>
+<h4>--date_expires_gmt</h4>
+<p>The date the coupon expires, as GMT.</p>
 <h4>--individual_use</h4>
-<p>Whether coupon can only be used individually.</p>
+<p>If true, the coupon can only be used individually. Other applied coupons will be removed from the cart.</p>
 <h4>--product_ids</h4>
-<p>List of product ID's the coupon can be used on.</p>
+<p>List of product IDs the coupon can be used on.</p>
 <h4>--excluded_product_ids</h4>
-<p>List of product ID's the coupon cannot be used on.</p>
+<p>List of product IDs the coupon cannot be used on.</p>
 <h4>--usage_limit</h4>
-<p>How many times the coupon can be used.</p>
+<p>How many times the coupon can be used in total.</p>
 <h4>--usage_limit_per_user</h4>
 <p>How many times the coupon can be used per customer.</p>
 <h4>--limit_usage_to_x_items</h4>
 <p>Max number of items in the cart the coupon can be applied to.</p>
 <h4>--free_shipping</h4>
-<p>Define if can be applied for free shipping.</p>
+<p>If true and if the free shipping method requires a coupon, this coupon will enable free shipping.</p>
 <h4>--product_categories</h4>
-<p>List of category ID's the coupon applies to.</p>
+<p>List of category IDs the coupon applies to.</p>
 <h4>--excluded_product_categories</h4>
-<p>List of category ID's the coupon does not apply to.</p>
+<p>List of category IDs the coupon does not apply to.</p>
 <h4>--exclude_sale_items</h4>
-<p>Define if should not apply when have sale items.</p>
+<p>If true, this coupon will not be applied to items that have sale prices.</p>
 <h4>--minimum_amount</h4>
 <p>Minimum order amount that needs to be in the cart before coupon applies.</p>
 <h4>--maximum_amount</h4>
@@ -114,33 +117,35 @@
 <h4>--code</h4>
 <p>Coupon code.</p>
 <h4>--amount</h4>
-<p>The amount of discount.</p>
+<p>The amount of discount. Should always be numeric, even if setting a percentage.</p>
 <h4>--discount_type</h4>
 <p>Determines the type of discount that will be applied.</p>
 <h4>--description</h4>
 <p>Coupon description.</p>
 <h4>--date_expires</h4>
-<p>UTC DateTime when the coupon expires.</p>
+<p>The date the coupon expires, in the site's timezone.</p>
+<h4>--date_expires_gmt</h4>
+<p>The date the coupon expires, as GMT.</p>
 <h4>--individual_use</h4>
-<p>Whether coupon can only be used individually.</p>
+<p>If true, the coupon can only be used individually. Other applied coupons will be removed from the cart.</p>
 <h4>--product_ids</h4>
-<p>List of product ID's the coupon can be used on.</p>
+<p>List of product IDs the coupon can be used on.</p>
 <h4>--excluded_product_ids</h4>
-<p>List of product ID's the coupon cannot be used on.</p>
+<p>List of product IDs the coupon cannot be used on.</p>
 <h4>--usage_limit</h4>
-<p>How many times the coupon can be used.</p>
+<p>How many times the coupon can be used in total.</p>
 <h4>--usage_limit_per_user</h4>
 <p>How many times the coupon can be used per customer.</p>
 <h4>--limit_usage_to_x_items</h4>
 <p>Max number of items in the cart the coupon can be applied to.</p>
 <h4>--free_shipping</h4>
-<p>Define if can be applied for free shipping.</p>
+<p>If true and if the free shipping method requires a coupon, this coupon will enable free shipping.</p>
 <h4>--product_categories</h4>
-<p>List of category ID's the coupon applies to.</p>
+<p>List of category IDs the coupon applies to.</p>
 <h4>--excluded_product_categories</h4>
-<p>List of category ID's the coupon does not apply to.</p>
+<p>List of category IDs the coupon does not apply to.</p>
 <h4>--exclude_sale_items</h4>
-<p>Define if should not apply when have sale items.</p>
+<p>If true, this coupon will not be applied to items that have sale prices.</p>
 <h4>--minimum_amount</h4>
 <p>Minimum order amount that needs to be in the cart before coupon applies.</p>
 <h4>--maximum_amount</h4>
@@ -280,7 +285,7 @@
 <h4>--note</h4>
 <p>Order note content. (<strong>Required</strong>)</p>
 <h4>--customer_note</h4>
-<p>Shows/define if the note is only for reference or for the customer (the user will be notified).</p>
+<p>If true, the note will be shown to customers and they will be notified. If false, the note will be for admin reference only.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
 <h3>wc order_note get &lt;order_id&gt; &lt;id&gt;</h3>
@@ -356,6 +361,8 @@
 <p>Meta data.</p>
 <h4>--line_items</h4>
 <p>Line items data.</p>
+<h4>--api_refund</h4>
+<p>When true, the payment gateway API is used to generate the refund.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
 <h3>wc shop_order_refund get &lt;order_id&gt; &lt;id&gt;</h3>
@@ -431,6 +438,8 @@
 <p>Currency the order was created with, in ISO format.</p>
 <h4>--customer_id</h4>
 <p>User ID who owns the order. 0 for guests.</p>
+<h4>--customer_note</h4>
+<p>Note left by customer during checkout.</p>
 <h4>--billing</h4>
 <p>Billing address.</p>
 <h4>--shipping</h4>
@@ -441,12 +450,6 @@
 <p>Payment method title.</p>
 <h4>--transaction_id</h4>
 <p>Unique transaction ID.</p>
-<h4>--customer_note</h4>
-<p>Note left by customer during checkout.</p>
-<h4>--date_completed</h4>
-<p>The date the order was completed, in the site's timezone.</p>
-<h4>--date_paid</h4>
-<p>The date the order has been paid, in the site's timezone.</p>
 <h4>--meta_data</h4>
 <p>Meta data.</p>
 <h4>--line_items</h4>
@@ -483,6 +486,8 @@
 <p>Currency the order was created with, in ISO format.</p>
 <h4>--customer_id</h4>
 <p>User ID who owns the order. 0 for guests.</p>
+<h4>--customer_note</h4>
+<p>Note left by customer during checkout.</p>
 <h4>--billing</h4>
 <p>Billing address.</p>
 <h4>--shipping</h4>
@@ -493,12 +498,6 @@
 <p>Payment method title.</p>
 <h4>--transaction_id</h4>
 <p>Unique transaction ID.</p>
-<h4>--customer_note</h4>
-<p>Note left by customer during checkout.</p>
-<h4>--date_completed</h4>
-<p>The date the order was completed, in the site's timezone.</p>
-<h4>--date_paid</h4>
-<p>The date the order has been paid, in the site's timezone.</p>
 <h4>--meta_data</h4>
 <p>Meta data.</p>
 <h4>--line_items</h4>
@@ -769,6 +768,8 @@
 <p>Review content. (<strong>Required</strong>)</p>
 <h4>--date_created</h4>
 <p>The date the review was created, in the site's timezone.</p>
+<h4>--date_created_gmt</h4>
+<p>The date the review was created, as GMT.</p>
 <h4>--rating</h4>
 <p>Review rating (0 to 5).</p>
 <h4>--name</h4>
@@ -799,6 +800,8 @@
 <p>The content of the review.</p>
 <h4>--date_created</h4>
 <p>The date the review was created, in the site's timezone.</p>
+<h4>--date_created_gmt</h4>
+<p>The date the review was created, as GMT.</p>
 <h4>--rating</h4>
 <p>Review rating (0 to 5).</p>
 <h4>--name</h4>
@@ -1044,9 +1047,13 @@
 <h4>--sale_price</h4>
 <p>Product sale price.</p>
 <h4>--date_on_sale_from</h4>
-<p>Start date of sale price.</p>
+<p>Start date of sale price, in the site's timezone.</p>
+<h4>--date_on_sale_from_gmt</h4>
+<p>Start date of sale price, as GMT.</p>
 <h4>--date_on_sale_to</h4>
-<p>End data of sale price.</p>
+<p>End date of sale price, in the site's timezone.</p>
+<h4>--date_on_sale_to_gmt</h4>
+<p>End date of sale price, in the site's timezone.</p>
 <h4>--virtual</h4>
 <p>If the product is virtual.</p>
 <h4>--downloadable</h4>
@@ -1054,11 +1061,9 @@
 <h4>--downloads</h4>
 <p>List of downloadable files.</p>
 <h4>--download_limit</h4>
-<p>Amount of times the product can be downloaded.</p>
+<p>Number of times downloadable files can be downloaded after purchase.</p>
 <h4>--download_expiry</h4>
-<p>Number of days that the customer has up to be able to download the product.</p>
-<h4>--download_type</h4>
-<p>Download type, this controls the schema on the front-end.</p>
+<p>Number of days until access to downloadable files expires.</p>
 <h4>--external_url</h4>
 <p>Product external URL. Only for external products.</p>
 <h4>--button_text</h4>
@@ -1146,9 +1151,13 @@
 <h4>--sale_price</h4>
 <p>Product sale price.</p>
 <h4>--date_on_sale_from</h4>
-<p>Start date of sale price.</p>
+<p>Start date of sale price, in the site's timezone.</p>
+<h4>--date_on_sale_from_gmt</h4>
+<p>Start date of sale price, as GMT.</p>
 <h4>--date_on_sale_to</h4>
-<p>End data of sale price.</p>
+<p>End date of sale price, in the site's timezone.</p>
+<h4>--date_on_sale_to_gmt</h4>
+<p>End date of sale price, in the site's timezone.</p>
 <h4>--virtual</h4>
 <p>If the product is virtual.</p>
 <h4>--downloadable</h4>
@@ -1156,11 +1165,9 @@
 <h4>--downloads</h4>
 <p>List of downloadable files.</p>
 <h4>--download_limit</h4>
-<p>Amount of times the product can be downloaded.</p>
+<p>Number of times downloadable files can be downloaded after purchase.</p>
 <h4>--download_expiry</h4>
-<p>Number of days that the customer has up to be able to download the product.</p>
-<h4>--download_type</h4>
-<p>Download type, this controls the schema on the front-end.</p>
+<p>Number of days until access to downloadable files expires.</p>
 <h4>--external_url</h4>
 <p>Product external URL. Only for external products.</p>
 <h4>--button_text</h4>
@@ -1296,9 +1303,13 @@
 <h4>--sale_price</h4>
 <p>Variation sale price.</p>
 <h4>--date_on_sale_from</h4>
-<p>Start date of sale price.</p>
+<p>Start date of sale price, in the site's timezone.</p>
+<h4>--date_on_sale_from_gmt</h4>
+<p>Start date of sale price, as GMT.</p>
 <h4>--date_on_sale_to</h4>
-<p>End data of sale price.</p>
+<p>End date of sale price, in the site's timezone.</p>
+<h4>--date_on_sale_to_gmt</h4>
+<p>End date of sale price, in the site's timezone.</p>
 <h4>--visible</h4>
 <p>Define if the attribute is visible on the "Additional information" tab in the product's page.</p>
 <h4>--virtual</h4>
@@ -1308,9 +1319,9 @@
 <h4>--downloads</h4>
 <p>List of downloadable files.</p>
 <h4>--download_limit</h4>
-<p>Amount of times the variation can be downloaded.</p>
+<p>Number of times downloadable files can be downloaded after purchase.</p>
 <h4>--download_expiry</h4>
-<p>Number of days that the customer has up to be able to download the variation.</p>
+<p>Number of days until access to downloadable files expires.</p>
 <h4>--tax_status</h4>
 <p>Tax status.</p>
 <h4>--tax_class</h4>
@@ -1366,9 +1377,13 @@
 <h4>--sale_price</h4>
 <p>Variation sale price.</p>
 <h4>--date_on_sale_from</h4>
-<p>Start date of sale price.</p>
+<p>Start date of sale price, in the site's timezone.</p>
+<h4>--date_on_sale_from_gmt</h4>
+<p>Start date of sale price, as GMT.</p>
 <h4>--date_on_sale_to</h4>
-<p>End data of sale price.</p>
+<p>End date of sale price, in the site's timezone.</p>
+<h4>--date_on_sale_to_gmt</h4>
+<p>End date of sale price, in the site's timezone.</p>
 <h4>--visible</h4>
 <p>Define if the attribute is visible on the "Additional information" tab in the product's page.</p>
 <h4>--virtual</h4>
@@ -1378,9 +1393,9 @@
 <h4>--downloads</h4>
 <p>List of downloadable files.</p>
 <h4>--download_limit</h4>
-<p>Amount of times the variation can be downloaded.</p>
+<p>Number of times downloadable files can be downloaded after purchase.</p>
 <h4>--download_expiry</h4>
-<p>Number of days that the customer has up to be able to download the variation.</p>
+<p>Number of days until access to downloadable files expires.</p>
 <h4>--tax_status</h4>
 <p>Tax status.</p>
 <h4>--tax_class</h4>
@@ -1416,6 +1431,36 @@
 <p>Unique identifier for the variation.</p>
 <h4>--force</h4>
 <p>Whether to bypass trash and force deletion.</p>
+<h4>--porcelain</h4>
+<p>Output just the id when the operation is successful.</p>
+<h2>wc setting</h2>
+<h3>wc setting get &lt;id&gt;</h3>
+<h4>--group</h4>
+<p>Settings group ID.</p>
+<h4>--fields</h4>
+<p>Limit response to specific fields. Defaults to all fields.</p>
+<h4>--field</h4>
+<p>Get the value of an individual field.</p>
+<h4>--format</h4>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc setting get &lt;id&gt;</h3>
+<h4>--group</h4>
+<p>Settings group ID.</p>
+<h4>--id</h4>
+<p>Unique identifier for the resource.</p>
+<h4>--fields</h4>
+<p>Limit response to specific fields. Defaults to all fields.</p>
+<h4>--field</h4>
+<p>Get the value of an individual field.</p>
+<h4>--format</h4>
+<p>Render response in a particular format.<br>Default: table<br />Options: table, json, csv, ids, yaml, count, headers, body, envelope</p>
+<h3>wc setting update &lt;id&gt;</h3>
+<h4>--group</h4>
+<p>Settings group ID.</p>
+<h4>--id</h4>
+<p>Unique identifier for the resource.</p>
+<h4>--value</h4>
+<p>Setting value.</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
 <h2>wc shipping_zone</h2>
@@ -1485,10 +1530,10 @@
 <p>Shipping method sort order.</p>
 <h4>--enabled</h4>
 <p>Shipping method enabled status.</p>
-<h4>--method_id</h4>
-<p>Shipping method ID. Write on create only.</p>
 <h4>--settings</h4>
 <p>Shipping method settings.</p>
+<h4>--method_id</h4>
+<p>Shipping method ID. (<strong>Required</strong>)</p>
 <h4>--porcelain</h4>
 <p>Output just the id when the operation is successful.</p>
 <h3>wc shipping_zone_method get &lt;id&gt;</h3>
@@ -1511,8 +1556,6 @@
 <p>Shipping method sort order.</p>
 <h4>--enabled</h4>
 <p>Shipping method enabled status.</p>
-<h4>--method_id</h4>
-<p>Shipping method ID. Write on create only.</p>
 <h4>--settings</h4>
 <p>Shipping method settings.</p>
 <h4>--porcelain</h4>
