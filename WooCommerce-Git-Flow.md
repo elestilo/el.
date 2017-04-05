@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Branches](#branches)
+- [Branch naming](#branch-naming)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 For core development, we use the following structure and flow.
 
 ![Git Flow](https://github.com/woocommerce/woocommerce/wiki/images/flow.png)

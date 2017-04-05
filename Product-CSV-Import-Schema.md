@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [CSV Rules](#csv-rules)
+- [Basic Props](#basic-props)
+- [Special or mapped props](#special-or-mapped-props)
+- [Excluded props by default](#excluded-props-by-default)
+- [Props -> CSV Format](#props---csv-format)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 This is a proposal for the CSV Import Schema for https://github.com/woocommerce/woocommerce/issues/13077.
 
 ---
