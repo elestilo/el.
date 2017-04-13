@@ -45,6 +45,6 @@ If you're already familiar, and are just looking for documentation on the object
 
 If you are interested in contributing to the project, that's great! there are a couple ways you can get involved:
 
-1. **Writing tests for WooCommerce**. There are a lot of edge cases that aren't currently covered by the testing, and some components that aren't tested. Feel free to write tests for any gaps in testing that you notice following the same style as the current ones. Just open a pull request with your changes.
+1. **Writing tests for WooCommerce**. There are a lot of edge cases that aren't currently covered by the testing, and some components that aren't tested. Check the [testing backlog](https://github.com/woocommerce/woocommerce/wiki/Testing-Backlog) to see what's most needed or feel free to write tests for any gaps in testing that you notice following the same style as the current ones. Just open a pull request with your changes.
 
 2. **Working on the test components**. There are components that still need to be developed for some WooCommerce pages. These components are the backbone of the end-to-end testing, and all of the tests are composed using them. If you notice any bugs and want to file a ticket or want to handle implementing a component, head on over to the wc-e2e-page-objects [issues](https://github.com/woocommerce/wc-e2e-page-objects/issues). 
