@@ -62,7 +62,7 @@ The German would pay 9.91.
 
 A common feature request is to charge the same amount everywhere and absorb the differences in taxes. To enable this feature in 2.5 you would use the code:
 
-    add_filters( 'woocommerce_adjust_non_base_location_prices', '__return_false' )
+    add_filter( 'woocommerce_adjust_non_base_location_prices', '__return_false' )
 
 This would result in the following results, based on the previous 2 examples. 
 
