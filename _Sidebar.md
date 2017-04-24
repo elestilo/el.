@@ -1,6 +1,7 @@
 **Release Notes**
 - [2.6.x to 3.0.0 Developer Migration Notes](2.6.x-to-3.0.0-Developer-Migration-Notes)
 - [Enabling product gallery features (zoom, swipe, lightbox) in 3.0.0](Enabling-product-gallery-features-(zoom,-swipe,-lightbox)-in-3.0.0)
+- [Select2 fields not working in 3.0.x](https://github.com/woocommerce/woocommerce/wiki/Select2-fields-not-working-in-3.0.x)
 
 **CRUD & Data Descriptions**
 - [Database Description](https://github.com/woocommerce/woocommerce/wiki/Database-Description)
