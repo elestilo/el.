@@ -1,6 +1,6 @@
 If you see something like this on product and coupon edit pages you have a Select2 conflict:
 
-https://cloud.githubusercontent.com/assets/27859664/25281923/8ab71cf0-2674-11e7-883d-c360240841bf.png
+![](https://cloud.githubusercontent.com/assets/27859664/25281923/8ab71cf0-2674-11e7-883d-c360240841bf.png)
 
 WooCommerce 3.0 updated the Select2 library to v4 which is not backwards compatible with v3:
 
