@@ -2,17 +2,13 @@ If you see something like this on product and coupon edit pages you have a Selec
 
 ![](https://cloud.githubusercontent.com/assets/27859664/25281923/8ab71cf0-2674-11e7-883d-c360240841bf.png)
 
-WooCommerce 3.0 updated the Select2 library to v4 which is not backwards compatible with v3:
-
-https://github.com/woocommerce/woocommerce/wiki/2.6.x-to-3.0.0-Developer-Migration-Notes#select2-version-4
+WooCommerce 3.0 updated the Select2 library to v4 which is not backwards compatible with v3. See [this post](https://github.com/woocommerce/woocommerce/wiki/2.6.x-to-3.0.0-Developer-Migration-Notes#select2-version-4).
 
 [You may also see an error like this](https://wordpress.org/support/topic/3-0-error-option-ajax-is-not-allowed-for-select2/) in your JavaScript error console:
 
 ```
 Error: Option ‘ajax’ is not allowed for Select2
 ```
-
-This is the same issue.
 
 ## Possible causes
 
