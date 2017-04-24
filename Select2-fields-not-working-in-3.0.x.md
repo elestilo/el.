@@ -1,4 +1,4 @@
-If you see something like this on product and coupon edit pages you have a Select2 conflict:
+If you see something like this on product and coupon edit pages you may have a Select2 conflict or JavaScript error:
 
 ![](https://cloud.githubusercontent.com/assets/27859664/25281923/8ab71cf0-2674-11e7-883d-c360240841bf.png)
 
@@ -12,8 +12,15 @@ Error: Option ‘ajax’ is not allowed for Select2
 
 ## Possible causes
 
+- A generic JavaScript error stopping scripts from running.
 - A plugin/theme loading v3 Select2 globally on all admin pages, including WooCommerce pages
 - A WooCommerce extension that has not been updated [following these instructions](https://github.com/woocommerce/woocommerce/wiki/2.6.x-to-3.0.0-Developer-Migration-Notes#select2-version-4).
+
+## Finding a JavaScript error
+
+JavaScript errors can be looked up in the console. To do this, in Chrome browser, go to `View > Developer > JavaScript console`.
+
+A panel will open up at the bottom of the screen. Refresh the page, and see what errors are displayed. If there is no error or obvious cause, continue on.
 
 ## Finding the conflict
 
