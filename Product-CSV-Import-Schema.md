@@ -17,7 +17,6 @@ This is a proposal for the CSV Import Schema for https://github.com/woocommerce/
 ## CSV Rules
 
 - Must be in UTF8 format.
-- Images need to be pre-uploaded or online; only URLs are supported. To prevent duplication, imported images should store the source URL in meta.
 - Dates in ISO 8601 format using the local store timezone.
 - Boolean values use 1 or 0.
 - Arrays of fields use commas to separate values.
@@ -32,6 +31,13 @@ This is a proposal for the CSV Import Schema for https://github.com/woocommerce/
 - Serialised data is not supported.
 - All column headers use 'nice' names, not the actual props/key values.
 - On import, to map products to other products use ROW number? Since IDs do not exist.
+
+## Image handling
+
+- Images need to be pre-uploaded or available online.
+- URLs are supported and imported into the media library if used. 
+- To prevent duplication, imported images should store the source URL in meta.
+- Allow user to define the filename and compare this to the media library filenames to link images to a product.
 
 ## Basic Props
 
