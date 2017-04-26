@@ -24,7 +24,8 @@ This is a proposal for the CSV Import Schema for https://github.com/woocommerce/
 - Human readable values rather than programmatic e.g. names instead of ids.
 - Linking to products use product NAME or SKU.
 - -1 unlimited values leave field blank.
-- No column match treated as custom meta data.
+- No column match treated as **custom meta data**.
+- Custom meta is supported/imported but only plain text - no support for JSON or Serialised data. Let extensions take care of this themselves.
 - Taxonomies must be registered/identified by a filter to be imported as such.
 - Taxonomy hierarchy uses `>`
 - Core types will include `variation` to keep them in the same CSV. Non-variation fields ignored on import. Non-variation fields set to `null` or `n/a` on export.
