@@ -47,24 +47,24 @@ $orders = $query->get_orders();
 ### General
 **name**
 
-Valid values
+Accepts a string: the order slug.
 
 ```
-// All orders
+// Get orders (probably at most 1 order) with slug 'order-may-05-2017-0900-pm'.
 $args = array(
-
+    'name' => 'order-may-05-2017-0900-pm',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **status**
 
-Valid values
+Accepts a string: one of 'wc-pending', 'wc-processing', 'wc-on-hold', 'wc-completed', 'wc-refunded, 'wc-failed', or 'wc-cancelled'.
 
 ```
-// All orders
+// Get orders on hold.
 $args = array(
-
+    'status' => 'wc-on-hold'
 );
 $orders = wc_get_orders( $args );
 ```
