@@ -191,7 +191,9 @@ $orders = wc_get_orders( $args );
 
 **paginate**
 
-Accepts a boolean: True for pagination, or false for not. Default: false.
+Accepts a boolean: True for pagination, or false for not. 
+
+Default: false.
 
 Modifies the return results to give an object with fields:
 
@@ -215,36 +217,43 @@ echo 'First order id is: ' . $results->orders[0]->get_id() . '\n';
 
 **order**
 
-Valid values
+Accepts a string: 'DESC' or 'ASC'. Use with 'orderby'.
+
+Default: 'DESC'.
 
 ```
-// All orders
+// Get most recently modified orders.
 $args = array(
-
+    'orderby' => 'modified',
+    'order' => 'DESC',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **orderby**
 
-Valid values
+Accepts a string: 'none', 'ID', 'name', 'type', 'rand', 'date', 'modified'.
+
+Default: 'date'.
 
 ```
-// All orders
+// Get some random orders.
 $args = array(
-
+    'orderby' => 'rand',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **return**
 
-Valid values
+Accepts a string: 'ids' or 'objects'. 
+
+Default: 'objects'.
 
 ```
-// All orders
+// Get order ids.
 $args = array(
-
+    'return' => 'ids',
 );
 $orders = wc_get_orders( $args );
 ```
@@ -252,60 +261,60 @@ $orders = wc_get_orders( $args );
 ### Price
 **currency**
 
-Valid values
+Accepts a string: Currency used in order.
 
 ```
-// All orders
+// Get orders paid in USD.
 $args = array(
-
+    'currency' => 'USD',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **prices_include_tax**
 
-Valid values
+Accepts a string: 'yes' or 'no'.
 
 ```
-// All orders
+// Get orders whose prices include tax.
 $args = array(
-
+    'prices_include_tax' => 'yes',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **payment_method**
 
-Valid values
+Accepts a string: Slug of payment method used.
 
 ```
-// All orders
+// Get orders payed by check.
 $args = array(
-
+    'payment_method' => 'cheque',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **payment_method_title**
 
-Valid values
+Accepts a string: Full title of payment method used.
 
 ```
-// All orders
+// Get orders payed by check.
 $args = array(
-
+    'payment_method_title' => 'Check payments',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **discount_total, discount_tax, shipping_total, shipping_tax, cart_tax, total**
 
-Valid values
+Accepts a float: Unrounded amount to match on.
 
 ```
-// All orders
+// Get orders with 20.00 discount total.
 $args = array(
-
+    'discount_total' => 20.00
 );
 $orders = wc_get_orders( $args );
 ```
@@ -314,38 +323,47 @@ $orders = wc_get_orders( $args );
 
 **customer**
 
-Valid values
+Accepts a string or an integer: Customer's billing email or customer id.
 
 ```
-// All orders
+// Get orders by customer with email 'woocommerce@woocommerce.com'.
 $args = array(
-
+    'customer' => 'woocommerce@woocommerce.com',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **customer_id**
 
-Valid values
+Accepts an integer: Customer ID.
 
 ```
-// All orders
+// Get orders by customer with ID 12.
 $args = array(
-
+    'customer_id' => 12,
 );
 $orders = wc_get_orders( $args );
 ```
 
-### Address
+### Address and Name
 
 **billing_first_name, billing_last_name, billing_company, billing_address_1, billing_address_2, billing_city, billing_state, billing_postcode, billing_country, billing_email, billing_phone, shipping_first_name, shipping_last_name, shipping_company, shipping_address_1, shipping_address_2, shipping_city, shipping_state, shipping_postcode, shipping_country**
 
-Valid values
+Accepts string: Value to match on.
 
 ```
-// All orders
+// Get orders from America.
 $args = array(
+    'billing_country' => 'US',
+);
+$orders = wc_get_orders( $args );
+```
 
+```
+// Get orders from people named Claudio Sanches.
+$args = array(
+    'billing_first_name' => 'Claudio',
+    'billing_last_name' => 'Sanches',
 );
 $orders = wc_get_orders( $args );
 ```
@@ -354,12 +372,53 @@ $orders = wc_get_orders( $args );
 
 **date_created, date_modified, date_completed, date_paid**
 
-Valid values
+Accepts a string. Date queries use a standard format:
+
+`YYYY-MM-DD` - Matches on orders during that one day in site timezone.
+
+`>YYYY-MM-DD` - Matches on orders after that one day in site timezone.
+
+`>=YYYY-MM-DD` - Matches on orders during or after that one day in site timezone.
+
+`<YYYY-MM-DD` - Matches on orders before that one day in site timezone.
+
+`<=YYYY-MM-DD` - Matches on orders during or before that one day in site timezone.
+
+`YYYY-MM-DD...YYYY-MM-DD` - Matches on orders during or in between the days in site timezone.
+
+`TIMESTAMP` - Matches on orders during that one second in UTC timezone.
+
+`>TIMESTAMP` - Matches on orders after that one second in UTC timezone.
+
+`>=TIMESTAMP` - Matches on orders during or after that one second in UTC timezone.
+
+`<TIMESTAMP` - Matches on orders before that one second in UTC timezone.
+
+`<=TIMESTAMP` - Matches on orders during or before that one second in UTC timezone.
+
+`TIMESTAMP...TIMESTAMP` - Matches on orders during or in between the seconds in UTC timezone.
+
 
 ```
-// All orders
+// Get orders paid February 12, 2016.
 $args = array(
+    'date_paid' => '2016-02-12',
+);
+$orders = wc_get_orders( $args );
+```
 
+```
+// Get orders created before the last hour.
+$args = array(
+    'date_created' => '<' . ( time() - HOUR_IN_SECONDS ),
+);
+$orders = wc_get_orders( $args );
+```
+
+```
+// Get orders completed 16 May 2017 21:46:17 UTC to 17 May 2017 12:46:17 UTC.
+$args = array(
+    'date_completed' => '1494971177...1494938777',
 );
 $orders = wc_get_orders( $args );
 ```
