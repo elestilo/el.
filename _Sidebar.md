@@ -26,6 +26,7 @@
 - [Customising account page tabs](Customising-account-page-tabs)
 - [End-to-end Testing](End-to-end-Testing)
 - [Getting started with the REST API](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
+- [wc_get_orders and WC_Order_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query)
 
 **Contribution / Guidelines**
 - [Our Git Flow](https://github.com/woocommerce/woocommerce/wiki/WooCommerce-Git-Flow)
