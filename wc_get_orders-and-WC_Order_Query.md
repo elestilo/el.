@@ -4,24 +4,31 @@
 
 ## Usage
 
-Here are a couple examples:
+Here are a few examples:
 
 ```
+// Get orders from people named John that were paid in the year 2016.
 $orders = wc_get_orders( array(
-
+    'billing_first_name' => 'John',
+    'date_paid' => '2016-01-01...2016-12-31`,
 ) );
 ```
 
 ```
+// Get 10 most recent order ids in date descending order.
 $query = new WC_Order_Query( array(
-
+    'limit' => 10,
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'return' => 'ids',
 ) );
 $orders = $query->get_orders();
 ```
 
 ```
+// Get orders from the customer with email 'woocommerce@woocommerce.com'.
 $query = new WC_Order_Query();
-$query->set( '', '' );
+$query->set( 'customer', 'woocommerce@woocommerce.com' );
 $orders = $query->get_orders();
 ```
 
