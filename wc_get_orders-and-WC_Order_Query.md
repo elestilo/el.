@@ -71,24 +71,25 @@ $orders = wc_get_orders( $args );
 
 **type**
 
-Valid values
+Accepts a string: 'shop_order' or 'shop_order_refund'.
 
 ```
-// All orders
+// Get refunds in the last 24 hours.
 $args = array(
-
+    'type' => 'shop_order_refund',
+    'date_created' => '>' . ( time() - DAY_IN_SECONDS )
 );
 $orders = wc_get_orders( $args );
 ```
 
 **version**
 
-Valid values
+Accepts a string: WooCommerce version number the order was created in.
 
 ```
-// All orders
+// Get orders created during WooCommerce 2.6.14
 $args = array(
-
+    'version' => '2.6.14'
 );
 $orders = wc_get_orders( $args );
 ```
