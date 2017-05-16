@@ -15,7 +15,14 @@ $orders = wc_get_orders( array(
 ```
 $query = new WC_Order_Query( array(
 
-) )
+) );
+$orders = $query->get_orders();
+```
+
+```
+$query = new WC_Order_Query();
+$query->set( '', '' );
+$orders = $query->get_orders();
 ```
 
 ## WC_Order_Query Methods
