@@ -40,58 +40,298 @@ $orders = $query->get_orders();
 ### General
 **name**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **status**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 **type**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **version**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 **created_via**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **parent**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 **parent_exclude**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **exclude**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 **limit**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **page**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 **offset**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **paginate**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 **order**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **orderby**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **return**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 ### Price
 **currency**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **prices_include_tax**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 **payment_method**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **payment_method_title**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **discount_total, discount_tax, shipping_total, shipping_tax, cart_tax, total**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 ### Customer
 
 **customer**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 **customer_id**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 ### Address
 
 **billing_first_name, billing_last_name, billing_company, billing_address_1, billing_address_2, billing_city, billing_state, billing_postcode, billing_country, billing_email, billing_phone, shipping_first_name, shipping_last_name, shipping_company, shipping_address_1, shipping_address_2, shipping_city, shipping_state, shipping_postcode, shipping_country**
 
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
+
 ### Date
 
 **date_created, date_modified, date_completed, date_paid**
+
+Valid values
+
+```
+// All orders
+$args = array(
+
+);
+$orders = wc_get_orders( $args );
+```
 
 ## Adding Custom Parameter Support
 
