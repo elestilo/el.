@@ -59,25 +59,25 @@ $orders = wc_get_orders( $args );
 
 **status**
 
-Accepts a string: one of 'wc-pending', 'wc-processing', 'wc-on-hold', 'wc-completed', 'wc-refunded, 'wc-failed', or 'wc-cancelled'.
+Accepts a string: one of 'wc-pending', 'wc-processing', 'wc-on-hold', 'wc-completed', 'wc-refunded, 'wc-failed', 'wc-cancelled', or a custom order status.
 
 ```
 // Get orders on hold.
 $args = array(
-    'status' => 'wc-on-hold'
+    'status' => 'wc-on-hold',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **type**
 
-Accepts a string: 'shop_order' or 'shop_order_refund'.
+Accepts a string: 'shop_order', 'shop_order_refund', or a custom order type.
 
 ```
 // Get refunds in the last 24 hours.
 $args = array(
     'type' => 'shop_order_refund',
-    'date_created' => '>' . ( time() - DAY_IN_SECONDS )
+    'date_created' => '>' . ( time() - DAY_IN_SECONDS ),
 );
 $orders = wc_get_orders( $args );
 ```
@@ -89,105 +89,128 @@ Accepts a string: WooCommerce version number the order was created in.
 ```
 // Get orders created during WooCommerce 2.6.14
 $args = array(
-    'version' => '2.6.14'
+    'version' => '2.6.14',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **created_via**
 
-Valid values
+Accepts a string: 'checkout', 'rest-api', or a custom creation method slug.
 
 ```
-// All orders
+// Get orders created through site checkout.
 $args = array(
-
+    'created_via' => 'checkout',
 );
 $orders = wc_get_orders( $args );
 ```
 
 **parent**
 
-Valid values
+Accepts an integer: post ID of the order parent.
 
 ```
-// All orders
+// Get orders with post parent ID of 20.
 $args = array(
-
+    'parent' => 20,
 );
 $orders = wc_get_orders( $args );
 ```
 
 **parent_exclude**
 
-Valid values
+Accepts an array of integers: Excludes orders with parent ids in the array.
 
 ```
-// All orders
+// Get orders that don't have parent IDs of 20 or 21.
 $args = array(
-
+    'parent_exclude' => array( 20, 21 ),
 );
 $orders = wc_get_orders( $args );
 ```
 
 **exclude**
 
-Valid values
+Accepts an array of integers: Excludes orders that have the ids.
 
 ```
-// All orders
+// Get orders that aren't the current order.
 $args = array(
-
+    'exclude' => array( $order->get_id() ),
 );
 $orders = wc_get_orders( $args );
 ```
 
 **limit**
 
-Valid values
+Accepts an integer: Maximum number of results to retrieve or `-1` for unlimited.
+
+Default: Site 'posts_per_page' setting.
 
 ```
-// All orders
+// Get latest 3 orders.
 $args = array(
-
+    'limit' => 3,
 );
 $orders = wc_get_orders( $args );
 ```
 
 **page**
 
-Valid values
+Accepts an integer: Page of results to retrieve. Does nothing if 'offset' is used.
 
 ```
-// All orders
+// First 3 orders.
 $args = array(
-
+    'limit' => 3,
+    'page' => 1,
 );
-$orders = wc_get_orders( $args );
+$page_1_orders = wc_get_orders( $args );
+
+// Second 3 orders.
+$args = array(
+    'limit' => 3,
+    'page' => 2,
+);
+$page_2_orders = wc_get_orders( $args );
 ```
 
 **offset**
 
-Valid values
+Accepts an integer: Amount to offset order results.
 
 ```
-// All orders
+// Get second to fifth most-recent orders.
 $args = array(
-
+    'limit' => 4,
+    'offset' => 1
 );
 $orders = wc_get_orders( $args );
 ```
 
 **paginate**
 
-Valid values
+Accepts a boolean: True for pagination, or false for not. Default: false.
+
+Modifies the return results to give an object with fields:
+
+_orders_: Array of found orders.
+
+_total_: Number of found orders.
+
+_max_num_pages_: The total number of pages.
+
 
 ```
-// All orders
+// Get orders with extra info about the results.
 $args = array(
-
+    'paginate' => true,
 );
-$orders = wc_get_orders( $args );
+$results = wc_get_orders( $args );
+echo $results->found_posts . ' orders found\n';
+echo 'Page 1 of ' $results->max_num_pages . '\n';
+echo 'First order id is: ' . $results->orders[0]->get_id() . '\n';
 ```
 
 **order**
