@@ -83,3 +83,9 @@ In this case, you may provide the consumer key/secret as query string parameters
 ```
 https://local.wordpress.dev/wp-json/wc/v1/orders?consumer_key=XXXX&consumer_secret=XXXX
 ```
+
+### Server does not support POST/DELETE/PUT
+
+Ideally, your server should be configured to accept these types of API request, but if not you can use the `_method` property. 
+
+See https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/#_method-or-x-http-method-override-header
