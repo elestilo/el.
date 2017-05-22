@@ -156,7 +156,7 @@ $args = array(
 $orders = wc_get_orders( $args );
 ```
 
-**page**
+**paged**
 
 Accepts an integer: Page of results to retrieve. Does nothing if 'offset' is used.
 
@@ -164,14 +164,14 @@ Accepts an integer: Page of results to retrieve. Does nothing if 'offset' is use
 // First 3 orders.
 $args = array(
     'limit' => 3,
-    'page' => 1,
+    'paged' => 1,
 );
 $page_1_orders = wc_get_orders( $args );
 
 // Second 3 orders.
 $args = array(
     'limit' => 3,
-    'page' => 2,
+    'paged' => 2,
 );
 $page_2_orders = wc_get_orders( $args );
 ```
