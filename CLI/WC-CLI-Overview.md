@@ -5,22 +5,6 @@
 - [What is WP-CLI?](#what-is-wp-cli)
 - [WooCommerce Commands](#woocommerce-commands)
 - [Examples](#examples)
-  - [Command:](#command)
-  - [Response:](#response)
-  - [Command:](#command-1)
-  - [Response:](#response-1)
-  - [Command:](#command-2)
-  - [Response:](#response-2)
-  - [Command:](#command-3)
-  - [Response:](#response-3)
-  - [Command:](#command-4)
-  - [Response:](#response-4)
-  - [Command:](#command-5)
-  - [Response:](#response-5)
-  - [Command:](#command-6)
-  - [Response:](#response-6)
-  - [Command:](#command-7)
-  - [Response:](#response-7)
 - [Frequently Asked Questions](#frequently-asked-questions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -394,3 +378,13 @@ If you are getting a 401 error, for example like
 `Error: Sorry, you cannot list resources. {"status":401}`
 
 You are trying to use the command unauthenticated. The WooCommerce CLI as of 3.0 requires you to provide a proper user to run the action as. Pass in your user ID using the `--user` flag.
+
+**I am trying to update a list of X but it's not saving**
+
+Some 'lists' are objects, for example, if you want to set categories for a product the REST API expects an array of objects: https://woocommerce.github.io/woocommerce-rest-api-docs/#product-properties
+
+So to set this you would use JSON like this:
+
+```
+wp wc product create --name='Product Name' --categories='[ { "id" : 21 } ]' --user=admin
+```
