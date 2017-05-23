@@ -59,12 +59,12 @@ $orders = wc_get_orders( $args );
 
 **status**
 
-Accepts a string: one of 'wc-pending', 'wc-processing', 'wc-on-hold', 'wc-completed', 'wc-refunded, 'wc-failed', 'wc-cancelled', or a custom order status.
+Accepts a string: one of 'pending', 'processing', 'on-hold', 'completed', 'refunded, 'failed', 'cancelled', or a custom order status.
 
 ```
 // Get orders on hold.
 $args = array(
-    'status' => 'wc-on-hold',
+    'status' => 'on-hold',
 );
 $orders = wc_get_orders( $args );
 ```
