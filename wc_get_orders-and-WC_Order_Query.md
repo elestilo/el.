@@ -323,7 +323,7 @@ $orders = wc_get_orders( $args );
 
 **customer**
 
-Accepts a string or an integer: Customer's billing email or customer id.
+Accepts a string or an integer: The order's billing email or customer id.
 
 ```
 // Get orders by customer with email 'woocommerce@woocommerce.com'.
