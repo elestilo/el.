@@ -45,17 +45,6 @@ $orders = $query->get_orders();
 ## Parameters
 
 ### General
-**name**
-
-Accepts a string: the order slug.
-
-```
-// Get orders (probably at most 1 order) with slug 'order-may-05-2017-0900-pm'.
-$args = array(
-    'name' => 'order-may-05-2017-0900-pm',
-);
-$orders = wc_get_orders( $args );
-```
 
 **status**
 
