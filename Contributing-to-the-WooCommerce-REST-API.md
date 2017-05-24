@@ -58,8 +58,6 @@ You can also use the `OPTIONS` command to return all information about an endpoi
 
 ![Customer schema](https://woocommerce.files.wordpress.com/2017/05/2017-05-24-at-10-24.png)
 
-[You can read more about schemas in the handbook](https://developer.wordpress.org/rest-api/extending-the-rest-api/schema/).
-
 To look at an example schema, [see the customers API](https://github.com/woocommerce/woocommerce/blob/3.0.0/includes/api/class-wc-rest-customer-downloads-controller.php#L78-L168).
 
 Each item in the schema represents data. Data has fixed names/keys and types. Take downloads for example:
@@ -88,6 +86,8 @@ Each item in the schema represents data. Data has fixed names/keys and types. Ta
 ```
 
 This shows that the API will return an array of file objects, and each object has 2 properties; name and file.
+
+[You can read more about schemas in the handbook](https://developer.wordpress.org/rest-api/extending-the-rest-api/schema/).
 
 ## Deprecation of older versions
 
