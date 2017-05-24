@@ -58,8 +58,7 @@ You can also use the `OPTIONS` command to return all information about an endpoi
 
 ![Customer schema](https://woocommerce.files.wordpress.com/2017/05/2017-05-24-at-10-24.png)
 
-[You can read more about schemas in the handbook
-(https://developer.wordpress.org/rest-api/extending-the-rest-api/schema/).
+[You can read more about schemas in the handbook](https://developer.wordpress.org/rest-api/extending-the-rest-api/schema/).
 
 To look at an example schema, [see the customers API](https://github.com/woocommerce/woocommerce/blob/3.0.0/includes/api/class-wc-rest-customer-downloads-controller.php#L78-L168).
 
