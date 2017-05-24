@@ -3,6 +3,10 @@
 - [Enabling product gallery features (zoom, swipe, lightbox) in 3.0.0](Enabling-product-gallery-features-(zoom,-swipe,-lightbox)-in-3.0.0)
 - [Select2 fields not working in 3.0.x](https://github.com/woocommerce/woocommerce/wiki/Select2-fields-not-working-in-3.0.x)
 
+**REST API**
+- [Getting started with the REST API](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
+- [Contributing to the REST API](https://github.com/woocommerce/woocommerce/wiki/Contributing-to-the-WooCommerce-REST-API)
+
 **CRUD & Data Descriptions**
 - [Database Description](https://github.com/woocommerce/woocommerce/wiki/Database-Description)
 - [CRUD Objects in 3.0](https://github.com/woocommerce/woocommerce/wiki/CRUD-Objects-in-3.0)
@@ -25,7 +29,6 @@
 - [How Taxes Work in WooCommerce](How-Taxes-Work-in-WooCommerce)
 - [Customising account page tabs](Customising-account-page-tabs)
 - [End-to-end Testing](End-to-end-Testing)
-- [Getting started with the REST API](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
 - [wc_get_orders and WC_Order_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query)
 
 **Contribution / Guidelines**
