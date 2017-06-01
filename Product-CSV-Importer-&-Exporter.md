@@ -46,6 +46,23 @@ You can access the exporter on the main "Products" admin screen:
 
 Click the button to begin the exporting process.
 
+**Columns:** If you do not want to export every column of product information, you can choose which columns to export here. By default, all product information except meta data will be exported.
 
-### Adding Custom Export Columns
+**Product types:** If you only want to export products of a certain type, you can choose which product types will be exported here. By default, products of all types will be exported.
+
+**Export custom meta:** If you have meta data on your products from other plugins and you want to export it, check this box. Meta data columns will be exported following the `meta:`-prefix standard detailed above in the importer mapping section. By default, no additional meta data will be exported.
+
+When you are satisfied with the exporter settings, click the "Generate CSV" button. You can view the status of the exporter in the progress bar. Do not close the screen while the exporter is exporting, otherwise you will be missing information in the generated CSV file.
+
+### Adding Custom Export Columns (Developers)
+
+TODO
+
+## Support & Bugs
+
+If you are having difficulty using the importer or have questions, please use [the forums](https://wordpress.org/support/plugin/woocommerce).
+
+If you discover a bug in the importer or exporter, please [file an issue](https://github.com/woocommerce/woocommerce/issues) and we will investigate. 
+
+
 
