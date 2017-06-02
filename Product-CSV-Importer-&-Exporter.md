@@ -120,7 +120,39 @@ When you are satisfied with the exporter settings, click the "Generate CSV" butt
 
 ### Adding Custom Export Columns (Developers)
 
-TODO
+It is a straightforward process to add support for custom columns to the exporter. The following example breaks down the process:
+
+```
+/**
+ * Add the custom column to the exporter and the exporter column menu.
+ *
+ * @param array $columns
+ * @return array $columns
+ */
+function add_export_column( $columns ) {
+
+	// column slug => column name
+	$columns['custom_column'] = 'Custom Column';
+
+	return $columns;
+}
+add_filter( 'woocommerce_product_export_column_names', 'add_export_column' );
+add_filter( 'woocommerce_product_export_product_default_columns', 'add_export_column' );
+
+/**
+ * Provide the data to be exported for one item in the column.
+ *
+ * @param mixed $value (default: '')
+ * @param WC_Product $product
+ * @return mixed $value - Should be in a format that can be output into a text file (string, numeric, etc).
+ */
+function add_export_data( $value, $product ) {
+	$value = $product->get_meta( 'custom_column', true, 'edit' );
+	return $value;
+}
+// Filter you want to hook into will be: 'woocommerce_product_export_product_column_{$column_slug}'.
+add_filter( 'woocommerce_product_export_product_column_custom_column', 'add_export_data', 10, 2 );
+```
 
 ## Support & Bugs
 
