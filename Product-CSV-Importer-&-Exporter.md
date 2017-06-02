@@ -42,6 +42,8 @@ The importer will process the CSV file asynchronously in batches. The progress m
 
 When the importer is finished processing, you will see a summary. If there were products that were not imported, you can view a log listing each product that was not imported and the reason.
 
+![Import Done Screen](images/importer/importdonescreen.png)
+
 ### Adding Custom Import Columns (Developers)
 
 TODO
