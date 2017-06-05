@@ -1,107 +1,20 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Table of Contents
+This is the schema used for the built in [CSV importer and exporter](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Importer-&-Exporter) in WooCommerce 3.1+.
 
-- [CSV Rules](#csv-rules)
-- [Basic Props](#basic-props)
-- [Special or mapped props](#special-or-mapped-props)
-- [Excluded props by default](#excluded-props-by-default)
-- [Props -> CSV Format](#props---csv-format)
+## General CSV guidelines
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-This is a proposal for the CSV Import Schema for https://github.com/woocommerce/woocommerce/issues/13077.
-
----
-
-## CSV Rules
-
-- Must be in UTF8 format.
-- Dates in ISO 8601 format using the local store timezone.
-- Boolean values use 1 or 0.
-- Arrays of fields use commas to separate values.
-- Human readable values rather than programmatic e.g. names instead of ids.
-- Linking to products use product NAME or SKU.
-- -1 unlimited values leave field blank.
-- No column match treated as **custom meta data**.
-- Custom meta is supported/imported but only plain text - no support for JSON or Serialised data. Let extensions take care of this themselves.
-- Taxonomies must be registered/identified by a filter to be imported as such.
-- Taxonomy hierarchy uses `>`
-- Core types will include `variation` to keep them in the same CSV. Non-variation fields ignored on import. Non-variation fields set to `null` or `n/a` on export.
+- CSVs should be in UTF-8 format.
+- Any dates should be defined for the store's local timezone.
+- If importing a boolean value (true or false) use 1 or 0 in your CSV.
+- Multiple values in a field get separated with commas.
+- If referencing an existing product ID, prefix the id with `id:`. If referencing a SKU, no prefix is needed. e.g. `id:100, SKU101` 
+- Custom meta is supported/imported but only plain text - no support for JSON or Serialised data.
+- Taxonomy term hierarchy is denoted with `>`, terms are separated with commas.
 - Serialised data is not supported.
-- All column headers use 'nice' names, not the actual props/key values.
-- On import, to map products to other products use ROW number? Since IDs do not exist.
+- Images need to be pre-uploaded or available online in order to import to your store.
+- External URLs are supported and imported into the media library if used. 
+- You can define the filename if the image already exists in the media library.
 
-## Image handling
-
-- Images need to be pre-uploaded or available online.
-- URLs are supported and imported into the media library if used. 
-- To prevent duplication, imported images should store the source URL in meta.
-- Allow user to define the filename and compare this to the media library filenames to link images to a product.
-
-## Basic Props
-
-- id
-- sku
-- name
-- status
-- featured
-- catalog_visibility
-- description
-- short_description
-- date_on_sale_from
-- date_on_sale_to
-- tax_status
-- tax_class
-- stock_status
-- backorders
-- sold_individually
-- weight
-- length
-- width
-- height
-- reviews_allowed
-- purchase_note
-
-## Special or mapped props
-
-- price (maps to sale or regular)
-- regular_price
-- upsell_ids - Avoid use of IDs?
-- cross_sell_ids
-- category_ids
-- tag_ids
-- parent_id
-- shipping_class_id
-- type / virtual / downloadable
-- downloads
-- download_limit
-- download_expiry
-- image_id / gallery_image_ids
-- default_attributes
-- attributes
-- manage_stock
-- stock_quantity
-
-## Excluded props by default
-
-These props can be imported, but they are never exported by default due to being of minor importance:
-
-- date_created
-- sale_price
-- menu_order ?
-- slug - Generate from name. Enabled by filter.
-- total_sales
-
-These props are neither imported or exported:
-
-- date_modified
-- rating_counts
-- average_rating
-- review_count
-- meta_data
-
-## Props -> CSV Format
+## CSV columns and formatting
 
 | Prop | Name in CSV | Example | Notes |
 |---|---|---|---|
