@@ -48,7 +48,7 @@ When the importer is finished processing, you will see a summary. If there were 
 
 It is a straightforward process to add support for custom columns to the importer. The following example breaks down the process:
 
-```
+```php
 /**
  * Register the 'Custom Column' column in the importer.
  *
