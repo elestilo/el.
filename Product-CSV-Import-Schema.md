@@ -56,6 +56,6 @@ This is the schema used for the built in [CSV importer and exporter](https://git
 | `downloads` | Download 1 URL | `url.zip` |  |
 | `download_limit ` | Download Limit | `1` | `n/a` or a limit. |
 | `download_expiry ` | Download Expiry Days | `1` | `n/a` or a day limit. |
-| `parent_id ` | Parent | `id:100`, `SKU-1`, `row:20` | Set parent ID. Used for simple products in a group and variations. Can be just a numeric ID e.g. `id:100`, a row ID if importing for the first time e.g. `row:20`, or a SKU. Export will use SKU when possible. |
-| `upsell_ids ` | Upsells | `id:100, id:101`, `SKU-1, SKU-2`, `row:20, row:21` | List of IDs. Can be just a numeric ID e.g. `id:100`, a row ID if importing for the first time e.g. `row:20`, or a SKU. Export will use SKU when possible. |
-| `cross_sell_ids ` | Cross-sells | `id:100, id:101`, `SKU-1, SKU-2`, `row:20, row:21` | List of IDs. Can be just a numeric ID e.g. `id:100`, a row ID if importing for the first time e.g. `row:20`, or a SKU. Export will use SKU when possible. |
+| `parent_id ` | Parent | `id:100`, `SKU-1` | Set parent ID. Used for simple products in a group and variations. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
+| `upsell_ids ` | Upsells | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
+| `cross_sell_ids ` | Cross-sells | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
