@@ -8,6 +8,7 @@
   - [Connection issues with localhost and self signed SSL certificates](#connection-issues-with-localhost-and-self-signed-ssl-certificates)
   - [401 Unauthorized](#401-unauthorized)
   - [Consumer key is missing](#consumer-key-is-missing)
+  - [Server does not support POST/DELETE/PUT](#server-does-not-support-postdeleteput)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

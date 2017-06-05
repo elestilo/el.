@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [General CSV guidelines](#general-csv-guidelines)
+- [CSV columns and formatting](#csv-columns-and-formatting)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 This is the schema used for the built in [CSV importer and exporter](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Importer-&-Exporter) in WooCommerce 3.1+.
 
 ## General CSV guidelines

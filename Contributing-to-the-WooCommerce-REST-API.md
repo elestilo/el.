@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [About the WooCommerce REST API](#about-the-woocommerce-rest-api)
+- [API Versioning and how it affects development](#api-versioning-and-how-it-affects-development)
+- [Adding new endpoints](#adding-new-endpoints)
+  - [Schema first development](#schema-first-development)
+- [Deprecation of older versions](#deprecation-of-older-versions)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## About the WooCommerce REST API
 
 WooCommerce is fully integrated with the [WordPress REST API](https://developer.wordpress.org/rest-api/). This allows WooCommerce data to be created, read, updated, and deleted using requests in JSON format and using various WordPress REST API Authentication methods with standard HTTP verbs which are understood by most HTTP clients.

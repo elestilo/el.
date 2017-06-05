@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Overview](#overview)
+- [Importer](#importer)
+  - [Upload CSV File Screen](#upload-csv-file-screen)
+  - [Mapping Screen](#mapping-screen)
+  - [Importing screen](#importing-screen)
+  - [Adding Custom Import Columns (Developers)](#adding-custom-import-columns-developers)
+- [Exporter](#exporter)
+  - [Adding Custom Export Columns (Developers)](#adding-custom-export-columns-developers)
+- [Support & Bugs](#support--bugs)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Overview
 
 Starting in version 3.1.0, WooCommerce has a built-in product CSV importer and exporter. You can easily import, export, and update hundreds or thousands of products on your WooCommerce sites. The importer and exporter support all types of products, including variations. This guide will walk you through using the importer and exporter and will also detail how to add custom import and export columns for developers.

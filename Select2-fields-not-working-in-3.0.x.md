@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Possible causes](#possible-causes)
+- [Finding a JavaScript error](#finding-a-javascript-error)
+- [Finding the conflict](#finding-the-conflict)
+- [Resolving the conflict](#resolving-the-conflict)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 If you see something like this on product and coupon edit pages you may have a Select2 conflict or JavaScript error:
 
 ![](https://cloud.githubusercontent.com/assets/27859664/25281923/8ab71cf0-2674-11e7-883d-c360240841bf.png)
