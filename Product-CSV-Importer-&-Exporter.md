@@ -122,7 +122,7 @@ When you are satisfied with the exporter settings, click the "Generate CSV" butt
 
 It is a straightforward process to add support for custom columns to the exporter. The following example breaks down the process:
 
-```
+```php
 /**
  * Add the custom column to the exporter and the exporter column menu.
  *
