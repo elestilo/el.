@@ -5,37 +5,45 @@ This list outlines **general** items to test before a release of core. Release s
 _Code_
 
 1. Run PHPUnit - check for errors, particularly from installer.
+2. Run e2e tests on a clean install with dummy data.
 
-_Admin_
 
-1. Activation (new install)
-  1. Run through wizard
-2. Activation (existing install with content)
-3. Navigate through all admin screens, incl. settings.
-4. Save settings.
-5. Enable some shipping methods.
+_Admin checks_
+
+1. Activation on a **new install**
+  1. Ensure wizard is triggered.
+  2. Run through all wizard steps.
+2. Activation on an existing install.
+3. Navigate through all admin screens, including all settings screens.
+4. Save settings. Ensure there are no errors.
+5. Enable/configure some shipping methods.
 6. Enable cheque gateway for testing.
-7. Create simple product.
-8. Create variable product
-  1. Include global attribute.
-  2. Include product attribute.
+7. Create a new simple product.
+8. Create a new variable product
+  1. Include a global attribute.
+  2. Include a new product attribute.
 
 _Frontend/Checkout_
-1. View shop page and paginated pages. Add to cart.
-2. View category archive.
+
+Whilst logged out:
+
+1. View shop page and paginated pages. Check display. Add to cart.
+2. View category archive. Check display.
 3. View single product (simple). Add to cart.
 4. View single product (variable). Add to cart.
 5. View cart page.
   1. Check items are displayed correctly.
-  2. Calc shipping.
-  3. Inc/Dec item qty.
+  2. Calculate shipping. Refresh. Do changes persist?
+  3. Increment/decrement item quantities and save.
   4. Proceed to checkout.
 6. Enter details and checkout with Cheque or BACS.
   1. Make a mistake - are errors shown?
   2. Place order.
   3. Are the details correct after order placed?
   4. Check order emails are received and working.
-7. View account page. Is the order there?
-8. Go to order admin. Is the order correct?
-9. Mark order completed.
-  1. Confirm emails are sent.
+
+Repeat the above after logging in, then:
+
+1. View account page. Is the order there?
+2. Go to order admin. Is the order correct?
+3. Mark order completed. Confirm emails are sent.
