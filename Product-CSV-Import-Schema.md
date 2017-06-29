@@ -61,7 +61,7 @@ This is the schema used for the built in [CSV importer and exporter](https://git
 | `attributes` | Attribute 1 Visible | `1` | 1 or 0 |
 | `image_id / gallery_image_ids` | Images | `http://somewhere.com/image.jpg, http://somewhere.com/image2.jpg` | First is featured image. |
 | `attributes` | Attribute 1 Value(s) | `Blue, Red, Green` | List of values. Variations only need 1 value. First is used if multiple get provided. |
-| `downloads` | Download 1 Name | `Dowload 1` |  |
+| `downloads` | Download 1 Name | `Download 1` |  |
 | `downloads` | Download 1 URL | `url.zip` |  |
 | `download_limit ` | Download Limit | `1` | `n/a` or a limit. |
 | `download_expiry ` | Download Expiry Days | `1` | `n/a` or a day limit. |
