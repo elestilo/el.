@@ -6,7 +6,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-The new gallery introduced in 3.0.0 ([read here for more information](https://woocommerce.wordpress.com/2016/10/19/new-product-gallery-merged-in-to-core-for-2-7/)) uses Flexslider, Photowipe, and the jQuery Zoom plugin to offer swiping, lightboxes and other neat features.
+The new gallery introduced in 3.0.0 ([read here for more information](https://woocommerce.wordpress.com/2016/10/19/new-product-gallery-merged-in-to-core-for-2-7/)) uses Flexslider, Photoswipe, and the jQuery Zoom plugin to offer swiping, lightboxes and other neat features.
 
 This new gallery is off by default for custom and 3rd party themes since it's common to disable the WooCommerce gallery and replace with your own. To enable the gallery, you can declare support like this
 
