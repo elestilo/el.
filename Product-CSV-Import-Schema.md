@@ -9,6 +9,8 @@
 
 This is the schema used for the built in [CSV importer and exporter](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Importer-&-Exporter) in WooCommerce 3.1+.
 
+Visit the [Product CSV Importer and Exporter](https://docs.woocommerce.com/document/product-csv-importer-exporter/) guide for more information on how to use it.
+
 ## General CSV guidelines
 
 - CSVs should be in UTF-8 format.
@@ -25,46 +27,45 @@ This is the schema used for the built in [CSV importer and exporter](https://git
 
 ## CSV columns and formatting
 
-| Prop | Name in CSV | Example | Notes |
+| CSV Column Name | Product Properties | Example | Notes |
 |---|---|---|---|
-| `id` | ID | `100` | Defining this will overwrite data for that ID on import. |
-| `type` | Type | `simple`, `variation, virtual` | Product Type. Valid values: simple, variable, grouped, external, variation, virtual, downloadable. Multiple types can be used CSV separated. |
-| `sku` | SKU | `my-sku` | Required. Auto-generated if missing. |
-| `name` | Name | `My Product Name` | Required. |
-| `status` | Published | `1` | 1 for published, 0 for draft. |
-| `featured` | Is featured? | `1` | 1 or 0 |
-| `catalog_visibility` | Visibility in catalog | `visible` | Supported values: `visible`, `catalog`, `search`, `hidden` |
-| `short_description` | Short Description | `This is a product.` |  |
-| `description` | Description | `This is more information about a product.` |  |
-| `date_on_sale_from` | Date sale price starts | `2013-06-07 10:53:15` | Date or leave blank. |
-| `date_on_sale_to` | Date sale price ends | `2013-06-07 10:53:15` | Date or leave blank. |
-| `tax_status` | Tax Status | `taxable` | Supported values: `taxable`, `shipping`, `none` |
-| `tax_class` | Tax Class | `standard` | Can use any existing tax class. |
-| `stock_status` | In stock? | `1` | 1 or 0 |
-| `backorders` | Backorders allowed? | `1` | 1, 0, or `notify` |
-| `sold_individually` | Sold individually? | `1` | 1 or 0 |
-| `weight` | Weight (unit) | `100` | Parse only numbers. |
-| `length` | Length (unit) | `20` | Parse only numbers. |
-| `width` | Width (unit) | `20` | Parse only numbers. |
-| `height` | Height (unit) | `20` | Parse only numbers. |
-| `reviews_allowed` | Allow customer reviews? | `1` | 1 or 0 |
-| `purchase_note` | Purchase Note | `Thanks for buying it buddy.` |  |
-| `price` | Price | `20.99` | May set sale or regular price depending on other columns. |
-| `regular_price ` | Regular Price | `24.99` | Non-sale price. |
-| `manage_stock / stock_quantity ` | Stock | `20` | Numeric stock level enables stock management. `parent` can be used for variations. Blank = no stock management. |
-| `category_ids` | Categories | `Category 1, Category 1 > Category 2` | CSV list of categories. `>` used for hierarchy. |
-| `tag_ids ` | Tags | `Tax 1, Tag 2` | CSV list of tags. |
-| `shipping_class_id` | Shipping Class | `Name` | Name of shipping class |
-| `attributes` | Attribute 1 Name | `Color` | Looks for global attribute or uses text if not found. Include as many as needed. "Used for variations" is set automatically. |
-| `attributes` | Attribute 1 Value(s) | `Blue, Red, Green` | List of values. Variations only need 1 value. First is used if multiple get provided. |
-| `default_attributes` | Attribute 1 Default | `Blue` | Default value for variable products. |
-| `attributes` | Attribute 1 Visible | `1` | 1 or 0 |
-| `image_id / gallery_image_ids` | Images | `http://somewhere.com/image.jpg, http://somewhere.com/image2.jpg` | First is featured image. |
-| `attributes` | Attribute 1 Value(s) | `Blue, Red, Green` | List of values. Variations only need 1 value. First is used if multiple get provided. |
-| `downloads` | Download 1 Name | `Download 1` |  |
-| `downloads` | Download 1 URL | `url.zip` |  |
-| `download_limit ` | Download Limit | `1` | `n/a` or a limit. |
-| `download_expiry ` | Download Expiry Days | `1` | `n/a` or a day limit. |
-| `parent_id ` | Parent | `id:100`, `SKU-1` | Set parent ID. Used for simple products in a group and variations. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
-| `upsell_ids ` | Upsells | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
-| `cross_sell_ids ` | Cross-sells | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
+| `ID` | id | `100` | Defining this will overwrite data for that ID on import. |
+| `Type` | type | `simple`, `variation, virtual` | Product Type. Valid values: simple, variable, grouped, external, variation, virtual, downloadable. Multiple types can be used CSV separated. |
+| `SKU` | sku | `my-sku` | Required. Auto-generated if missing. |
+| `Name` | name | `My Product Name` | Required. |
+| `Published` | status | `1` | 1 for published, 0 for draft. |
+| `Is featured?` | featured | `1` | 1 or 0 |
+| `Visibility in catalog` | catalog_visibility | `visible` | Supported values: `visible`, `catalog`, `search`, `hidden` |
+| `Short Description` | short_description | `This is a product.` |  |
+| `Description` | description | `This is more information about a product.` |  |
+| `Date sale price starts` | date_on_sale_from | `2013-06-07 10:53:15` | Date or leave blank. |
+| `Date sale price ends` | date_on_sale_to | `2013-06-07 10:53:15` | Date or leave blank. |
+| `Tax Status` | tax_status | `taxable` | Supported values: `taxable`, `shipping`, `none` |
+| `Tax Class` | tax_class | `standard` | Can use any existing tax class. |
+| `In stock?` | stock_status | `1` | 1 or 0 |
+| `Backorders allowed?` | backorders | `1` | 1, 0, or `notify` |
+| `Sold individually?` | sold_individually | `1` | 1 or 0 |
+| `Weight (unit)` | weight | `100` | Parse only numbers. |
+| `Length (unit)` | length | `20` | Parse only numbers. |
+| `Width (unit)` | width | `20` | Parse only numbers. |
+| `Height (unit)` | height | `20` | Parse only numbers. |
+| `Allow customer reviews?` | reviews_allowed | `1` | 1 or 0 |
+| `Purchase Note` | purchase_note | `Thanks for buying it buddy.` |  |
+| `Price` | price | `20.99` | May set sale or regular price depending on other columns. |
+| `Regular Price` | regular_price | `24.99` | Non-sale price. |
+| `Stock` | manage_stock / stock_quantity | `20` | Numeric stock level enables stock management. `parent` can be used for variations. Blank = no stock management. |
+| `Categories` | category_ids | `Category 1, Category 1 > Category 2` | CSV list of categories. `>` used for hierarchy. |
+| `Tags` | tag_ids | `Tax 1, Tag 2` | CSV list of tags. |
+| `Shipping Class` | shipping_class_id | `Name` | Name of shipping class |
+| `Attribute 1 Name` | attributes | `Color` | Looks for global attribute or uses text if not found. Include as many as needed. "Used for variations" is set automatically. |
+| `Attribute 1 Value(s)` | attributes | `Blue, Red, Green` | List of values. Variations only need 1 value. First is used if multiple get provided. |
+| `Attribute 1 Default` | default_attributes | `Blue` | Default value for variable products. |
+| `Attribute 1 Visible` | attributes | `1` | 1 or 0 |
+| `Images` | image_id / gallery_image_ids | `http://somewhere.com/image.jpg, http://somewhere.com/image2.jpg` | First is featured image. |
+| `Download 1 Name` | downloads | `Download 1` |  |
+| `Download 1 URL` | downloads | `url.zip` |  |
+| `Download Limit` | download_limit | `1` | `n/a` or a limit. |
+| `Download Expiry Days` | download_expiry | `1` | `n/a` or a day limit. |
+| `Parent` | parent_id | `id:100`, `SKU-1` | Set parent ID. Used for simple products in a group and variations. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
+| `Upsells` | upsell_ids | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
+| `Cross-sells` | cross_sell_ids | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
