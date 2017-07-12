@@ -1,4 +1,3 @@
-# Roadmap and release process
 WooCommerce has a minor release (e.g., 3.1, 3.2) every 3-4 months, typically per quarter. Each cycle consists of:
 
 - 4-6 weeks development (1 sprint per week)
