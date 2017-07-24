@@ -309,7 +309,7 @@ $args = array(
 $products = wc_get_products( $args );
 ```
 
-**virtual, downloadable, featured, sold_individually, backorders, manage_stock, reviews_allowed**
+**virtual, downloadable, featured, sold_individually, manage_stock, reviews_allowed**
 
 Accepts a boolean: Limit results to products with the specific settings or features.
 
