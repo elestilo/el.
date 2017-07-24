@@ -49,35 +49,51 @@ $products = $query->get_products();
 
 **status**
 
-Accepts a string: one of 'pending', 'processing', 'on-hold', 'completed', 'refunded, 'failed', 'cancelled', or a custom order status.
+Accepts a string or array of strings: one or more of of 'draft', 'pending', 'private', 'publish', or a custom status.
 
 ```
-// Get orders on hold.
+// Get draft products.
 $args = array(
-    'status' => 'on-hold',
+    'status' => 'draft',
 );
-$orders = wc_get_orders( $args );
+$products = wc_get_products( $args );
 ```
 
 **type**
 
-TODO
+Accepts a string or array of strings: one or more of 'external', 'grouped', 'simple', 'variable', or a custom type.
 
 ```
+// Get external products.
+$args = array(
+    'type' => 'external',
+);
+$products = wc_get_products( $args );
 ```
 
 **include**
 
-TODO
+Accepts an array of integers: Only includes products with IDs in the array.
 
 ```
+// Get external products limited to ones with specific IDs.
+$args = array(
+    'type' => 'external',
+    'include' => array( 134, 200, 210, 340 ),
+);
+$products = wc_get_products( $args );
 ```
 
 **exclude**
 
-TODO
+Accepts an array of integers: Excludes products with IDs in the array.
 
 ```
+// Get products that aren't the current product.
+$args = array(
+    'exclude' => array( $product->get_id() ),
+);
+$products = wc_get_products( $args );
 ```
 
 **parent**
