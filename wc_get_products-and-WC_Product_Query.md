@@ -222,65 +222,72 @@ $products = wc_get_products( $args );
 
 **return**
 
-TODO
+Accepts a string: 'ids' or 'objects'.
+
+Default: 'objects'.
 
 ```
+// Get product ids.
+$args = array(
+    'return' => 'ids',
+);
+$products = wc_get_products( $args );
 ```
 
 ### Product 
 
 **slug**
 
-TODO
+Accepts a string: Product slug to match on.
 
 ```
 ```
 
 **sku**
 
-TODO
+Accepts a string: Product SKU to match on. Does partial matching on the SKU.
 
 ```
 ```
 
 **tag**
 
-TODO
+Accepts an array: Limit results to products assigned to specific tags by slug.
 
 ```
 ```
 
 **category**
 
-TODO
+Accepts an array: Limit result to products assigned to specific categories by slug.
 
 ```
 ```
 
 **weight, length, width, height**
 
-TODO
+Accepts a float: The dimension measurement to match on.
 
 ```
 ```
 
 **price, regular_price, sale_price**
 
-TODO
+Accepts a float: The price to match on. 
 
 ```
 ```
 
 **total_sales**
 
-TODO
+Accepts an int: Gets products with that many sales.
 
 ```
 ```
 
 **virtual, downloadable, featured, sold_individually, backorders, manage_stock, reviews_allowed**
 
-TODO
+Accepts a boolean: Limit results to products with the specific settings or features.
 
 ```
 ```
@@ -294,35 +301,36 @@ TODO
 
 **stock_quantity**
 
-TODO
+Accepts an int: The quantity of a product in stock.
 
 ```
 ```
 
 **stock_status**
 
-TODO
+Accepts a string: 'outofstock' or 'instock'.
 
 ```
 ```
 
 **tax_status**
 
-TODO
+Accepts a string: 'taxable', 'shipping', or 'none'.
 
 ```
 ```
 
 **tax_class**
 
-TODO
+Accepts a string: A tax class slug.
 
 ```
+//: e.g. 'reduced-rate'.
 ```
 
 **shipping_class**
 
-TODO
+Accepts a string: A shipping class slug.
 
 ```
 ```
