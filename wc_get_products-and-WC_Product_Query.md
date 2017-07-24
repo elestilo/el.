@@ -353,7 +353,7 @@ Accepts a string: 'outofstock' or 'instock'.
 ```
 // Get out of stock products.
 $args = array(
-    'stock_status' =>'outofstock',
+    'stock_status' => 'outofstock',
 );
 $products = wc_get_products( $args );
 ```
@@ -365,7 +365,7 @@ Accepts a string: 'taxable', 'shipping', or 'none'.
 ```
 // Get taxable products.
 $args = array(
-    'stock_status' =>'taxable',
+    'stock_status' => 'taxable',
 );
 $products = wc_get_products( $args );
 ```
@@ -377,7 +377,7 @@ Accepts a string: A tax class slug.
 ```
 // Get products in the "Reduced Rate" tax class.
 $args = array(
-    'tax_class' =>'reduced-rate',
+    'tax_class' => 'reduced-rate',
 );
 $products = wc_get_products( $args );
 ```
@@ -387,6 +387,12 @@ $products = wc_get_products( $args );
 Accepts a string or array of strings: One or more shipping class slugs.
 
 ```
+// Get products in the "Bulky" shipping class.
+$args = array(
+    'shipping_class' => 'bulky',
+);
+$products = wc_get_products( $args );
+
 ```
 
 **download_limit, download_expiry**
@@ -394,6 +400,11 @@ Accepts a string or array of strings: One or more shipping class slugs.
 Accepts an integer: The download limit/expiry or `-1` for unlimited.
 
 ```
+// Get products with unlimited downloads.
+$args = array(
+    'download_limit' => -1,
+);
+$products = wc_get_products( $args );
 ```
 
 **average_rating**
@@ -401,6 +412,11 @@ Accepts an integer: The download limit/expiry or `-1` for unlimited.
 Accepts a float: The average rating.
 
 ```
+// Get products with all 5-star ratings.
+$args = array(
+    'average_rating' => 5.0,
+);
+$products = wc_get_products( $args );
 ```
 
 **review_count**
@@ -408,6 +424,11 @@ Accepts a float: The average rating.
 Accepts an int: The number of reviews.
 
 ```
+// Get products with 1 review.
+$args = array(
+    'review_count' => 1,
+);
+$products = wc_get_products( $args );
 ```
 
 ### Date
