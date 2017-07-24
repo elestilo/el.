@@ -322,6 +322,18 @@ $args = array(
 $products = wc_get_products( $args );
 ```
 
+**backorders**
+
+Accepts a string: 'yes', 'no', or 'notify'.
+
+```
+// Get products that allow backorders.
+$args = array(
+    'backorders' => 'yes',
+);
+$products = wc_get_products( $args );
+```
+
 **visibility**
 
 Accepts a string or array of strings: One or more of 'visible', 'catalog', 'search', or 'hidden'.
