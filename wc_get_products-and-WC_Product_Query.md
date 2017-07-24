@@ -236,18 +236,16 @@ $products = wc_get_products( $args );
 
 ### Product 
 
-**slug**
-
-Accepts a string: Product slug to match on.
-
-```
-```
-
 **sku**
 
 Accepts a string: Product SKU to match on. Does partial matching on the SKU.
 
 ```
+// Get products with "PRDCT" in their SKU (e.g. PRDCT-1 and PRDCT-2).
+$args = array(
+    'sku' => 'PRDCT',
+);
+$products = wc_get_products( $args );
 ```
 
 **tag**
@@ -255,6 +253,11 @@ Accepts a string: Product SKU to match on. Does partial matching on the SKU.
 Accepts an array: Limit results to products assigned to specific tags by slug.
 
 ```
+// Get products with the "Excellent" or "Modern" tags.
+$args = array(
+    'tag' => array( 'excellent', 'modern' ),
+);
+$products = wc_get_products( $args );
 ```
 
 **category**
@@ -262,6 +265,11 @@ Accepts an array: Limit results to products assigned to specific tags by slug.
 Accepts an array: Limit result to products assigned to specific categories by slug.
 
 ```
+// Get shirts.
+$args = array(
+    'category' => array( 'shirts' ),
+);
+$products = wc_get_products( $args );
 ```
 
 **weight, length, width, height**
@@ -269,6 +277,12 @@ Accepts an array: Limit result to products assigned to specific categories by sl
 Accepts a float: The dimension measurement to match on.
 
 ```
+// Get products 5.5 units wide and 10 units long.
+$args = array(
+    'width' => 5.5,
+    'length' => 10,
+);
+$products = wc_get_products( $args );
 ```
 
 **price, regular_price, sale_price**
@@ -276,6 +290,11 @@ Accepts a float: The dimension measurement to match on.
 Accepts a float: The price to match on. 
 
 ```
+// Get products that currently cost 9.99.
+$args = array(
+    'price' => 9.99,
+);
+$products = wc_get_products( $args );
 ```
 
 **total_sales**
@@ -283,6 +302,11 @@ Accepts a float: The price to match on.
 Accepts an int: Gets products with that many sales.
 
 ```
+// Get products that have never been purchased.
+$args = array(
+    'total_sales' => 0,
+);
+$products = wc_get_products( $args );
 ```
 
 **virtual, downloadable, featured, sold_individually, backorders, manage_stock, reviews_allowed**
@@ -290,13 +314,24 @@ Accepts an int: Gets products with that many sales.
 Accepts a boolean: Limit results to products with the specific settings or features.
 
 ```
+// Get downloadable products that don't allow reviews.
+$args = array(
+    'downloadable' => true,
+    'reviews_allowed' => false,
+);
+$products = wc_get_products( $args );
 ```
 
 **visibility**
 
-TODO
+Accepts a string or array of strings: One or more of 'visible', 'catalog', 'search', or 'hidden'.
 
 ```
+// Get products that show in the catalog.
+$args = array(
+    'visibility' => array( 'visible', 'catalog' ),
+);
+$products = wc_get_products( $args );
 ```
 
 **stock_quantity**
@@ -304,6 +339,11 @@ TODO
 Accepts an int: The quantity of a product in stock.
 
 ```
+// Get products that only have one left in stock.
+$args = array(
+    'stock_quantity' => 1,
+);
+$products = wc_get_products( $args );
 ```
 
 **stock_status**
@@ -311,6 +351,11 @@ Accepts an int: The quantity of a product in stock.
 Accepts a string: 'outofstock' or 'instock'.
 
 ```
+// Get out of stock products.
+$args = array(
+    'stock_status' =>'outofstock',
+);
+$products = wc_get_products( $args );
 ```
 
 **tax_status**
@@ -318,6 +363,11 @@ Accepts a string: 'outofstock' or 'instock'.
 Accepts a string: 'taxable', 'shipping', or 'none'.
 
 ```
+// Get taxable products.
+$args = array(
+    'stock_status' =>'taxable',
+);
+$products = wc_get_products( $args );
 ```
 
 **tax_class**
@@ -325,68 +375,37 @@ Accepts a string: 'taxable', 'shipping', or 'none'.
 Accepts a string: A tax class slug.
 
 ```
-//: e.g. 'reduced-rate'.
+// Get products in the "Reduced Rate" tax class.
+$args = array(
+    'tax_class' =>'reduced-rate',
+);
+$products = wc_get_products( $args );
 ```
 
 **shipping_class**
 
-Accepts a string: A shipping class slug.
+Accepts a string or array of strings: One or more shipping class slugs.
 
 ```
 ```
 
-**upsell_ids, cross_sell_ids**
+**download_limit, download_expiry**
 
-TODO
-
-```
-```
-
-**attributes**
-
-TODO
-
-```
-```
-
-**default_attributes**
-
-TODO
-
-```
-```
-
-**menu_order**
-
-TODO
-
-```
-```
-
-**download_limit**
-
-TODO
-
-```
-```
-
-**download_expiry**
-
-TODO
+Accepts an integer: The download limit/expiry or `-1` for unlimited.
 
 ```
 ```
 
 **average_rating**
 
-TODO
+Accepts a float: The average rating.
 
 ```
 ```
 
 **review_count**
 
-TODO
+Accepts an int: The number of reviews.
 
 ```
 ```
