@@ -7,29 +7,30 @@
 Here are a few examples:
 
 ```
-// Get orders from people named John that were paid in the year 2016.
-$orders = wc_get_orders( array(
-    'billing_first_name' => 'John',
-    'date_paid' => '2016-01-01...2016-12-31`,
+// Get downloadable products created in the year 2016.
+$products = wc_get_products( array(
+    'downloadable' => true,
+    'date_created' => '2016-01-01...2016-12-31`,
 ) );
 ```
 
 ```
-// Get 10 most recent order ids in date descending order.
-$query = new WC_Order_Query( array(
+// Get 10 most recent product ids in date descending order.
+$query = new WC_Product_Query( array(
     'limit' => 10,
     'orderby' => 'date',
     'order' => 'DESC',
     'return' => 'ids',
 ) );
-$orders = $query->get_orders();
+$products = $query->get_products();
 ```
 
 ```
-// Get orders from the customer with email 'woocommerce@woocommerce.com'.
-$query = new WC_Order_Query();
-$query->set( 'customer', 'woocommerce@woocommerce.com' );
-$orders = $query->get_orders();
+// Get products containing a specific SKU.
+// Does partial matching, so this will get products with SKUs "PRDCT-1", "PRDCT-2", etc.
+$query = new WC_Product_Query();
+$query->set( 'sku', 'PRDCT' );
+$products = $query->get_products();
 ```
 
 ## WC_Product_Query Methods
