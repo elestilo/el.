@@ -1,6 +1,6 @@
 ## Description
 
-`wc_get_orders` and `WC_Order_Query` provide a standard way of retrieving orders that is safe to use and will not break due to database changes in future WooCommerce versions. Building custom WP_Queries or database queries is likely to break your code in future versions of WooCommerce as data moves towards custom tables for better performance. This is the best-practices way for plugin and theme developers to retrieve multiple orders. `wc_get_orders` and `WC_Order_Query` are similar to WordPress [`get_posts` and `WP_Query`](https://codex.wordpress.org/Class_Reference/WP_Query). Just like those, you pass in an array of arguments defining the criteria for the search.
+`wc_get_products` and `WC_Product_Query` provide a standard way of retrieving products that is safe to use and will not break due to database changes in future WooCommerce versions. Building custom WP_Queries or database queries is likely to break your code in future versions of WooCommerce as data moves towards custom tables for better performance. This is the best-practices way for plugin and theme developers to retrieve multiple products. `wc_get_products` and `WC_Product_Query` are similar to WordPress [`get_posts` and `WP_Query`](https://codex.wordpress.org/Class_Reference/WP_Query). Just like those, you pass in an array of arguments defining the criteria for the search.
 
 ## Usage
 
@@ -57,6 +57,70 @@ $args = array(
 );
 $orders = wc_get_orders( $args );
 ```
+
+```
+'parent'
+'parent_exclude'
+'exclude'
+'limit'
+'page' 
+'offset' 
+'paginate' 
+
+'order'
+'orderby' 
+
+'return'
+
+'status'
+'type'
+'limit'
+'include'
+'slug'
+'date_created'
+'date_modified'
+'featured'
+'catalog_visibility'
+'description'
+'short_description'
+'sku'
+'price'
+'regular_price'
+'sale_price'
+'date_on_sale_from'
+'date_on_sale_to'
+'total_sales'
+'tax_status'
+'tax_class'
+'manage_stock'
+'stock_quantity'
+'stock_status'
+'backorders'
+'sold_individually'
+'weight'
+'length'
+'width'
+'height'
+'upsell_ids'
+'cross_sell_ids'
+'reviews_allowed'
+'purchase_note'
+'attributes'
+'default_attributes'
+'menu_order'
+'virtual'
+'downloadable'
+'category'
+'tag'
+'shipping_class'
+'image_id'
+'download_limit'
+'download_expiry'
+'rating_counts'
+'average_rating'
+'review_count'
+```
+
 
 ### Date
 
