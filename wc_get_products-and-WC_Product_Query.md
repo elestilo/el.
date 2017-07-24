@@ -15,7 +15,7 @@ $products = wc_get_products( array(
 ```
 
 ```
-// Get 10 most recent product ids in date descending order.
+// Get 10 most recent product IDs in date descending order.
 $query = new WC_Product_Query( array(
     'limit' => 10,
     'orderby' => 'date',
@@ -98,58 +98,126 @@ $products = wc_get_products( $args );
 
 **parent**
 
-TODO
+Accepts an integer: post ID of the product parent.
 
 ```
+// Get products with a specific parent.
+$args = array(
+    'parent' => 20,
+);
+$products = wc_get_products( $args );
 ```
 
 **parent_exclude**
 
-TODO
+Accepts an array of integers: Excludes products with parent ids in the array.
 
 ```
+// Get products that don't have parent IDs of 20 or 21.
+$args = array(
+    'parent_exclude' => array( 20, 21 ),
+);
+$products = wc_get_products( $args );
 ```
 
 **limit**
 
-TODO
+Accepts an integer: Maximum number of results to retrieve or `-1` for unlimited.
 
 ```
+// Get latest 3 products.
+$args = array(
+    'limit' => 3,
+);
+$products = wc_get_products( $args );
 ```
 
-**page**
+**paged**
 
-TODO
+Accepts an integer: Page of results to retrieve. Does nothing if 'offset' is used.
 
 ```
+// First 3 products.
+$args = array(
+    'limit' => 3,
+    'paged' => 1,
+);
+$page_1_products = wc_get_products( $args );
+
+// Second 3 products.
+$args = array(
+    'limit' => 3,
+    'paged' => 2,
+);
+$page_2_products = wc_get_products( $args );
 ```
 
 **paginate**
 
-TODO
+Accepts a boolean: True for pagination, or false for not.
+
+Default: false.
+
+Modifies the return results to give an object with fields:
+
+_products_: Array of found products.
+
+_total_: Number of found products.
+
+_max_num_pages_: The total number of pages.
 
 ```
+// Get products with extra info about the results.
+$args = array(
+    'paginate' => true,
+);
+$results = wc_get_products( $args );
+echo $results->total . ' products found\n';
+echo 'Page 1 of ' . $results->max_num_pages . '\n';
+echo 'First product id is: ' . $results->products[0]->get_id() . '\n';
 ```
 
 **offset**
 
-TODO
+Accepts an integer: Amount to offset product results.
 
 ```
+// Get second to fifth most-recent products.
+$args = array(
+    'limit' => 4,
+    'offset' => 1
+);
+$products = wc_get_products( $args );
+
 ```
 
 **order**
 
-TODO
+Accepts a string: 'DESC' or 'ASC'. Use with 'orderby'.
+
+Default: 'DESC'.
 
 ```
+// Get most recently modified products.
+$args = array(
+    'orderby' => 'modified',
+    'order' => 'DESC',
+);
+$products = wc_get_products( $args );
 ```
 
 **orderby**
 
-TODO
+Accepts a string: 'none', 'ID', 'name', 'type', 'rand', 'date', 'modified'.
+
+Default: 'date'.
 
 ```
+// Get some random products.
+$args = array(
+    'orderby' => 'rand',
+);
+$products = wc_get_products( $args );
 ```
 
 **return**
