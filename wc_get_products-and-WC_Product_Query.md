@@ -336,12 +336,12 @@ $products = wc_get_products( $args );
 
 **visibility**
 
-Accepts a string or array of strings: One or more of 'visible', 'catalog', 'search', or 'hidden'.
+Accepts a string: One of 'visible', 'catalog', 'search', or 'hidden'.
 
 ```
 // Get products that show in the catalog.
 $args = array(
-    'visibility' => array( 'visible', 'catalog' ),
+    'visibility' => 'catalog',
 );
 $products = wc_get_products( $args );
 ```
