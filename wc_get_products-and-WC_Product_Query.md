@@ -472,6 +472,13 @@ Accepts a string. Date queries use a standard format:
 `<=TIMESTAMP` - Matches on products during or before that one second in UTC timezone.
 
 `TIMESTAMP...TIMESTAMP` - Matches on products during or in between the seconds in UTC timezone.
+```
+// Get downloadable products created in the year 2016.
+$products = wc_get_products( array(
+    'downloadable' => true,
+    'date_created' => '2016-01-01...2016-12-31`,
+) );
+```
 
 ## Adding Custom Parameter Support
 
