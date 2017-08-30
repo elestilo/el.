@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Replaced shortcode attributes.](#replaced-shortcode-attributes)
+- [Products shortcode](#products-shortcode)
+  - [Available attributes](#available-attributes)
+  - [Examples](#examples)
+    - [Products by category](#products-by-category)
+    - [Products by attribute](#products-by-attribute)
+    - [Products by ID](#products-by-id)
+    - [Products by SKU](#products-by-sku)
+    - [Recent products](#recent-products)
+    - [On sale products](#on-sale-products)
+    - [Best selling products](#best-selling-products)
+    - [Top rated products](#top-rated-products)
+    - [Featured products](#featured-products)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Shortcodes has been improved on WooCommerce 3.2.0, see the changes:
 
 ## Replaced shortcode attributes.
