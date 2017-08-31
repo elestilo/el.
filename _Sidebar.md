@@ -30,6 +30,7 @@
 - [Customising account page tabs](Customising-account-page-tabs)
 - [End-to-end Testing](End-to-end-Testing)
 - [wc_get_orders and WC_Order_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query)
+- [wc_get_products and WC_Product_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_products-and-WC_Product_Query)
 - [Importer and Exporter](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Importer-&-Exporter)
 
 **Contribution / Guidelines**
