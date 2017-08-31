@@ -482,4 +482,29 @@ $products = wc_get_products( array(
 
 ## Adding Custom Parameter Support
 
-**TODO**
+It is possible to add support for custom parameters in `wc_get_products` or `WC_Product_Query`. To do this you need to filter the generated query.
+
+```
+/**
+ * Handle a custom 'customvar' query var to get products with the 'customvar' meta.
+ * @param array $query - Args for WP_Query.
+ * @param array $query_vars - Query vars from WC_Product_Query.
+ * @return array modified $query
+ */
+function handle_custom_query_var( $query, $query_vars ) {
+	if ( ! empty( $query_vars['customvar'] ) ) {
+		$query['meta_query'][] = array(
+			'key' => 'customvar',
+			'value' => esc_attr( $query_vars['customvar'] ),
+		);
+	}
+
+	return $query;
+}
+add_filter( 'woocommerce_product_data_store_cpt_get_products_query', 'handle_custom_query_var', 10, 2 );
+```
+
+Usage:
+```
+$products = wc_get_products( array( 'customvar' => 'somevalue' ) );
+```
