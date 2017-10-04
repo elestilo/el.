@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Use coding standards](#use-coding-standards)
+- [Template structure](#template-structure)
+  - [Structuring templates logically](#structuring-templates-logically)
+  - [Example template header](#example-template-header)
+  - [Variables and PHP logic](#variables-and-php-logic)
+  - [Localized strings](#localized-strings)
+  - [Action and filter hooks](#action-and-filter-hooks)
+  - [Function calls](#function-calls)
+- [Hook vs override - when to use what](#hook-vs-override---when-to-use-what)
+- [Overriding templates in plugins](#overriding-templates-in-plugins)
+- [Templates changes](#templates-changes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 WooCommerce core contains a series of templates which control the overall layout of WooCommerce store pages. They can be found within the `woocommerce/templates` directory.
 
 These templates can contain a mixture of:
