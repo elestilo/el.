@@ -27,7 +27,7 @@ Visit the [Product CSV Importer and Exporter](https://docs.woocommerce.com/docum
 
 ## CSV columns and formatting
 
-| CSV Column Name | Product Properties | Example | Notes |
+| CSV Column Name | Maps to product property | Example | Notes |
 |---|---|---|---|
 | `ID` | id | `100` | Defining this will overwrite data for that ID on import. |
 | `Type` | type | `simple`, `variation, virtual` | Product Type. Valid values: simple, variable, grouped, external, variation, virtual, downloadable. Multiple types can be used CSV separated. |
@@ -60,7 +60,8 @@ Visit the [Product CSV Importer and Exporter](https://docs.woocommerce.com/docum
 | `Attribute 1 Name` | attributes | `Color` | Looks for global attribute or uses text if not found. Include as many as needed. "Used for variations" is set automatically. |
 | `Attribute 1 Value(s)` | attributes | `Blue, Red, Green` | List of values. Variations only need 1 value. First is used if multiple get provided. |
 | `Attribute 1 Default` | default_attributes | `Blue` | Default value for variable products. |
-| `Attribute 1 Visible` | attributes | `1` | 1 or 0 |
+| `Attribute 1 Visible` | attributes | `1` | 1 or 0. Mapping screen labels this as "Attribute Visibility" |
+| `Attribute 1 Global` | attributes | `1` | 1 or 0. Mapping screen labels this as "Is a global attribute?" |
 | `Images` | image_id / gallery_image_ids | `http://somewhere.com/image.jpg, http://somewhere.com/image2.jpg` | First is featured image. |
 | `Download 1 Name` | downloads | `Download 1` |  |
 | `Download 1 URL` | downloads | `url.zip` |  |
@@ -69,3 +70,4 @@ Visit the [Product CSV Importer and Exporter](https://docs.woocommerce.com/docum
 | `Parent` | parent_id | `id:100`, `SKU-1` | Set parent ID. Used for simple products in a group and variations. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
 | `Upsells` | upsell_ids | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
 | `Cross-sells` | cross_sell_ids | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
+| `Position` | menu_order | `1` | Menu order, used for sorting. |
