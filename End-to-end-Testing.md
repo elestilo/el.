@@ -19,17 +19,15 @@ The end-to-end tests bundled in WooCommerce can be used to verify WooCommerce is
 
 ## Getting started
 
-Getting set up with and running the end-to-end tests is a fairly straightforward process that should take you less than 15 minutes. In the future, some of these steps are going to get automated for an easier and quicker set up.
-1. Start with a clean WooCommerce install.
-2. Use one of the following themes: twenty-twelve, twenty-fifteen, Storefront.
-3. Import the WooCommerce dummy data using the WordPress Importer. The dummy data can be found in the WooCommerce plugin folder at `dummy-data/dummy-data.xml`.
-4. Add a flat rate shipping method to the default "Rest of the World" shipping zone.
-5. `cd` to the WooCommerce plugin folder.
-6. Run `npm install` to get all of the dependencies.
-7. Copy the file `tests/e2e-tests/config/local-sample.json` to `tests/e2e-tests/config/local-development.json`.
-8. Fill in the correct details in `local-development.json`.
-9. To run all of the tests run `grunt e2e-tests`. If you want to run only one file's tests you can use the `e2e-test` command with the `--file` flag: `grunt e2e-test --file="checkout-page.js"`.
-10. Sit back and relax while the computer does all of the work.
+Getting set up with and running the end-to-end tests is a fairly straightforward process that should take you less than 15 minutes.
+1. Start with a local WordPress development environment (e.g. VVV) with WooCommerce available and one of the following themes: twenty-twelve, twenty-fifteen, Storefront.
+2. Import the SQL database from `tests/e2e-tests/data/e2e-db.sql` into your environment. There are many potential ways you can do this and many tutorials are available for this. 
+3. `cd` to the WooCommerce plugin folder.
+4. Run `npm install` to get all of the dependencies.
+5. Copy the file `tests/e2e-tests/config/local-sample.json` to `tests/e2e-tests/config/local-development.json`.
+6. Fill in the correct details in `local-development.json`.
+7. To run all of the tests run `grunt e2e-tests`. If you want to run only one file's tests you can use the `e2e-test` command with the `--file` flag: `grunt e2e-test --file="checkout-page.js"`.
+8. Sit back and relax while the computer does all of the work.
 
 ## Using the end-to-end components for testing your extensions
 
