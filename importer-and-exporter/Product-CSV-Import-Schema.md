@@ -67,7 +67,7 @@ Visit the [Product CSV Importer and Exporter](https://docs.woocommerce.com/docum
 | `Download 1 URL` | downloads | `url.zip` |  |
 | `Download Limit` | download_limit | `1` | `n/a` or a limit. |
 | `Download Expiry Days` | download_expiry | `1` | `n/a` or a day limit. |
-| `Parent` | parent_id | `id:100`, `SKU-1` | Set parent ID. Used for simple products in a group and variations. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
+| `Parent` | parent_id | `id:100`, `SKU-1` | Set parent ID. Used for variations. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
 | `Upsells` | upsell_ids | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
 | `Cross-sells` | cross_sell_ids | `id:100, id:101`, `SKU-1, SKU-2` | List of IDs. Can be just a numeric ID e.g. `id:100` or a SKU. Export will use SKU when possible. |
 | `Position` | menu_order | `1` | Menu order, used for sorting. |
