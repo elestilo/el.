@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Backward Compatibility](#backward-compatibility)
+- [Roadmap](#roadmap)
+- [Feature requests](#feature-requests)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 WooCommerce has a minor release (e.g., 3.1, 3.2) every 3-4 months, typically per quarter. Each cycle consists of:
 
 - 4-6 weeks development (1 sprint per week)
