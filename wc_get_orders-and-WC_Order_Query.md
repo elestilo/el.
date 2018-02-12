@@ -216,9 +216,9 @@ $args = array(
     'paginate' => true,
 );
 $results = wc_get_orders( $args );
-echo $results->total . ' orders found\n';
-echo 'Page 1 of ' $results->max_num_pages . '\n';
-echo 'First order id is: ' . $results->orders[0]->get_id() . '\n';
+echo $results->total . " orders found\n";
+echo 'Page 1 of ' . $results->max_num_pages . "\n";
+echo 'First order id is: ' . $results->orders[0]->get_id() . "\n";
 ```
 
 **order**
