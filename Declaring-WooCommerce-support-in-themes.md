@@ -8,7 +8,7 @@ Declaring WooCommerce support is straightforward and involves adding one functio
 function mytheme_add_woocommerce_support() {
 	add_theme_support( 'woocommerce' );
 }
-add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' )
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 ```
 
 Make sure you are using the `after_setup_theme` hook and not the `init` hook. Read more about this at the documentation for [add_theme_support](https://developer.wordpress.org/reference/functions/add_theme_support/).
