@@ -37,7 +37,7 @@ add_filter( 'woocommerce_background_image_regeneration', '__return_false' );
 
 Once disabled, you'll need to regenerate thumbnails manually using another tool should you change image size settings and need new thumbnails.
 
-Alternatively, use [Jetpack Photon module](https://jetpack.com/support/photon/) which will be used instead if enabled as of WooCommerce 3.3.2.
+Alternatively, you can use the [Jetpack Photon module](https://jetpack.com/support/photon/) which can do image resizing on the fly and will be used instead of background regeneration as of WooCommerce 3.3.2.
 
 ## Using Jetpack Photon instead
 
