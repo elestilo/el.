@@ -1,6 +1,7 @@
 **Release Notes**
 - [2.6.x to 3.0.0 Developer Migration Notes](2.6.x-to-3.0.0-Developer-Migration-Notes)
 - [Select2 fields not working in 3.0.x](https://github.com/woocommerce/woocommerce/wiki/Select2-fields-not-working-in-3.0.x)
+- [Thumbnail Image Regeneration in 3.3+](https://github.com/woocommerce/woocommerce/wiki/Thumbnail-Image-Regeneration-in-3.3-)
 
 **REST API and CLI**
 - [Getting started with the REST API](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
