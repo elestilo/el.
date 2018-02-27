@@ -33,7 +33,7 @@ Visit the [Product CSV Importer and Exporter](https://docs.woocommerce.com/docum
 | `Type` | type | `simple`, `variation, virtual` | Product Type. Valid values: simple, variable, grouped, external, variation, virtual, downloadable. Multiple types can be used CSV separated. |
 | `SKU` | sku | `my-sku` | Required. Auto-generated if missing. |
 | `Name` | name | `My Product Name` | Required. |
-| `Published` | status | `1` | 1 for published, 0 for draft. |
+| `Published` | status | `1` | 1 for published, 0 for private, -1 for draft. |
 | `Is featured?` | featured | `1` | 1 or 0 |
 | `Visibility in catalog` | catalog_visibility | `visible` | Supported values: `visible`, `catalog`, `search`, `hidden` |
 | `Short Description` | short_description | `This is a product.` |  |
