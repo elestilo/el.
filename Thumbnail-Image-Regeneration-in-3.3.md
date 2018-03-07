@@ -1,4 +1,4 @@
-WooCommerce 3.3 introduced thumbnail regeneration functionality. In the past when image size settings were changed you would ned to install an external plugin and then have it regenerate all WordPress image thumbnails before the changes would be visible.
+WooCommerce 3.3 introduced thumbnail regeneration functionality. In the past when image size settings were changed you would need to install an external plugin and then have it regenerate all WordPress image thumbnails before the changes would be visible.
 
 The new image regeneration functionality, combined with the introduction of WooCommerce image settings in the customizer, now ensure that as you make changes to your store image settings you can preview the changes in real-time within the customizer.
 
