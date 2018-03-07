@@ -1,3 +1,5 @@
+[Note: This document is now maintained in the WooCommerce documents](https://docs.woocommerce.com/document/image-sizes-theme-developers/).
+
 To display images in your catalog, WooCommerce registers a few new image sizes which define the actual image dimensions to be used. These sizes include:
 
 - `woocommerce_thumbnail` - used in the product 'grids' in places such as the shop page.
