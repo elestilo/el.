@@ -30,11 +30,13 @@ To work out how much tax is applicable to a given price there is a calculation l
 
 **For tax inclusive prices**
 
-    Tax = Price - Price / 1.2
+    Tax = Line Price - Line Price / 1.2
 
 **For tax exclusive prices**
 
-    Tax = Price * 0.2
+    Tax = Line Price * 0.2
+
+Tax calculations are performed **per line**, not per item.
 
 ## Cross-border/country/region taxes
 
