@@ -11,6 +11,12 @@ When you make changes to image sizes/aspect ratios in the customiser, or if your
 
 Whilst in the customizer, size changes can be previewed due to our on-the-fly image regen. These changes will not be persisted to the live site until you hit publish.
 
+### Background jobs and BasicAuth
+
+If your site is behind BasicAuth, both async requests and background processes will fail to complete. This is because WP Background Processing relies on the WordPress HTTP API, which requires you to attach your BasicAuth credentials to requests.
+
+You can pass these credentials via a snippet, see: https://github.com/A5hleyRich/wp-background-processing#basicauth
+
 ### Viewing background regeneration logs
 
 To view the logs for background image regeneration go to `WooCommerce > Status > Logs` and select the `wc-background-regeneration` log from the dropdown.
