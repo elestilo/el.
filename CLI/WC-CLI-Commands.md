@@ -32,7 +32,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--after</h4>
@@ -182,7 +182,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--exclude</h4>
@@ -319,7 +319,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--after</h4>
@@ -394,7 +394,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--after</h4>
@@ -528,7 +528,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--exclude</h4>
@@ -666,7 +666,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--exclude</h4>
@@ -826,7 +826,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--exclude</h4>
@@ -896,7 +896,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--exclude</h4>
@@ -966,7 +966,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--after</h4>
@@ -1234,7 +1234,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--after</h4>
@@ -1598,7 +1598,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--exclude</h4>
@@ -1721,7 +1721,7 @@
 <h4>--page</h4>
 <p>Current page of the collection.</p>
 <h4>--per_page</h4>
-<p>Maximum number of items to be returned in result set. Defaults to all items.</p>
+<p>Maximum number of items to be returned in result set. Defaults to 100 items.</p>
 <h4>--search</h4>
 <p>Limit results to those matching a string.</p>
 <h4>--after</h4>
