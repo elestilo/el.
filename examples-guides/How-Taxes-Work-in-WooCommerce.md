@@ -26,17 +26,19 @@ When we say _defined including tax_, we are referring to the taxes of the store'
 
 ## Tax Calculations (simplified)
 
-To work out how much tax is applicable to a given price there is a calculation like as follows. For a tax rate of 20%, the following would be used:
+To work out how much tax is applicable to a given price there is a calculation like as follows. 
 
-**For tax inclusive prices**
-
-    Tax = Line Price - Line Price / 1.2
+Tax calculations are performed **per line**, not per item. For a tax rate of 20%, the following would be used:
 
 **For tax exclusive prices**
 
     Tax = Line Price * 0.2
 
-Tax calculations are performed **per line**, not per item.
+**For tax inclusive prices**
+
+    Tax = Line Price - Line Price / 1.2
+
+Note how the tax is not exactly 20% of the line price when prices include tax already. Doing a regular percentage calculation would essentially be taxing the tax already applied :)
 
 ## Cross-border/country/region taxes
 
