@@ -147,7 +147,7 @@ $args = array(
 $products = wc_get_products( $args );
 ```
 
-**paged**
+**page**
 
 Accepts an integer: Page of results to retrieve. Does nothing if 'offset' is used.
 
@@ -155,14 +155,14 @@ Accepts an integer: Page of results to retrieve. Does nothing if 'offset' is use
 // First 3 products.
 $args = array(
     'limit' => 3,
-    'paged' => 1,
+    'page'  => 1,
 );
 $page_1_products = wc_get_products( $args );
 
 // Second 3 products.
 $args = array(
     'limit' => 3,
-    'paged' => 2,
+    'page'  => 2,
 );
 $page_2_products = wc_get_products( $args );
 ```
