@@ -327,3 +327,11 @@ the `::load()` method works for any data store registered to `woocommerce_data_s
 ```
 $data_store = WC_Data_Store::load( 'mycustomdata' );
 ```
+
+### Data store limitations and WP Admin
+
+Currently, several WooCommerce screens still rely on WordPress to list objects. Examples of this include orders, coupons and products.
+
+If you replace data via a data store some parts of the existing UI may fail. An example of this may be lists of coupons when using the `type` filter. This filter uses meta data, and is in turn passed to WordPress which runs a query using the `WP_Query` class. This cannot handle data outside of the regular meta tables (Ref #19937).
+
+To get around this, usage of `WP_Query` would need to be deprecated and replaced with custom query classes and functions. This is something on on long term roadmap, as is replacing WP List Table screens with custom list tables powered by data stores. Contributions around this system are welcome, otherwise we'll be tackling it when we move away from the WordPress core List Table UI.
