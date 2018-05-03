@@ -9,6 +9,7 @@
     - [Defining a new product type](#defining-a-new-product-type)
     - [Data store for custom data](#data-store-for-custom-data)
 - [Calling a data store](#calling-a-data-store)
+- [Data store limitations and WP Admin](#data-store-limitations-and-wp-admin)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -328,7 +329,7 @@ the `::load()` method works for any data store registered to `woocommerce_data_s
 $data_store = WC_Data_Store::load( 'mycustomdata' );
 ```
 
-### Data store limitations and WP Admin
+## Data store limitations and WP Admin
 
 Currently, several WooCommerce screens still rely on WordPress to list objects. Examples of this include orders, coupons and products.
 
