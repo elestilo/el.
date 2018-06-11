@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
 - [Getting started](#getting-started)
+- [Troubleshooting broken tests](#troubleshooting-broken-tests)
 - [Using the end-to-end components for testing your extensions](#using-the-end-to-end-components-for-testing-your-extensions)
 - [Contributing](#contributing)
 
