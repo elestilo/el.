@@ -29,6 +29,14 @@ Getting set up with and running the end-to-end tests is a fairly straightforward
 7. To run all of the tests run `grunt e2e-tests`. If you want to run only one file's tests you can use the `e2e-test` command with the `--file` flag: `grunt e2e-test --file="checkout-page.js"`.
 8. Sit back and relax while the computer does all of the work.
 
+## Troubleshooting broken tests
+
+To help troubleshoot broken tests, a screenshot of the browser is saved to the `screenshots/` directory in the root of the WooCommerce repository. For tests running from Travis, the screenshot will be uploaded to Amazon S3 and the URL displayed in the section for the `travis.sh after` script in the Travis build job log:
+
+![image](https://user-images.githubusercontent.com/31110506/40990860-59cb3af8-68af-11e8-9d62-f5cc7ddd15c6.png)
+
+Submitting screenshots to S3 doesn't work for PRs created from forks (https://github.com/woocommerce/woocommerce/pull/20462). In this case, it is necessary to run the tests locally to get the screenshots. 
+
 ## Using the end-to-end components for testing your extensions
 
 The end-to-end testing components are designed in an extendable, reusable way that enables WooCommerce extension developers to use them to write end-to-end test suites for their extensions without having to set up everything from scratch. Adding end-to-end tests for extensions will make compatibility testing with new WooCommerce versions quicker and reduce the chance of introducing bugs to your extensions.
