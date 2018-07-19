@@ -22,7 +22,7 @@ Before proceeding, please read the [REST API docs on authentication which covers
 
 ## Generate Keys
 
-First you need to generate some API keys and enable the REST API so you can start using it. 
+To start using REST API, you first need to generate API keys. 
 
 1. Go to *WooCommerce > Settings > Advanced*
 2. Go to the *REST API* tab and click *Add key*.
