@@ -24,17 +24,17 @@ Before proceeding, please read the [REST API docs on authentication which covers
 
 First you need to generate some API keys and enable the REST API so you can start using it. 
 
-1. Go to *WooCommerce > Settings > API* and ensure the API is enabled. 
-2. Go to the *keys/apps* tab and click *add key*.
+1. Go to *WooCommerce > Settings > Advanced*
+2. Go to the *REST API* tab and click *Add key*.
 3. Give the key a description for your own reference, choose a user with access to orders etc, and give the key *read/write* permissions.
-4. Click *generate api key*.
+4. Click *Generate api key*.
 5. Your keys will be shown - do not close this tab yet, the secret will be hidden if you try to view the key again.
 
 ![Generated API Keys](examples-guides/images/keys.png)
 
 ## Making a basic request
 
-The request URL we'll test is `wp-json/wc/v1/orders`. On localhost the full URL may look something like this: `https://local.wordpress.dev/wp-json/wc/v1/orders`. Modify this to use your own site URL.
+The request URL we'll test is `wp-json/wc/v2/orders`. On localhost the full URL may look something like this: `https://local.wordpress.dev/wp-json/wc/v2/orders`. Modify this to use your own site URL.
 
 In Postman, you need to set the fields for request type, request URL, and the settings on the authorization tab. For Authorization, choose *basic auth* and enter your *consumer key* and *consumer secret* keys from WooCommerce into the username and password fields
 
@@ -82,7 +82,7 @@ Occasionally servers may not parse the Authorization header correctly (if you se
 In this case, you may provide the consumer key/secret as query string parameters instead. Example:
 
 ```
-https://local.wordpress.dev/wp-json/wc/v1/orders?consumer_key=XXXX&consumer_secret=XXXX
+https://local.wordpress.dev/wp-json/wc/v2/orders?consumer_key=XXXX&consumer_secret=XXXX
 ```
 
 ### Server does not support POST/DELETE/PUT
