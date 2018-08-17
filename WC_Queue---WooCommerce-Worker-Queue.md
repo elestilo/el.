@@ -1,5 +1,5 @@
 ## Introduction
-With WooCommerce 3.5+ there is a new Worker Queue system, WC_Queue. This new system allows for scheduling and running background jobs using the Action Scheduler library, however, it is easily overridable to hook in a Worker Queue system of your own likings like Amazon SQS or any other queue system out there.
+With WooCommerce 3.5+ there is a new Worker Queue system, WC_Queue. This new system allows for scheduling and running background jobs using the [Action Scheduler library](https://github.com/Prospress/action-scheduler), however, it is easily overridable to hook in a Worker Queue system of your own likings like Amazon SQS or any other queue system out there.
 
 ## Using WC_Queue
 The Worker Queue can be accessed using the `WC()->queue()` method, this will return the WC_Queue implementation, by default it will utilise WC_Action_Queue but as mentioned it can be extended to use any other queue system, see the implementing a custom worker queue section for more details on that.
@@ -159,7 +159,7 @@ class WC_My_Custom_Queue implements WC_Queue_Interface {
 ```
 
 ### Making WooCommerce use your custom queue class
-In order for WooCommerce to use your custom queue class we need to tell it to do so otherwise it will just default to using the built-in WC_Action_Queue class which is based on the Action Scheduler library. You would do this from your queue extension using code like this.
+In order for WooCommerce to use your custom queue class we need to tell it to do so otherwise, it will just default to using the built-in WC_Action_Queue class which is based on the [Action Scheduler library](https://github.com/Prospress/action-scheduler). You would do this from your queue extension using code like this.
 
 ```
 add_filter( 'woocommerce_queue_class', 'wc_please_use_my_queue' );
