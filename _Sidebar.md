@@ -35,6 +35,7 @@
 - [wc_get_orders and WC_Order_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query)
 - [wc_get_products and WC_Product_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_products-and-WC_Product_Query)
 - [Importer and Exporter](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Importer-&-Exporter)
+- [WC_Queue - WooCommerce Queue System](https://github.com/woocommerce/woocommerce/wiki/WC_Queue---WooCommerce-Worker-Queue)
 
 **Contribution**
 - [Our Git Flow](https://github.com/woocommerce/woocommerce/wiki/WooCommerce-Git-Flow)
