@@ -4,7 +4,7 @@ With WooCommerce 3.5+ there is a new Worker Queue system, WC_Queue. This new sys
 ## Using WC_Queue
 The Worker Queue can be accessed using the `WC()->queue()` method, this will return the WC_Queue implementation, by default it will utilise WC_Action_Queue but as mentioned it can be extended to use any other queue system, see the implementing a custom worker queue section for more details on that.
 
-Queues work the same as the WordPress hook system, you have a function that does all your processing, you attach that function to a unique action and then call that action to schedule or cancel jobs.
+Queues work the same as the WordPress hook system, you have a function that processes your job, you attach that function to a unique action and then call that action to schedule or cancel jobs.
 
 ### Adding jobs to the queue
 `WC()->queue()->add( $hook, $args = array(), $group = '' )` - You will use this method to execute a **one time job** that will **fire as soon as possible**. You pass the hook that needs to be executed as `$hook`, any arguments you want to use inside that hook in `$args` and if you specify a group name in `$group` it will run the job as part of a group meaning it will process jobs first in first out for that group and not all in async.
