@@ -117,6 +117,17 @@ class WC_My_Custom_Queue implements WC_Queue_Interface {
 		// Code here to remove a job from the queue.
 	}
 
+        /**
+	 * Dequeue all actions with a matching hook (and optionally matching args and group) so no matching actions are ever run.
+	 *
+	 * @param string $hook The hook that the job will trigger.
+	 * @param array  $args Args that would have been passed to the job.
+	 * @param string $group The group the job is assigned to (if any).
+	 */
+	public function cancel_all( $hook, $args = array(), $group = '' ) {
+                // Code here to cancel all running jobs for a certain action.
+        }
+
 	/**
 	 * Get the date and time for the next scheduled occurence of an action with a given hook
 	 * (an optionally that matches certain args and group), if any.
