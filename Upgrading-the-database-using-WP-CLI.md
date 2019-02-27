@@ -1,8 +1,6 @@
 When new versions of WooCommerce are released, often you'll be prompted to run a database upgrade. Whilst it's possible to do this through WP admin, advanced users may prefer to run these upgrades via the CLI, for example, on busy stores where timeouts could occur.
 
-[This page outlines how to start using the WP CLI](https://wp-cli.org/) since we won't cover it in this WIKI. This article only covers the commands WooCommerce adds.
-
-## Using the `wc update` command
+[This page outlines how to install and begin using the WP CLI](https://wp-cli.org/).
 
 To update the database, use the following CLI command:
 
