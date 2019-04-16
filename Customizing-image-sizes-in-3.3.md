@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Themes can define image sizes](#themes-can-define-image-sizes)
+- [Customize image sizes in the customizer](#customize-image-sizes-in-the-customizer)
+- [Changing image sizes via hooks](#changing-image-sizes-via-hooks)
+- [Changing what image sizes are used in WooCommerce via hooks](#changing-what-image-sizes-are-used-in-woocommerce-via-hooks)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 [Note: This document is now maintained in the WooCommerce documents](https://docs.woocommerce.com/document/image-sizes-theme-developers/).
 
 To display images in your catalog, WooCommerce registers a few new image sizes which define the actual image dimensions to be used. These sizes include:

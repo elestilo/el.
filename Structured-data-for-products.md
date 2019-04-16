@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Viewing generated structured data](#viewing-generated-structured-data)
+- [Customizing structured data using WooCommerce filters](#customizing-structured-data-using-woocommerce-filters)
+  - [Adding extra data](#adding-extra-data)
+- [Generating product data in other places, e.g. archives](#generating-product-data-in-other-places-eg-archives)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 WooCommerce outputs structured data for products automatically. [According to Google](https://developers.google.com/search/docs/data-types/product), in the context of your store, this markup is suitable for single product pages.
 
 *Note: Prior to 3.5.6, limited data was sometimes output to archives/categories. This is no longer the case; according to Google guidelines only visible data should be marked up, and archives that link out to individual pages should not be marked out. [Issue ref](https://github.com/woocommerce/woocommerce/issues/22896), [Docs](https://developers.google.com/search/docs/guides/sd-policies#multiple-elements-on-a-page).*

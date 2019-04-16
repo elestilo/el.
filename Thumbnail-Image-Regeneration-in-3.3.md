@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [How it works](#how-it-works)
+  - [Background jobs and BasicAuth](#background-jobs-and-basicauth)
+  - [Viewing background regeneration logs](#viewing-background-regeneration-logs)
+  - [Cancelling a background regeneration job](#cancelling-a-background-regeneration-job)
+  - [CDN plugins](#cdn-plugins)
+- [How to disable background regeneration](#how-to-disable-background-regeneration)
+- [Using Jetpack Photon instead](#using-jetpack-photon-instead)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 WooCommerce 3.3 introduced thumbnail regeneration functionality. In the past when image size settings were changed you would need to install an external plugin and then have it regenerate all WordPress image thumbnails before the changes would be visible.
 
 The new image regeneration functionality, combined with the introduction of WooCommerce image settings in the customizer, now ensure that as you make changes to your store image settings you can preview the changes in real-time within the customizer.
