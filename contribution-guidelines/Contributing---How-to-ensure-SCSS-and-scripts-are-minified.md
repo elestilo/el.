@@ -8,7 +8,19 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-To handle minification, WooCommerce uses [Grunt](http://gruntjs.com). 
+# General principles
+
+When contributing to the project, please commit your changes to unminified files (i.e. the readable JS files and SCSS files). The minification will be handled as part of the release process.
+
+To ensure you can test your changes, run with `SCRIPT_DEBUG` turned on, i.e. add `define( 'SCRIPT_DEBUG', true );` to your wp-config.php.
+
+If you want to run the minification anyway, please see the details below. 
+
+<details>
+
+---
+
+For minification, WooCommerce uses [Grunt](http://gruntjs.com)
 
 ## Installing Grunt
 
@@ -27,3 +39,4 @@ Whilst in the WooCommerce directory in Terminal, run `grunt watch`. This will wa
 
 To trigger minification manually, just type `grunt` instead.
 
+</details>
