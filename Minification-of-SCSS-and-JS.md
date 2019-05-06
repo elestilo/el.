@@ -12,7 +12,7 @@
 
 ## SCSS
 
-When updating SCSS files in the WooCommerce project, please commit your changes to both unminified SCSS files and minified CSS files.
+When updating SCSS files in the WooCommerce project, please **commit your changes to both unminified SCSS files and minified CSS files**.
 
 To get the minified CSS files, run task `grunt css`. Alternatively, if you are performing multiple changes and want grunt to watch all SCSS files and trigger the update automatically, run `grunt watch css` in the woocommerce plugin folder.
 
@@ -45,7 +45,7 @@ To trigger minification manually, just type `grunt css` instead.
 
 ## Javascript
 
-When changing the JS files, please commit your changes to unminified files (i.e. the readable JS files). The minification will be handled as part of the release process.
+When changing the JS files, please **commit only unminified files** (i.e. the readable JS files). The minification will be handled as part of the release process.
 
 To ensure you can test your changes, run with `SCRIPT_DEBUG` turned on, i.e. add `define( 'SCRIPT_DEBUG', true );` to your wp-config.php file.
 
