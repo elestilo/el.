@@ -40,7 +40,7 @@
 
 **Contribution**
 - [Our Git Flow](https://github.com/woocommerce/woocommerce/wiki/WooCommerce-Git-Flow)
-- [How to ensure SCSS and scripts are minified](Contributing---How-to-ensure-SCSS-and-scripts-are-minified)
+- [SCSS and JS minification](https://github.com/woocommerce/woocommerce/wiki/Minification-of-SCSS-and-JS)
 - [CSS SASS coding guidelines and naming conventions](CSS-SASS-coding-guidelines-and-naming-conventions)
 - [Core Testing Checklist](https://github.com/woocommerce/woocommerce/wiki/Core-Testing-Checklist)
 - [String localisation guidelines](String-localisation-guidelines)
