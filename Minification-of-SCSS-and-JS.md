@@ -10,11 +10,13 @@
 
 # General principles
 
-When contributing to the project, please commit your changes to unminified files (i.e. the readable JS files and SCSS files). The minification will be handled as part of the release process.
+## SCSS
 
-To ensure you can test your changes, run with `SCRIPT_DEBUG` turned on, i.e. add `define( 'SCRIPT_DEBUG', true );` to your wp-config.php.
+When updating SCSS files in the WooCommerce project, please commit your changes to both unminified SCSS files and minified CSS files.
 
-If you want to run the minification anyway, please see the details below. 
+To get the minified CSS files, run task `grunt css`. Alternatively, if you are performing multiple changes and want grunt to watch all SCSS files and trigger the update automatically, run `grunt watch css` in the woocommerce plugin folder.
+
+For further details on how to set up `grunt`, please see the details section.
 
 <details>
 
@@ -35,8 +37,15 @@ In terminal/command line, cd to the WooCommerce directory and run `npm install`.
 
 ## Watching for changes
 
-Whilst in the WooCommerce directory in Terminal, run `grunt watch`. This will watch for changes within SCSS and JS files and minify them when needed.
+Whilst in the WooCommerce directory in Terminal, run `grunt watch css`. This will watch for changes within SCSS files and minify them when needed.
 
-To trigger minification manually, just type `grunt` instead.
+To trigger minification manually, just type `grunt css` instead.
 
 </details>
+
+## Javascript
+
+When changing the JS files, please commit your changes to unminified files (i.e. the readable JS files). The minification will be handled as part of the release process.
+
+To ensure you can test your changes, run with `SCRIPT_DEBUG` turned on, i.e. add `define( 'SCRIPT_DEBUG', true );` to your wp-config.php file.
+
