@@ -38,7 +38,7 @@ composer install
 8. Run `npm install` from the local machine (to be able to run git hooks from local machine, if you're running git on local machine as well).
 
 ## Activate Xdebug
-Running `xdbug_on` inside Vagrant seems to be broken for me as of 2019-05-14.
+Running `xdbug_on` inside Vagrant seems to be broken for me as of 2019-05-14, so here are manual steps:
 
 1. Copy and paste output from [phpinfo()](http://vvv.test/phpinfo/) to [Xdebug wizard](https://xdebug.org/wizard.php), analyze and check step about editing the php.ini file (step 9 in my case).
 2. Check if `/usr/lib/php/*/xdebug.so` is present in the VM (it should be):
