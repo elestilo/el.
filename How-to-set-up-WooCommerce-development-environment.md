@@ -2,7 +2,7 @@
 
 1. Install [VirtualBox](https://www.virtualbox.org/)
 2. Install [vagrant](https://www.vagrantup.com/)
-3. Install [VVV](https://varyingvagrantvagrants.org/docs/en-US/installation/) (as of 2019-05-14, only develop branch (version 3) works, so after cloning the repo, you need to switch to branch develop, i.e. `git checkout develop`)
+3. Install [VVV 3](https://varyingvagrantvagrants.org/docs/en-US/installation/)
 4. Provision a new machine (`vagrant up`), allow installation of local plugins (vagrant-hostsupdater)
 9. Clone woocommerce repo to `/wp-content/plugins`, i.e on the local machine. 
     ```bash=
