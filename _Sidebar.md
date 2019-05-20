@@ -39,6 +39,7 @@
 - [Importer and Exporter](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Importer-&-Exporter)
 
 **Contribution**
+- [Set up development environment](https://github.com/woocommerce/woocommerce/wiki/How-to-set-up-WooCommerce-development-environment)
 - [Our Git Flow](https://github.com/woocommerce/woocommerce/wiki/WooCommerce-Git-Flow)
 - [SCSS and JS minification](https://github.com/woocommerce/woocommerce/wiki/Minification-of-SCSS-and-JS)
 - [CSS SASS coding guidelines and naming conventions](CSS-SASS-coding-guidelines-and-naming-conventions)
