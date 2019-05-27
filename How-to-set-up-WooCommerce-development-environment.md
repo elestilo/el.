@@ -133,3 +133,4 @@ All of the below steps should be performed in the Vagrant VM:
 
     sudo service php7.2-fpm restart
     ```
+14. Alternatively, you can copy the tideways PHP file over to your local machine and map it in the path mappings for PHPDebug (confirmed to work by Rodrigo).
