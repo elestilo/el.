@@ -1,6 +1,6 @@
 To log errors triggered by WordPress plugins, you can use the debug log.
 
-1. [Edit your wp-config.php file](https://codex.wordpress.org/Editing_wp-config.php)
+1. [Edit your wp-config.php file](https://wordpress.org/support/article/debugging-in-wordpress/)
 2. Add the following lines to enable debug (if these are already defined, edit the values):
 ```php
 define( 'WP_DEBUG', true );
@@ -11,4 +11,4 @@ define( 'WP_DEBUG_DISPLAY', false );
 
 This will enable the debug log, but will hide errors on your site.
 
-For more information see [Debugging in WordPress](https://codex.wordpress.org/Debugging_in_WordPress).
+For more information see [Debugging in WordPress](https://wordpress.org/support/article/debugging-in-wordpress/).
