@@ -57,6 +57,20 @@ In your terminal:
     $ composer install
     ```
 
+## Generating assets
+
+To generate assets (JS and CSS files) run the following command from the WooCommerce root directory:
+
+```
+$ node_modules/.bin/grunt assets
+```
+
+To automatically rebuild the assets whenever a JS or SCSS file is modified run:
+
+```
+$ node_modules/.bin/grunt watch
+```
+
 ## IDE integrations
 
 WooCommerce core has linting rules in place via pre-commit hooks to ensure code standards are used. Ensure you have installed NPM and Composer packages, so these are set up!
