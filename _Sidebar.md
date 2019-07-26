@@ -1,3 +1,12 @@
+**Contribution**
+- [Set up development environment](https://github.com/woocommerce/woocommerce/wiki/How-to-set-up-WooCommerce-development-environment)
+- [Our Git Flow](https://github.com/woocommerce/woocommerce/wiki/WooCommerce-Git-Flow)
+- [SCSS and JS minification](https://github.com/woocommerce/woocommerce/wiki/Minification-of-SCSS-and-JS)
+- [CSS SASS coding guidelines and naming conventions](CSS-SASS-coding-guidelines-and-naming-conventions)
+- [Core Testing Checklist](https://github.com/woocommerce/woocommerce/wiki/Core-Testing-Checklist)
+- [String localisation guidelines](String-localisation-guidelines)
+- [Deprecation in core](Deprecation-in-core)
+
 **Release Notes**
 - [3.6.x notes/FAQ](https://github.com/woocommerce/woocommerce/wiki/3.6.x-notes-FAQ)
 - [2.6.x to 3.0.0 Developer Migration Notes](2.6.x-to-3.0.0-Developer-Migration-Notes)
@@ -37,12 +46,3 @@
 - [wc_get_orders and WC_Order_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query)
 - [wc_get_products and WC_Product_Query](https://github.com/woocommerce/woocommerce/wiki/wc_get_products-and-WC_Product_Query)
 - [Importer and Exporter](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Importer-&-Exporter)
-
-**Contribution**
-- [Set up development environment](https://github.com/woocommerce/woocommerce/wiki/How-to-set-up-WooCommerce-development-environment)
-- [Our Git Flow](https://github.com/woocommerce/woocommerce/wiki/WooCommerce-Git-Flow)
-- [SCSS and JS minification](https://github.com/woocommerce/woocommerce/wiki/Minification-of-SCSS-and-JS)
-- [CSS SASS coding guidelines and naming conventions](CSS-SASS-coding-guidelines-and-naming-conventions)
-- [Core Testing Checklist](https://github.com/woocommerce/woocommerce/wiki/Core-Testing-Checklist)
-- [String localisation guidelines](String-localisation-guidelines)
-- [Deprecation in core](Deprecation-in-core)
