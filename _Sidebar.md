@@ -5,7 +5,7 @@
 - [CSS SASS coding guidelines and naming conventions](CSS-SASS-coding-guidelines-and-naming-conventions)
 - [Core Testing Checklist](https://github.com/woocommerce/woocommerce/wiki/Core-Testing-Checklist)
 - [String localisation guidelines](String-localisation-guidelines)
-- [Translating WooCommerce](Translation-WooCommerce)
+- [Translating WooCommerce](Translating-WooCommerce)
 - [Deprecation in core](Deprecation-in-core)
 
 **Release Notes**
