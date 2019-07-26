@@ -71,6 +71,6 @@ While developing, we recommend adding support to your editor for the following (
  
 ## Additional resources
 
-1. [Running unit tests](Running-unit-tests)
+1. [Running unit tests](https://github.com/woocommerce/woocommerce/blob/master/tests/README.md)
 2. [Running e2e tests](End-to-end-Testing)
 3. [Extra VVV configurations](Extra-VVV-Configurations)
