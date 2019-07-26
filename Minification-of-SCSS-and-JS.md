@@ -2,9 +2,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [Installing Grunt](#installing-grunt)
-- [Setting up Grunt for WooCommerce](#setting-up-grunt-for-woocommerce)
-- [Watching for changes](#watching-for-changes)
+- [General principles](#general-principles)
+  - [SCSS](#scss)
+  - [Installing Grunt](#installing-grunt)
+  - [Setting up Grunt for WooCommerce](#setting-up-grunt-for-woocommerce)
+  - [Watching for changes](#watching-for-changes)
+  - [Javascript](#javascript)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
