@@ -51,7 +51,7 @@ In your terminal:
     ```
     $ git clone git@github.com:USER_NAME/woocommerce.git
     ```
-3. Install dependencies:
+3. Install dependencies (this includes some functionality such as Gutenberg Blocks and the REST API that are developed as separate projects):
     ```
     $ cd woocommerce
     $ npm install
