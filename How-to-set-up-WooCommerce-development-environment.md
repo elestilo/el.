@@ -7,6 +7,7 @@ This page will guide you through the process of setting up WooCommerce developme
 - [Pre-requisites](#pre-requisites)
 - [Configure a local WordPress instance](#configure-a-local-wordpress-instance)
 - [Clone WooCommerce repository and install dependencies](#clone-woocommerce-repository-and-install-dependencies)
+- [Generating assets](#generating-assets)
 - [IDE integrations](#ide-integrations)
 - [Additional resources](#additional-resources)
 
