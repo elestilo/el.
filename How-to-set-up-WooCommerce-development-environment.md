@@ -32,7 +32,7 @@ To configure our local WordPress instance, you will need to:
 3. Install and provision [VVV](https://varyingvagrantvagrants.org/docs/en-US/installation/)
 4. If everything worked as expected, you should have a WordPress installation running on the following URL: https://one.wordpress.test. This is the WP site that we will use to install WooCommerce.
 
-## Clone WooCommerce repository and install dependencies
+## Clone WooCommerce repository
 
 To install WooCommerce on your WordPress installation, you need to decide whether you will clone the WooCommerce repository directly or your WooCommerce fork. If you plan to contribute to WooCommerce code base, it is recommended that you clone your fork. If needed, see [this GitHub document on how to create a fork](https://help.github.com/en/articles/fork-a-repo).
 
@@ -51,14 +51,16 @@ In your terminal:
     ```
     $ git clone git@github.com:USER_NAME/woocommerce.git
     ```
-3. Install dependencies (this includes some functionality such as Gutenberg Blocks and the REST API that are developed as separate projects):
-    ```
-    $ cd woocommerce
-    $ npm install
-    $ composer install
-    ```
 
-## Generating assets
+## Install dependencies and generate assets
+
+To install WooCommerce dependencies (this includes some functionality such as Gutenberg Blocks and the REST API that are developed as separate projects and Grunt that is used to generated minified versions of the SCSS and JS files):
+
+```
+$ cd ~/vagrant-local/www/wordpress-one/public_html/wp-content/plugins/woocommerce
+$ npm install
+$ composer install
+```
 
 The source code found on GitHub does not contain compiled CSS or Javascript. To generate those assets run the following command from the WooCommerce root directory:
 
