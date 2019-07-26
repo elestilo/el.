@@ -60,7 +60,7 @@ In your terminal:
 
 ## Generating assets
 
-To generate assets (JS and CSS files) run the following command from the WooCommerce root directory:
+The source code found on GitHub does not contain compiled CSS or Javascript. To generate those assets run the following command from the WooCommerce root directory:
 
 ```
 $ node_modules/.bin/grunt assets
