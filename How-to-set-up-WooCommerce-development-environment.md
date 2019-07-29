@@ -65,13 +65,13 @@ $ composer install
 The source code found on GitHub does not contain compiled CSS or Javascript. To generate those assets run the following command from the WooCommerce root directory:
 
 ```
-$ node_modules/.bin/grunt assets
+npm run build
 ```
 
 To automatically rebuild the assets whenever a JS or SCSS file is modified run:
 
 ```
-$ node_modules/.bin/grunt watch
+npm run build-watch
 ```
 
 ## IDE integrations
