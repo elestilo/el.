@@ -75,6 +75,8 @@ Your API keys or signature is wrong. Ensure that:
 - The password when authenticating is your consumer secret.
 - Make a new set of keys to be sure.
 
+If your server utilizes FastCGI, check that your [authorization headers are properly read.](https://support.metalocator.com/en/articles/1654091-wp-json-basic-auth-with-fastcgi). 
+
 ### Consumer key is missing
 
 Occasionally servers may not parse the Authorization header correctly (if you see a “Consumer key is missing” error when authenticating over SSL, you have a server issue). 
