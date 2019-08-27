@@ -10,7 +10,7 @@ command -v doctoc >/dev/null 2>&1 || {
   exit 1;
 }
 
-command -v doctoc >/dev/null 2>&1 || { 
+command -v ack >/dev/null 2>&1 || { 
   echo >&2 "ack is required! Aborting...";
   exit 1;
 }
