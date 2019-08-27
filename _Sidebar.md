@@ -9,6 +9,7 @@
 - [Deprecation in core](Deprecation-in-core)
 
 **Release Notes**
+- [Release Testing Instructions]()
 - [3.6.x notes/FAQ](https://github.com/woocommerce/woocommerce/wiki/3.6.x-notes-FAQ)
 - [2.6.x to 3.0.0 Developer Migration Notes](2.6.x-to-3.0.0-Developer-Migration-Notes)
 - [Select2 fields not working in 3.0.x](https://github.com/woocommerce/woocommerce/wiki/Select2-fields-not-working-in-3.0.x)
