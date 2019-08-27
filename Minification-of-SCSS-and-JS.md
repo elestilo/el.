@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [SCSS](#scss)
+- [Javascript](#javascript)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## SCSS
 
 When updating SCSS files in the WooCommerce project, please **commit only your changes to unminified SCSS files**. The minification will be handled as part of the release process.

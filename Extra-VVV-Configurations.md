@@ -2,7 +2,7 @@ This page lists a few extra VVV configurations that can be useful in some scenar
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+## Table of Contents
 
 - [Activate Xdebug in VVV](#activate-xdebug-in-vvv)
 - [Email setup in VVV](#email-setup-in-vvv)

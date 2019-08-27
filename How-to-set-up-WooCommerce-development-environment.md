@@ -2,7 +2,7 @@ This page will guide you through the process of setting up WooCommerce developme
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+## Table of Contents
 
 - [Pre-requisites](#pre-requisites)
 - [Configure a local WordPress instance](#configure-a-local-wordpress-instance)

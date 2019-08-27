@@ -20,6 +20,8 @@
   - [Table: `woocommerce_log`](#table-woocommerce_log)
   - [Table: `wc_webhooks`](#table-wc_webhooks)
   - [Table: `wc_download_log`](#table-wc_download_log)
+  - [Table: `wc_product_meta_lookup`](#table-wc_product_meta_lookup)
+  - [Table: `wc_tax_rate_classes`](#table-wc_tax_rate_classes)
 - [Source File](#source-file)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

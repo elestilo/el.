@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Glossary & Style Guide](#glossary--style-guide)
+- [Translating Video Tutorials](#translating-video-tutorials)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 We have a [project on translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/woocommerce). You can join the localization team of your language and help by translating WooCommerce. [Find more about using joining a language team and using GlotPress](https://make.wordpress.org/polyglots/handbook/tools/glotpress-translate-wordpress-org/).
 
 If WooCommerce is already 100% translated for your language, join the team anyway! We regularly update our language files, and new strings that need translation will likely be added soon.
