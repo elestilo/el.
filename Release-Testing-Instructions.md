@@ -65,4 +65,4 @@ To test:
 
 - Install and activate WooCommerce on a test site
 - WooCommerce on-boarding wizard should start
-- On `Store setup` page of the wizard the checkbox next to `Help WooCommerce improve with usage tracking.` should not be selected by default
+- On `Store setup` page of the wizard, the checkbox next to `Help WooCommerce improve with usage tracking.` at the bottom of the page should not be selected by default
