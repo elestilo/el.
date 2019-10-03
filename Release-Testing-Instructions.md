@@ -74,7 +74,15 @@ To test:
 - Create a new simple product 
 - In the `Inventory` section of the product page
 - Set `Stock status` field to `On backorder`
-- Don't select the box next to `Enable stock management at product level`
+- **Don't** select the box next to `Enable stock management at product level`
 - Publish the product
 - Navigate to the product page at the front-end of the site
 - Notice saying `Available on backorder` should be displayed on the product page
+
+5) Remove broken download link for downloadable products in refund emails.
+
+To test:
+
+- Create a virtual downloadable product
+- Place an order for the product and refund it 
+- Check Refund email - it **should not** contain `Downloads` section with a link to download product
