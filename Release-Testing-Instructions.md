@@ -66,3 +66,15 @@ To test:
 - Install and activate WooCommerce on a test site
 - WooCommerce on-boarding wizard should start
 - On `Store setup` page of the wizard, the checkbox next to `Help WooCommerce improve with usage tracking.` at the bottom of the page should not be selected by default
+
+4) Add `Available on backorder` message for products available on backorder.
+
+To test:
+
+- Create a new simple product 
+- In the `Inventory` section of the product page
+- Set `Stock status` field to `On backorder`
+- Don't select the box next to `Enable stock management at product level`
+- Publish the product
+- Navigate to the product page at the front-end of the site
+- Notice saying `Available on backorder` should be displayed on the product page
