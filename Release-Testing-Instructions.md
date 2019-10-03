@@ -53,13 +53,7 @@ To test:
 - Change order ID in the URL to a random order ID (make sure it does not exist in WC)
 - An error indicating invalid order should be displayed
 
-2) Update the recommended PHP version to 7.0 and the recommended WP version to 5.0.
-
-To test:
-
-- You should see a recommendation notice if you are using a less than recommended version of PHP and WordPress
-
-3) Change On-Boarding Wizard to opt-out of usage tracking by default.
+2) Change On-Boarding Wizard to opt-out of usage tracking by default.
 
 To test:
 
@@ -67,7 +61,7 @@ To test:
 - WooCommerce on-boarding wizard should start
 - On `Store setup` page of the wizard, the checkbox next to `Help WooCommerce improve with usage tracking.` at the bottom of the page should not be selected by default
 
-4) Add `Available on backorder` message for products available on backorder.
+3) Add `Available on backorder` message for products available on backorder.
 
 To test:
 
@@ -79,7 +73,7 @@ To test:
 - Navigate to the product page at the front-end of the site
 - Notice saying `Available on backorder` should be displayed on the product page
 
-5) Remove broken download link for downloadable products in refund emails.
+4) Remove broken download link for downloadable products in refund emails.
 
 To test:
 
@@ -87,10 +81,12 @@ To test:
 - Place an order for the product and refund it 
 - Check Refund email - it **should not** contain `Downloads` section with a link to download product
 
-6) Add Zambia's Provinces to the list of states.
+5) Add Zambia's Provinces to the list of states.
 
 To test:
 
 - Visit `WooCommerce > Settings > Shipping`
 - Click on `Add shipping zone`
 - In `Zone regions` filed, type `Zambia` - you should be able to see different provinces, e.g. `Muchinga`
+
+6) Update the recommended PHP version to 7.0 and the recommended WP version to 5.0. You should see a recommendation notice if you are using a less than recommended version of PHP and WordPress
