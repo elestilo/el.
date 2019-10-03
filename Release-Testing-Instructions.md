@@ -58,3 +58,11 @@ To test:
 To test:
 
 - You should see a recommendation notice if you are using a less than recommended version of PHP and WordPress
+
+3) Change On-Boarding Wizard to opt-out of usage tracking by default.
+
+To test:
+
+- Install and activate WooCommerce on a test site
+- WooCommerce on-boarding wizard should start
+- On `Store setup` page of the wizard the checkbox next to `Help WooCommerce improve with usage tracking.` should not be selected by default
