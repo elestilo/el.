@@ -51,7 +51,7 @@ To test:
 
 - Go to `My Account -> Orders -> View order` (any order)
 - Change order ID in the URL to a random order ID (make sure it does not exist in WC)
-- An error indicating invalid order should be displayed
+- An error message saying `Invalid order.` should be displayed
 
 2) Change On-Boarding Wizard to opt-out of usage tracking by default.
 
