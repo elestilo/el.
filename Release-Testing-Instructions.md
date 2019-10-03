@@ -86,3 +86,11 @@ To test:
 - Create a virtual downloadable product
 - Place an order for the product and refund it 
 - Check Refund email - it **should not** contain `Downloads` section with a link to download product
+
+6) Add Zambia's Provinces to the list of states.
+
+To test:
+
+- Visit `WooCommerce > Settings > Shipping`
+- Click on `Add shipping zone`
+- In `Zone regions` filed, type `Zambia` - you should be able to see different provinces, e.g. `Muchinga`
