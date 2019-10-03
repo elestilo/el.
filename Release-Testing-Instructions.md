@@ -9,3 +9,34 @@
 This document contains all the testing instructions for new features and enhancement that are added to each new release. Bugfix testing instructions will remain part of each PR only.
 
 # 3.8
+
+### Product Blocks
+
+WooCommerce Product Blocks 2.4 is included in this release. WooCommerce Products Blocks is our eCommerce focused blocks for the Gutenberg editor that has been part of WordPress since 5.0.
+
+The first Product Blocks were included in WooCommerce 3.6. With the inclusion of Product Blocks 2.4 in WooCommerce 3.8, new blocks were added:
+
+- Reviews by Product
+- Reviews by Category
+- All Reviews
+- Product Search
+
+Existing block enhancements:
+
+- Now it’s possible to allow hidden products to be selected and shown in the **Hand-picked products block**.
+
+In order to have access to the new Product Blocks, you will need to have WordPress 5.1+ installed or have the latest version of the Gutenberg Editor plugin installed.
+
+To test, you’ll want to add a new page or post and add each of the new blocks to that page. Some areas to focus on:
+
+- Blocks discoverability
+- Add, edit, publish, and delete block
+- Block customization
+
+To test the Hand-picked products block enhancement:
+
+- Create hidden product(s)
+- Add new page or post
+- Add Hand-picked products block
+- Select hidden product(s) to be shown in the block
+- Edit, publish, and delete block
