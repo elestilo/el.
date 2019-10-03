@@ -40,3 +40,15 @@ To test the Hand-picked products block enhancement:
 - Add Hand-picked products block
 - Select hidden product(s) to be shown in the block
 - Edit, publish, and delete block
+
+### Additional enhancements
+
+In addition to the above, we have also included the following user-facing enhancements in WooCommerce 3.8:
+
+1) Show error message in "My Account - view order" if the order does not exist.
+
+To test:
+
+- Go to `My Account -> Orders -> View order` (any order)
+- Enter random order ID in the URL (make sure it does not exist in WC)
+- An error indicating invalid order should be displayed
