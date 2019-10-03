@@ -87,6 +87,6 @@ To test:
 
 - Visit `WooCommerce > Settings > Shipping`
 - Click on `Add shipping zone`
-- In `Zone regions` filed, type `Zambia` - you should be able to see different provinces, e.g. `Muchinga`
+- In `Zone regions` filed, type `Zambia` - you should be able to see and select different provinces, e.g. `Muchinga`
 
 6) Update the recommended PHP version to 7.0 and the recommended WP version to 5.0. You should see a recommendation notice if you are using a less than recommended version of PHP and WordPress
