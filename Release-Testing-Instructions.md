@@ -50,5 +50,5 @@ In addition to the above, we have also included the following user-facing enhanc
 To test:
 
 - Go to `My Account -> Orders -> View order` (any order)
-- Enter random order ID in the URL (make sure it does not exist in WC)
+- Change order ID in the URL to a random order ID (make sure it does not exist in WC)
 - An error indicating invalid order should be displayed
