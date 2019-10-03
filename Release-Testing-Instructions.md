@@ -52,3 +52,9 @@ To test:
 - Go to `My Account -> Orders -> View order` (any order)
 - Change order ID in the URL to a random order ID (make sure it does not exist in WC)
 - An error indicating invalid order should be displayed
+
+2) Update the recommended PHP version to 7.0 and the recommended WP version to 5.0.
+
+To test:
+
+- You should see a recommendation notice if you are using a less than recommended version of PHP and WordPress
